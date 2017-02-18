@@ -1,0 +1,165 @@
+img {
+	border: 0;
+}
+#div_tc_haut{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:110px;
+	height:25px;
+}
+.tc_haut_switch {
+	position: absolute;
+	top: 8px;
+	left: 102px;
+}
+
+.tc_haut_switch_mv {
+	position: absolute;
+	top: 8px;
+	left: 80px;
+}
+
+/* #surlignage is deprecated */
+#surlignage, .surlignage {
+	z-index: 2;
+}
+.tc_fond{
+	z-index:1;
+}
+.tc_fond_img {
+	position:absolute;
+	float:left;
+	top:24px;
+	left:0px;
+}
+.tc_fond_img_mv {
+	position:absolute;
+	float:left;
+	top:48px;
+	left:0px;
+}
+
+.text_div {
+	position: absolute;
+	float:left;
+	left:20px;
+	top:29px;
+}
+
+.text_div_mv {
+	position: absolute;
+	float:left;
+	left: 24px;
+	top:59px;
+}
+
+/* #legendeInput is deprecated */
+#legendeInput, .legendeInput {
+	position: absolute;
+	top: 0px;
+}
+
+.code_div {
+	position:absolute;
+	float:left;
+	top:3px;
+}
+
+.code_div_mv {
+	position:absolute;
+	float:left;
+}
+
+.password_div {
+	position:absolute;
+	width:120px;
+	top:18px;
+	float: left;
+	left:0px;
+}
+
+.password_div input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	border: 1px solid black;
+	background-color: #F5F7F6;
+	padding: 0;
+	height: 18px;
+	width: 94px;
+	float:left;
+}
+
+.password_div img {
+	vertical-align: top;
+}
+
+.password_div_mv {
+	position: absolute;
+	width: 260px;
+	top: 18px;
+	float: left;
+	left: 0px;
+}
+
+.password_div_mv input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 44px;
+	border: 2px solid black;
+	background-color: #FFFFFF;
+	padding: 0;
+	width: 190px;
+	left:33px;
+	float:left;
+}
+
+.password_div_mv img {
+	vertical-align: top;
+}
+
+.tc_aideimg {
+	text-align: left;
+}
+
+.tc_aideimg_mv {
+	text-align: left;
+
+}
+
+.keyboard {
+	position:absolute;
+	top:75px;
+	left:20px;
+	float:left;
+	z-index:1;
+}
+
+.keyboard_mv {
+	position:absolute;
+	left: 24px;
+	top: 168px;
+	z-index:1;
+	float:left;
+}
+
+/* #tc_boutons is deprecated */
+#tc_boutons, .tc_boutons, .tc_boutons_mv {
+	position: absolute;
+	float:left;
+	top: 5px;
+	margin-left:8px;
+	margin-top:26px;
+}
+
+.valid_img {
+	border:0;
+	margin-top: 14px;
+}
+.correct_img_mv{
+	margin-top: 26px;
+}
+.valid_img_mv {
+	border:0;
+	margin-top: 26px;
+}
+

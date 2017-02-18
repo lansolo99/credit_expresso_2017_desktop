@@ -1,0 +1,1094 @@
+@charset "utf-8";
+object {
+	outline:none;
+}
+/*---------- Mise en forme du texte -------------*/
+.net_taux_mea {
+	font-weight:bold;
+	font-size:14px
+}
+.net_gras {
+	font-weight:bold;
+}
+.net_italique {
+	font-style:italic;
+}
+.net_souligne {
+	text-decoration:underline;
+}
+.net_taille_10px {
+	font-size:10px
+}
+.net_taille_11px {
+	font-size:11px
+}
+.net_taille_12px {
+	font-size:12px
+}
+.net_taille_12px {
+	font-size:12px
+}
+.net_taille_13px {
+	font-size:13px
+}
+.net_taille_14px {
+	font-size:14px
+}
+.net_taille_15px {
+	font-size:15px
+}
+.net_taille_16px {
+	font-size:16px
+}
+.net_texte_rouge {
+	color:#E50027;
+}
+.net_texte_gris {
+	color:#ccc
+}
+.net_texte_bleu {
+	color:#2582E1
+}
+.net_aligner_centre {
+	text-align:center;
+}
+.net_aligner_gauche {
+	text-align:left;
+}
+.net_aligner_droite {
+	text-align:right;
+}
+/*----------- Mise en forme des titres --------------*/
+
+        /*----titre bloc pages type "template produit" ------*/
+.net_titre_niveau1 {
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#000000;
+	display:block;
+	margin:0px 0px 7px;
+}
+.net_titre_niveau2 {
+	font-size:16px;
+	font-weight:bold;
+	color:#e60328;
+	display:block;
+	margin:0px 0px 7px;
+}
+.net_titre_niveau3 {
+	border-bottom: #969696 solid 1px;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	padding-left:3px;
+	margin:12px 0px 7px;
+}
+.net_titre_niveau4 {
+	color:#4d4d4d;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:0px 0px 5px;
+}
+/*----titre bloc pour les pages FAQ ------*/
+.net_titre_faq {
+	font-size:13px;
+	font-weight:bold;
+	color:#222;
+	padding-left:15px;
+	background:url(../img/html_libre/faq_puce.gif) no-repeat left 5px;
+	display:block;
+	border-bottom:1px solid #ccc;
+	margin:15px 0 10px 0;
+}
+/*--------titre page aide -----------*/
+.net_titre_aide {
+	border-bottom: #0c65c3 solid 1px;
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:3px;
+	margin:12px 0px 7px;
+}
+/*----titre bloc type "Bloc orientation" ------*/
+.net_titre_bloc {
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	margin-bottom:10px;
+}
+/*-----------------------------------------------------------------*/
+/* --------------- Formatage des listes à puces ------------------ */
+/*-----------------------------------------------------------------*/
+        /*---------- liste à puce FAQ ----------*/
+.net_liste_faq {
+	padding:11px 8px;
+	border:1px solid #ccc;
+	list-style:none;
+}
+.net_liste_faq li {
+	padding-left:15px;
+	background:url(../img/html_libre/faq_puce.gif) no-repeat left 5px;
+	ephox-visible: false;
+}
+.net_liste_faq li a {
+	text-decoration:none;
+	color:#222;
+	font-size:12px;
+	ephox-visible: false;
+}
+.net_liste_faq li a:hover, .net_liste_faq li a:focus, .net_liste_faq li a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*---------- liste à puce AIDE ----------*/
+.net_liste_aide {
+	padding:11px 8px;
+	list-style:none;
+}
+.net_liste_aide li {
+	font-size:11px;
+	padding-left:15px;
+	background:url(../img/html_libre/n2g_puce_aide.gif) no-repeat left 5px;
+	ephox-visible: false;
+}
+.net_liste_aide li a {
+	color:#000;
+	ephox-visible: false;
+}
+.net_liste_aide li a:hover, .net_liste_aide li a:focus, .net_liste_aide li a:active {
+	color:#308dea;
+	ephox-visible: false;
+}
+/* ----------------------------------- */
+/* --- POSITION IMAGES DE FOND --- */
+/* ----------------------------------- */
+.net_image_fond_haut_droite {
+	background-position:top right;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.net_image_fond_bas_droite {
+	background-position:center right;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.net_image_fond_bas_gauche {
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.net_image_fond_haut_gauche {
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.net_image_fond_bas_centre {
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.net_image_fond_haut_centre {
+	background-position:top center;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+/* ------------------------------- */
+/* -------Formatage onglet ------- */
+/* ------------------------------- */
+.net_onglet_rouge {
+	height:20px;
+	padding:3px 14px 1px 14px;
+	background:url(../img/html_libre/n2g_onglet_rouge_fond.gif) repeat-x;
+	color:#FFFFFF;
+	font-size:13px;
+	float:left;
+}
+.net_onglet_orange {
+	height:20px;
+	padding:3px 14px 1px 14px;
+	background:url(../img/html_libre/n2g_onglet_orange_fond.gif) repeat-x;
+	color:#FFFFFF;
+	font-size:13px;
+	float:left;
+}
+.net_onglet_vert {
+	height:20px;
+	padding:3px 14px 1px 14px;
+	background:url(../img/html_libre/n2g_onglet_vert_fond.gif) repeat-x #85b537;
+	color:#FFFFFF;
+	font-size:13px;
+	float:left;
+}
+.net_onglet_bleu {
+	height:20px;
+	padding:3px 14px 1px 14px;
+	background:url(../img/html_libre/n2g_onglet_bleu_fond.gif) repeat-x #0478eb;
+	color:#FFFFFF;
+	font-size:13px;
+	float:left;
+}
+/* --------------------------- */
+/* ---- Formatage de lien ---- */
+/* --------------------------- */
+.net_lien {
+	color:#888;
+	text-decoration:none;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.net_lien:focus, .net_lien:hover, .net_lien:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.net_lien_bo {
+	color:#000;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.net_lien_bo:focus, .net_lien_bo:hover, .net_lien_bo:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*---bouton de pages aides retour au sommaire---*/
+.net_btn_retour_sommaire a {
+	float:right;
+	display:block;
+	width:120px;
+	height:20px;
+	margin-top:10px;
+	border:1px solid #00CCFF;
+	font-weight:normal;
+	ephox-visible: false;
+}
+/*--------------------------------------------------------------------*/
+/*----------------- Formatage des pages produits ---------------------*/
+/*--------------------------------------------------------------------*/
+.net_template_produit_accroche {
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+.net_template_produit_liste {
+	margin: 5px 0px 5px 5px;
+	padding:0px;
+	list-style: none;
+	font-size: 12px;
+}
+.net_template_produit_liste li {
+	padding:0px 0px 0px 15px;
+	font-size: 12px;
+	background:url(../img/template_produit_liste_puce.gif) no-repeat left 3px;
+	ephox-visible: false;
+}
+.net_template_produit_liste li ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	ephox-visible: false;
+}
+.net_template_produit_liste li ul li {
+	background:url(../img/n2g_puce_niveau2.gif) no-repeat left 6px;
+	padding:0px 0px 0px 10px;
+	ephox-visible: false;
+}
+/*---- Mise en forme Tableau -----*/ 
+.net_tableau_fond_gris_titre {
+	background-color:#e9eded;
+	font-weight:bold;
+	text-align:center;
+}
+.net_tableau_fond_cellule_gris {
+	background-color:#f4f6f6;
+	text-align:center;
+}
+.net_tableau_titre {
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+}
+.net_tableau_bordure {
+	border:1px solid #d9d9d9;
+}
+/*----------------- Mise en forme des boutons : SIMUL, PROMO, etc...  -------------------*/
+a.net_btn_menu_fiche {
+	display:block;
+	height:28px;
+	padding:2px 3px 9px 19px;
+	font-weight:bold;
+	text-decoration:none;
+	border-right:1px solid #ccc;
+	background-position:top left;
+	background-repeat:none;
+	ephox-visible: false;
+}
+* html a.net_btn_menu_fiche {
+	padding:3px 3px 0px 19px;
+	ephox-visible: false;
+}
+a:hover.net_btn_menu_fiche, a.net_btn_menu_fiche.on {
+	background-position:bottom left;
+	ephox-visible: false;
+}
+/*-------- Fond des boutons -----------*/
+a.net_btn_menu_fiche.net_simulation {
+	background-image:url(../img/html_libre/net_btn_simulateur.gif);
+	color:#dd0c82;
+	ephox-visible: false;
+}
+a.net_btn_menu_fiche.net_promo_bleu {
+	background-image:url(../img/html_libre/net_btn_bmf_bleue.gif);
+	color:#2381de;
+	ephox-visible: false;
+}
+/*---------------------------------------------------------------------*/
+/*--------------------- Mise en forme des encars ----------------------*/
+/*---------------------------------------------------------------------*/
+.net_encars_encadrement {
+	padding:5px;
+	border:1px solid #ccc;
+	ephox-visible: false;
+}
+.net_encars_fond_gris {
+	padding:18px 10px 20px;
+	background-color:#f2f2f2;
+	ephox-visible: false;
+}
+/*---------------- Encars de couleur -----------------*/
+.net_encars_haut, .net_encars_bas {
+	margin:0 auto;
+	height:10px;
+	width:429px;
+	font-size:1px;
+	ephox-visible: false;
+}
+.net_encars_conteneur {
+	margin:0 auto;
+	width:425px;
+	ephox-visible: false;
+}
+.net_encars_contenu {
+	margin:0 8px;
+	padding:9px;
+	ephox-visible: false;
+}
+.net_encars_haut {
+	margin-top:10px;
+	ephox-visible: false;
+}
+.net_encars_bas {
+	margin-bottom:10px;
+	ephox-visible: false;
+}
+/*--------- Encars orange -----------------*/
+.net_encars_orange .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_orange_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_orange .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_orange_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_orange .net_encars_conteneur {
+	border-right: 2px solid #fe6800;
+	border-left: 2px solid #fe6800;
+	ephox-visible: false;
+}
+.net_encars_orange .net_encars_contenu {
+	background:#ffeee0;
+	ephox-visible: false;
+}
+/*--------- Encars bleu -----------------*/
+.net_encars_bleu .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_bleu_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_bleu .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_bleu_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_bleu .net_encars_conteneur {
+	border-right: 2px solid #2683e0;
+	border-left: 2px solid #2683e0;
+	ephox-visible: false;
+}
+.net_encars_bleu .net_encars_contenu {
+	background:#b5d5f4;
+	ephox-visible: false;
+}
+/*--------- Encars violet -----------------*/
+.net_encars_violet .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_violet_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_violet .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_violet_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_violet .net_encars_conteneur {
+	border-right: 2px solid #7e1b82;
+	border-left: 2px solid #7e1b82;
+	ephox-visible: false;
+}
+.net_encars_violet .net_encars_contenu {
+	background:#d3b1d4;
+	ephox-visible: false;
+}
+/*--------- Encars rouge -----------------*/
+.net_encars_rouge .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_rouge_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_rouge .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_rouge_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_rouge .net_encars_conteneur {
+	border-right: 2px solid #e50028;
+	border-left: 2px solid #e50028;
+	ephox-visible: false;
+}
+.net_encars_rouge .net_encars_contenu {
+	background:#f6abb8;
+	ephox-visible: false;
+}
+/*--------- Encars vert -----------------*/
+.net_encars_vert .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_vert_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_vert .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_vert_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_vert .net_encars_conteneur {
+	border-right: 2px solid #5e9648;
+	border-left: 2px solid #5e9648;
+	ephox-visible: false;
+}
+.net_encars_vert .net_encars_contenu {
+	background:#c8dbc1;
+	ephox-visible: false;
+}
+/*--------- Encars gris -----------------*/
+.net_encars_gris .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_gris_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_gris .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_gris_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_gris .net_encars_conteneur {
+	border-right: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	ephox-visible: false;
+}
+.net_encars_gris .net_encars_contenu {
+	background:#eee;
+	ephox-visible: false;
+}
+/*--------- Encars rose -----------------*/
+.net_encars_rose .net_encars_haut {
+	background:#FFF url(../img/html_libre/net_encars_rose_haut.gif);
+	ephox-visible: false;
+}
+.net_encars_rose .net_encars_bas {
+	background:#FFF url(../img/html_libre/net_encars_rose_bas.gif);
+	ephox-visible: false;
+}
+.net_encars_rose .net_encars_conteneur {
+	border-right: 2px solid #ea0578;
+	border-left: 2px solid #ea0578;
+	ephox-visible: false;
+}
+.net_encars_rose .net_encars_contenu {
+	background:#f8add3;
+	ephox-visible: false;
+}
+/*--------- Encars a noter -----------------*/
+.net_encart_a_noter {
+	width: 420px; 
+	padding: 25px 10px 10px;
+	margin: 15px 0;
+	background:url(../img/n2g_ephox_a_noter.jpg) no-repeat;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*----------------------- Mise en forme des tableaux Jquery à onglets -----------------------*/
+/*------------------------------------------------------------------------------------------*/
+.net_tab {
+	margin:15px 0px;
+	ephox-visible: false;
+}
+.net_tab ul.tabs {
+	margin:5px 0px 6px 0px;
+	padding:0px;
+	position:relative;
+	z-index:2;
+	ephox-visible: false;
+}
+.net_tab ul.tabs li {
+	list-style:none;
+	display:inline;
+	ephox-visible: false;
+}
+.net_tab ul.tabs li a {
+	background:url(../img/html_libre/net_tab_off.gif) repeat-x top left #fff;
+	color:#6e6e6e;
+	font-weight:bold;
+	padding:6px 14px 6px 14px;
+	text-decoration:none;
+	border:1px solid #ccc;
+	ephox-visible: false;
+}
+.net_tab ul.tabs li a:hover {
+	background:url(../img/html_libre/net_tab_on.gif) repeat-x top left #fff;
+	color:#000;
+	border-color:#ccc;
+	ephox-visible: false;
+}
+.net_tab ul.tabs li a.active {
+	background:url(../img/html_libre/net_tab_on.gif) repeat-x top left #fff;
+	color:#282e32;
+	border:1px solid #ccc;
+	border-bottom: 1px solid #ffffff;
+	ephox-visible: false;
+}
+.net_tab ul.tabs li a.active:hover {
+	border-bottom-color:#FFF;
+}
+.net_tab #conteneur {
+	border:1px solid #ccc;
+	background:url(../img/html_libre/net_tab_fond.gif) repeat-x left bottom #fff;
+	padding:10px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	ephox-visible: false;
+}
+.net_tab #content_1, .net_tab #content_2, .net_tab #content_3 {
+	display:none;
+	height: 1%;
+	ephox-visible: false;
+}
+.net_tab #content_1 div {
+	margin-bottom:2px;
+	line-height:12px;
+	height:31px;
+	ephox-visible: false;
+}
+.net_tab #content_1 div img {
+	margin-right:4px;
+	ephox-visible: false;
+}
+/*---------- CLASS EXEPTIONNELLES -----------*/
+
+.net_filet_gris_pret_immo {
+	height: 189px;
+	padding-top: 10px;
+	padding-right: 5px;
+	font-size: 11px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	line-height: 12px;
+	padding-bottom: 10px;
+	border:1px solid #CCC;
+	ephox-visible: false;
+}
+.net_filet_gris {
+	border:1px solid #ccc;
+	padding:10px;
+	margin-bottom:11px;
+}
+.net_texte70 {
+	width:70%;
+	ephox-visible: false;
+}
+
+
+strong {
+	font-weight:bold;
+	ephox-visible: false;	
+}
+
+/*--------------- MODULE GAV ----------------------*/
+
+.module_gg_net_tab {
+	margin:5px 0px;
+	ephox-visible: false;
+}
+.module_gg_net_tab #conteneur {
+	background:url(https://static.societegenerale.fr//pri/module_gav/fond_ombre.gif) no-repeat 0 0;
+	padding:3px 5px;
+	width:580px;
+	height:309px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	ephox-visible: false;
+}
+.module_gg_content_genea {
+	display:none;
+	ephox-visible: false;
+}
+.module_gg_btn {
+	overflow:auto;
+	width:100%;
+	height:38px;
+	ephox-visible: false;
+}
+.module_gg_btn a {
+	display:block;
+	height:37px;
+	text-indent:-5000px;
+	width:168px;
+	outline:none;
+	cursor:pointer;
+	ephox-visible: false;
+}
+.module_gg_btn a.gav {
+	background:url(https://static.societegenerale.fr//pri/module_gav/btn_gav.gif) bottom left no-repeat;
+	float:left;
+	ephox-visible: false;
+}
+.module_gg_btn a.genea {
+	background:url(https://static.societegenerale.fr//pri/module_gav/btn_genea.gif) bottom left no-repeat;
+	float:right;
+	ephox-visible: false;
+}
+.module_gg_btn a:hover, .module_gg_btn a.active {
+	background-position:top left;
+	ephox-visible: false;
+}
+.module_gg_content_gav {
+	background:url(https://static.societegenerale.fr//pri/module_gav/fond_gav.jpg) no-repeat left top;
+	height:244px;
+	padding:65px 0px 0px 10px;
+	ephox-visible: false;
+}
+.module_gg_content_genea {
+	background:url(https://static.societegenerale.fr//pri/module_gav/fond_genea.jpg) no-repeat left top;
+	height:244px;
+	padding:65px 0px 0px 10px;
+	ephox-visible: false;
+}
+/*------------- Mise en forme ----------------*/
+
+.module_gg_texte {
+	width:305px;
+	ephox-visible: false;
+}
+.module_gg_content_genea .module_gg_texte {
+	width:330px;
+	ephox-visible: false;
+}
+.module_gg_texte .para {
+	padding:0px 0px 4px 15px;
+	line-height:15px;
+	ephox-visible: false;
+}
+.module_gg_content_gav .module_gg_texte .para {
+	background:url(https://static.societegenerale.fr//pri/module_gav/fleche_bleu.gif) 0px 0px no-repeat;
+	ephox-visible: false;
+}
+.module_gg_content_genea .module_gg_texte .para {
+	background:url(https://static.societegenerale.fr//pri/module_gav/fleche_marron.gif) 0px 0px no-repeat;
+	ephox-visible: false;
+}
+.module_gg_encars_gav {
+	position:absolute;
+	left:372px;
+	top:154px;
+	line-height:14px;
+	ephox-visible: false;
+}
+.module_gg_encars_genea {
+	position:absolute;
+	left:370px;
+	top:156px;
+	line-height:14px;
+	width:190px;
+	ephox-visible: false;
+}
+.module_gg_btn_savoir_plus {
+	display:block;
+	text-indent:-5000px;
+	height:24px;
+	width:177px;
+	background:url(https://static.societegenerale.fr//pri/module_gav/btn_savoir_plus.gif) no-repeat left top;
+	position:absolute;
+	left:365px;
+	top:230px;
+	ephox-visible: false;
+}
+.gras_gav {
+	color:#1e4a82;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.gras_genea {
+	color:#a89871;
+	font-weight:bold;
+	ephox-visible: false;
+}
+
+/*-------------------------------------- JQUERY UI TOOLS ---------------------------------------------------*/
+.overlay {
+	display:none;
+	background:#EDEDEF url(../img/n2g_ngp_fond_img_SMS.jpg) no-repeat scroll 0 0;
+	ephox-visible: false;
+}
+.net_web2mobile {
+	ephox-visible: false;
+}
+.overlay .close {
+	position:absolute;
+	right:-6px;
+	top:-10px;
+	cursor:pointer;
+	height:26px;
+	width:26px;
+	background-color:#CCC;
+	ephox-visible: false;
+}
+/*---------------------------------------- Bloc Par téléphone et Web Call Back --------------------------*/
+
+.net_mod_tel {
+	padding-bottom:10px;
+	margin-bottom:11px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_bottom.gif) no-repeat left bottom;
+	ephox-visible: false;
+}
+.net_mod_tel_titre {
+	width:174px;
+	height:44px;
+	text-indent:-5000px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_titre.gif) 0 0 no-repeat;
+	ephox-visible: false;
+}
+.net_mod_tel_content {
+	width:163px;
+	padding-left:11px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_fond.gif) 0 0 repeat-y;
+	padding-bottom:6px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.net_mod_tel_3955 {
+	display:block;
+	width:153px;
+	height:41px;
+	ephox-visible: false;
+}
+/*---- Liste Produit ----*/
+.net_mod_tel_3955.expresso {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_expresso.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.livret {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_livret.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.epargne {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_epargne.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.declic {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_declic.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.offreso {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_offreso.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.ja {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_ja.gif) no-repeat 0 0;
+}
+.net_mod_tel_3955.debit_diff {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_wcb_debidiff.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.ldd {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_ldd.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.lep {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_LEP.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.cel {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_CEL.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_3955.essentiel_auto {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_3955_essentielauto.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+/*---- Fin liste produit ----*/
+.net_mod_tel_wcb_txt {
+	display:block;
+	width:153px;
+	height:55px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_wcb_txt.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_wcb_txt2 {
+	display:block;
+	width:153px;
+	height:55px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_wcb_txt2.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+.net_mod_tel_btn {
+	display:block;
+	width:96px;
+	height:11px;
+	font-size:1px;
+	margin-left:28px;
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_btn.gif) top left;
+	ephox-visible: false;
+}
+.net_mod_tel_btn:hover {
+	background:url(https://static.societegenerale.fr//pri/pri/themes/defaut/webcallback/img/net_mod_tel_btn.gif) bottom left;
+	ephox-visible: false;
+}
+/*--------- WCB NEW à remanier ----------------------*/
+
+.net_wcb_offre_auto {
+	background:transparent url(https://static.societegenerale.fr//pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Modules/Web_Call_Back/img/wcb_auto.gif) repeat scroll left top;
+	height:179px;
+	margin-bottom:11px;
+	position:relative;
+	width:174px;
+	ephox-visible: false;
+}
+.net_wcb_offre_auto a, .net_wcb_offre_habitation a {
+	height:25px;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	position:absolute;
+	right:30px;
+	text-decoration:none;
+	text-indent:-5000px;
+	top:90px;
+	width:112px;
+	ephox-visible: false;
+}
+.net_wcb_offre_habitation {
+	background:transparent url(https://static.societegenerale.fr//pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Modules/Web_Call_Back/img/wcb_habitation.gif) repeat scroll left top;
+	height:179px;
+	margin-bottom:11px;
+	position:relative;
+	width:174px;
+	ephox-visible: false;
+}
+/*---------- WCB VERSION DEFINITIVE 2010 -------*/
+
+.wcb2 {
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.wcb2_titre {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_titre.gif) top left no-repeat;
+	height:44px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_text {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_text.gif) top left no-repeat;
+	height:45px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_zone_btn {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_zone_btn.gif) top left no-repeat;
+	height:30px;
+	position:relative;
+	ephox-visible: false;
+}
+.wcb2_zone_btn a {
+	position:absolute;
+	display:block;
+	width:111px;
+	height:21px;
+	top:7px;
+	left:32px;
+	text-indent:-5000px;
+	outline:none;
+	ephox-visible: false;
+}
+/*-------- Déclinaison --------------*/
+
+.wcb2_3955_expresso {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_expresso.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_essentiel {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_essentiel.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_plus {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_plus.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_epargne {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_epargne.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_cartes {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_cartes.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_informations {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_informations.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_auto {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_auto.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_habitation {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_habitation.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_alterna {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_alterna.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_option_credit {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_option.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_option_credit {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_option.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_collection {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_collection.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_livreta {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/3955-WCB-livretA.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_solidaire {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_solidaire.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+.wcb2_3955_assurance {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_assurance.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+
+.wcb2_3955_pel {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_pel.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+
+.wcb2_3955_rdv {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_rendezvous.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+
+.wcb2_3955_alertesms {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb_3955_sms.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+
+.wcb2_3955_somusic {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/03-WebCallBack/img/wcb2_3955_somusic.gif) top left no-repeat;
+	height:55px;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+
+/*------------------------------ BTN --------------------------------*/
+.net_btn_promo {
+	font-family:Arial;
+	border:1px solid #ccc;
+	font-size:12px;
+	font-weight:bold;
+	color:#2381DE;
+	background:url(images/net_btn_offrespeciale_link.gif) top left repeat-x;
+	width:122px;
+	ephox-visible: false;
+}
+.net_btn_promo a {
+	display:block;
+	padding:8px 0 8px 18px;
+	color:#2381DE;
+	text-decoration:none;
+	background:url(images/net_btn_offrespeciale.jpg) 0px 0px no-repeat;
+	width:104px;
+	ephox-visible: false;
+}
+.net_btn_promo a:hover {
+	background:url(images/net_btn_offrespeciale.jpg) 0px -63px no-repeat;
+	ephox-visible: false;
+}
+.net_btn_promo a.on {
+	background:url(images/net_btn_offrespeciale.jpg) 0px -63px no-repeat;
+	ephox-visible: false;
+}
+
+
+/*---------------------------- Tooltip Gris -------------------------*/
+
+.n2g_tp {
+    color: #7A7A7A;
+    cursor: help;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tooltip {
+    background-color: #DEDEDE;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 10px #8C8C8C;
+    color: #000000;
+    display: none;
+    font-size: 12px;
+    padding: 10px 15px;
+    text-align: left;
+    width: 200px;
+}

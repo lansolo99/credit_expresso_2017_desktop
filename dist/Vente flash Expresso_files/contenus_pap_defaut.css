@@ -1,0 +1,2151 @@
+/*@charset "UTF-8";*/
+
+/* COMMUN */
+body {
+  background-color: #fff;
+  color: #000;
+ /* background-image: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Communication/Home_page/bandeau/02_fevrier_2011/habillage_EIP_JAZZ.jpg);    background-position: 0px 0px;
+  background-repeat: repeat-x;*/
+
+  ephox-visible: false;
+}
+img {
+	border:none;
+}
+/* FIN COMMUN */
+
+
+/*-------- HOME PAGE ---------------*/
+
+
+.home_onglet_contact {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_onglet_rouge-.gif) top left no-repeat;
+	height:19px;
+	padding:4px 0px 0px 11px;
+	color:#FFF;
+	border-bottom:1px solid #af000c;
+	margin-bottom:8px;
+}
+/*MISE A JOUR MAI 2012 */
+/*---------- Services et contrats ------*/
+.home_services_urgences {
+	border:1px solid #ccc;
+	height:41px;
+	padding-bottom:0px;
+	margin-bottom:9px;
+}
+
+
+.home_services_urgences_titre {
+	/*background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_titre_bloc_fond_service_urgence.gif) left top no-repeat;*/
+	color:#c92727;
+	height:21px;
+	font-weight:bold;
+	padding:3px 0px 0px 7px;
+}
+
+.home_services_urgences_titre a {
+	color:#c92727;
+	text-decoration:none;
+}
+
+.home_services_urgences_titre_cliquez_ici {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_service_urgence_chevron_gris.gif) right 4px no-repeat;
+	color: #7a7a7a;
+	font-weight: bold;
+	padding-right: 15px;
+	text-decoration: none;
+	
+}
+
+/*FIN MISE A JOUR MAI 2012 */
+
+.home_services_urgences_contenu {
+	padding:0px 0px 0px 7px;
+	font-size:11px;
+	line-height:16px;
+}
+.home_services_urgences_contenu a {
+	font-weight:bold;
+	color:#676767;
+	text-decoration:none;
+	line-height:16px;
+	padding-right:15px;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_puce_grise.gif) right 4px no-repeat;
+}
+.home_services_urgences_contenu a:hover {
+	text-decoration:underline;
+}
+/*------- Nous contacter --------*/
+.home_nous_contacter {
+	border:1px solid #ccc;
+	width:165px;
+	height:18px;
+	display:block;
+	font-weight:bold;
+	color:#676767;
+	text-decoration:none;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_nous_contacter_fond.gif) top left no-repeat;
+	padding:3px 0px 0px 7px;
+	margin-bottom:9px;
+}
+.home_nous_contacter:hover {
+	color:#333;
+}
+/*-------- Home Mobile ------------*/
+.home_bloc_mobile {
+	border:0px;
+	text-decoration:none;
+	display:block;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_mobile.gif) top left no-repeat;
+	height:93px;
+	width:174px;
+	text-indent:-5000px;
+	margin-bottom:9px;
+}
+
+/*-------- 3933 ------------*/
+.home_bloc_3933 {
+	border:1px solid #ccc;
+	text-decoration:none;
+	display:block;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_3933.jpg) top left no-repeat;
+	height:91px;
+	width:172px;
+	text-indent:-5000px;
+	margin-bottom:9px;
+}
+/*------- Accès direct ----------*/
+		
+.home_acces_titre {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_acces_titre.gif) top left no-repeat;
+	padding:3px 0px 0px 9px;
+	height:20px;
+	color:#FFF;
+}
+.home_acces ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	border:1px #CCC solid;
+	padding-bottom:-1px;
+}
+.home_acces ul li a {
+	display:block;
+	height:22px;
+	padding:5px 0px 0px 7px;
+	text-decoration:none;
+	color:#676767;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_acces_lien_bg.gif) top left no-repeat;
+}
+.home_acces ul li a:hover {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_acces_lien_bg.gif) bottom left no-repeat;
+	color:#333;
+}
+
+/*---------- Home Resaeux Sociaux -------*/
+
+.n2g_home_reseaux_sociaux {
+	position: relative;
+	margin-top: 15px;
+}
+
+.n2g_home_reseaux_sociaux_titre {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.n2g_home_reseaux_sociaux ul { 
+	width: 184px; 
+	margin: 8px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.n2g_home_reseaux_sociaux ul li { 
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.n2g_home_reseaux_sociaux ul li a { 
+	display: block;
+	width: 34px;
+	*width: 36px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+.n2g_home_reseaux_sociaux ul li.n2g_twitter_link a {background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_icons-v2.jpg') 0 0 no-repeat; }
+.n2g_home_reseaux_sociaux ul li.n2g_sgetvous_link a {background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_icons-v2.jpg') -36px 0 no-repeat; }
+.n2g_home_reseaux_sociaux ul li.n2g_youtube_link a {background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_icons-v2.jpg') -72px 0 no-repeat; }
+.n2g_home_reseaux_sociaux ul li.n2g_ensregion_link a {background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_icons-v2.jpg') -106px 0 no-repeat; }
+.n2g_home_reseaux_sociaux ul li.n2g_espconseil_link a {background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_icons-v2.jpg') -144px 0 no-repeat; }
+
+.n2g_home_reseaux_sociaux_infobulles {
+	display: none;
+	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 186px;
+	height: 11px;
+	padding: 4px 9px 12px 8px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	background: transparent url('https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_sprite_social_network_bg_infobulle.png') 0 0 no-repeat;
+}
+
+/*---------- Home raccourci -------*/
+
+.home_raccourci {
+	float:left;
+	width:164px; /*mise à jour 15/01/2015*/
+}
+.home_raccourci_titre {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_raccourci_titre.gif) top left no-repeat;
+	padding:3px 0px 0px 9px;
+	height:20px;
+	color:#FFF;
+}
+.home_raccourci_content {
+	border:1px solid #ccc;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_raccourci_fond.gif) top left no-repeat;
+	height:180px;
+	width:164px;
+}
+.home_raccourci_content div {
+	float:left;
+	width:181px;
+	height:35px;
+	padding:10px 12px 0px 12px;
+}
+.home_raccourci_content div a {
+	color:#676767;
+	text-decoration:none;
+}
+.home_raccourci_content div a:hover {
+	text-decoration:underline;
+}
+
+/*------------- Home Moments de vie ------------*/
+
+.home_moment_de_vie {
+    width: 236px;/*mise à jour 15/01/2015*/
+    float: left;
+    border: #bfbfbf;
+    margin-left: 13px;
+}
+
+.home_mdv_titre {
+    width: 105px;
+    height: 23px;
+    background-image: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_moment_de_vie_titre.png);
+    padding: 3px 0px 0px 9px;
+  	height: 20px;
+  	color: #FFF;
+}
+
+.home_mdv_contenu {
+    border: 1px solid #bfbfbf;
+    padding: 95px 15px 15px 15px;
+    height: 70px;
+    background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_moment_de_vie_fond_testingA.jpg) top center no-repeat;
+}
+
+.home_mdv_contenu_v2 {
+    border: 1px solid #bfbfbf;
+    padding: 95px 15px 15px 15px;
+    height: 70px;
+    background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_moment_de_vie_fond_testingB.jpg) top center no-repeat;
+}
+
+.home_mdv_lien {
+    text-decoration: none;
+    color: #000000;
+    line-height: 16px;
+}
+
+.home_mdv_lien > span {
+    margin-bottom: 4px;
+    display: block;
+}
+
+
+/*------------- ZOOM SUR ------------*/
+
+.home_zoom {
+	float:left;
+	width:166px;
+	/* margin-left:11px; */
+}
+.home_zoom_titre {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_zoom_titre.gif) top left no-repeat;
+	padding:3px 0px 0px 10px;
+	height:20px;
+	color:#FFF;
+}
+.home_zoom_content {
+	border:1px solid #ccc;
+	height:165px;
+	padding:15px 10px 0px 10px;
+}
+.home_zoom_content_titre {
+	font-weight:bold;
+	color:#417312;
+	line-height:16px;
+	padding-bottom:10px;
+}
+.home_zoom_content a {
+	color:#333;
+	text-decoration:none;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_zoom_puce.gif) center right no-repeat;
+	padding-right:20px;
+}
+.home_zoom_content a:hover {
+	text-decoration:underline;
+}
+
+/*chevron transparent*/
+.home_zoom_content a.n2g_chevron_transparent {
+	color:#333;
+	text-decoration:none;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_zoom_puce_transparent.gif) 84px bottom no-repeat;
+	padding-right:14px;
+	display:block;
+}
+
+/*-------------- VOTRE ESPACE ------------*/
+.home_espace_titre {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_titre.gif) top left no-repeat;
+	padding:3px 0px 0px 9px;
+	height:20px;
+	color:#FFF;
+	margin-bottom:10px;
+	border-bottom:1px solid #0478eb;
+}
+.home_espace_content {
+	border:1px solid #ccc;
+	padding:5px;
+	margin-bottom:11px;
+}
+.home_espace_content_titre {
+	font-weight:bold;
+	color:#0478eb;
+	padding-bottom:5px;
+	line-height:14px;
+}
+.home_espace_content a {
+	color:#666;
+	text-decoration:none;
+}
+.home_espace_content a:hover {
+	text-decoration:underline;
+}
+/*--- 30 ans  ---*/
+.home_espace_content.moins_30 {
+	height:72px;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_30ans.jpg) center center no-repeat;
+}
+
+.home_espace_content.jeunes {
+	height:72px;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_jeunes.jpg) center center no-repeat;
+	padding-right:61px;
+}
+
+.home_espace_content.vous_enfants {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_espace_enfants.jpg) center center no-repeat;
+	height:76px;
+	padding-right: 61px;
+}
+.home_espace_content.fonction_pub {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_fonction_pub.gif) center center no-repeat;
+	height:51px;
+}
+.home_espace_content.client_int {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/n2g_home_clientele_internationale.jpg) center center no-repeat;
+	height:63px;
+	position:relative;
+}
+.home_espace_content.client_int a.eng {
+	position:absolute;
+	display:block;
+	top:18px;
+	right:4px;
+	text-decoration:none;
+	width:27px;
+	height:19px;
+	text-indent:-5000px;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_flag.jpg) top left no-repeat;
+}
+.home_espace_content.client_int a.esp {
+	position:absolute;
+	display:block;
+	top:40px;
+	right:4px;
+	text-decoration:none;
+	width:27px;
+	height:19px;
+	text-indent:-5000px;
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_flag.jpg) top right no-repeat;
+}
+.home_espace_content.client_int a.eng:hover {
+	background-position:bottom left;
+}
+.home_espace_content.client_int a.esp:hover {
+	background-position:bottom right;
+}
+.home_espace_content.gestion {
+	background:url(../../../PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/00-Home/img/home_espace_gestion.gif) center center no-repeat;
+	height: 51px;
+}
+
+/* --- DEB MENU PRINCIPAL DECONNECTE --- */
+/* Navigation principale */
+#n2g_navigation_principale_deconnecte {
+	clear: both;
+	width: 980px;
+	height: 35px;
+	background:url(../img/refonte/menu_haut_refonte_fond.gif) repeat-x;
+	ephox-visible: false;
+}
+#n2g_navigation_principale_deconnecte #n2g_menu_brochure {
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+	ephox-visible: false;
+}
+#n2g_navigation_principale_deconnecte #n2g_menu_brochure li {
+	display: block;
+	float: left;
+	ephox-visible: false;
+}
+#n2g_navigation_principale_deconnecte #n2g_menu_brochure li a, #n2g_navigation_principale_deconnecte #n2g_menu_brochure li span {
+	width: 155px;
+	height: 35px;
+	display: block;
+	text-indent:-5000px;
+	outline:none;
+	ephox-visible: false;
+}
+#n2g_navigation_principale_deconnecte a:focus, #n2g_navigation_principale_deconnecte a:hover, #n2g_navigation_principale_deconnecte a:active, #n2g_navigation_principale_deconnecte a.actif, #n2g_navigation_principale_deconnecte a.actif:focus, #n2g_navigation_principale_deconnecte a.actif:hover, #n2g_navigation_principale_deconnecte a.actif:active {
+	background-position:left bottom;
+	ephox-visible: false;
+}
+/*-- Gestion des exceptions pour un menu avec un nombre d'onglets superieur à 5--*/
+#n2g_navigation_principale_deconnecte #n2g_menu_brochure li.item_1 a, #n2g_navigation_principale_deconnecte #n2g_menu_brochure li.item_1 span {
+	width: 180px;
+	ephox-visible: false;
+}
+/* -- FIN MENU PRINCIPAL DECONNECTE -- */
+
+/* -- DEB ESPACEMENT -- */
+.n2g_espacement, .n2g_espacement_defaut {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 5px;
+	ephox-visible: false;
+}
+.n2g_espacement_1 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 1px;
+	ephox-visible: false;
+}
+.n2g_espacement_2 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 2px;
+	ephox-visible: false;
+}
+.n2g_espacement_3 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 3px;
+	ephox-visible: false;
+}
+.n2g_espacement_4 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 4px;
+	ephox-visible: false;
+}
+.n2g_espacement_5 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 5px;
+	ephox-visible: false;
+}
+.n2g_espacement_10 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 10px;
+	ephox-visible: false;
+}
+.n2g_espacement_15 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 15px;
+	ephox-visible: false;
+}
+.n2g_espacement_20 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	ephox-visible: false;
+}
+.n2g_espacement_25 {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 25px;
+	ephox-visible: false;
+}
+/* -- FIN ESPACEMENT -- */
+    
+/* --- DEB FORM CONNEXION HOME ----- */
+.form_connexion_home {
+	width:180px;
+	margin: 8px 0 0 auto;
+	ephox-visible: false;
+}
+.form_connexion_home_titre {
+	height:20px;
+	width:150px;
+	padding:4px 0 0 30px;
+	background:url(../img/n2g_ngp_acces_aux_comptes_fond.jpg);
+	position:relative;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+.form_connexion_home_titre img {
+	position:absolute;
+	top:0;
+	left:10px;
+	ephox-visible: false;
+}
+.n2g_date_du_jour {
+	font-size: 11px;
+	text-align: right;
+	ephox-visible: false;
+}
+.form_connexion_home_contenu {
+	margin: 0 0 0 auto;
+	border:1px solid #b5b5b5;
+	min-height:66px;
+	width:170px;
+	padding:6px 0 0 8px;
+	background: #9b9b9b url(../img/n2g_form_cnx_home_fond.gif) repeat-x;
+	ephox-visible: false;
+}
+.form_connexion_home_contenu form {
+	float:left;
+	ephox-visible: false;
+}
+.form_connexion_home_zone {
+	width:96px;
+	border:1px solid #474747;
+	height:17px;
+	padding:2px;
+	vertical-align: top;
+	ephox-visible: false;
+}
+.form_connexion_home_btn_ok {
+	background:url(../img/n2g_form_cnx_home_btn_ok.gif);
+	width:30px;
+	height:23px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:12px;
+	cursor:pointer;
+	border:none;
+	ephox-visible: false;
+}
+.form_connexion_home_btn_aide {
+	background:url(../img/n2g_form_cnx_home_btn_que.gif);
+	display:block;
+	float:left;
+	width:24px;
+	height:23px;
+	ephox-visible: false;
+}
+.form_connexion_home_lien {
+	color:#333;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.form_connexion_home_lien:hover, .form_connexion_home_lien:focus, .form_connexion_home_lien:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.form_connexion_home_contenu ul {
+	clear:left;
+	list-style:none;
+	margin:30px 0 0 0;
+	padding:0;
+	ephox-visible: false;
+}
+*+html .form_connexion_home_contenu ul { /* hack pour IE 7 */
+	margin-top:3px;
+	ephox-visible: false;
+}
+.form_connexion_home_contenu ul li {
+	padding-left:7px;
+	line-height: 12px;
+	background:url(../img/n2g_form_cnx_home_puce.gif) no-repeat 0 5px;
+	ephox-visible: false;
+}
+.form_connexion_home_contenu ul li a {
+	color: #000;
+	font-size: 9px;
+	font-weight: bold;
+	ephox-visible: false;
+}
+/*----- MIRE DE CONNEXION ----------*/
+
+.n2g_mire_connexion_brochure {
+ width:310px;
+ overflow:auto;
+ position:absolute;
+}
+
+.n2g_mire_connexion_brochure .n2g_mire_connexion_titre {
+ height:25px;
+ width:310px;
+ text-indent:-5000px;
+ background:url(../img/n2g_mire_connexion_titre_deco.gif) top left no-repeat;
+}
+
+.n2g_mire_connexion_brochure .n2g_mire_connexion_zone_btn_brochure {
+ width:155px;
+ height:52px;
+ float:left;
+ background:url(../img/n2g_mire_connexion_form_bg_deco.gif) top left no-repeat; 
+ position:relative;
+}
+
+.n2g_mire_connexion_brochure .n2g_mire_connexion_zone_btn_brochure a {
+ display:block;
+ text-indent:-5000px;
+ width:136px;
+ height:26px;
+ background:url(../img/n2g_mire_connexion_btn_cliquez.gif);
+ position:absolute;
+ top:15px;
+ left:10px;
+}
+
+.n2g_mire_connexion_brochure ul {
+ float:left;
+ list-style:none;
+ background:url(../img/n2g_mire_connexion_liste_bg_deco.gif) top left no-repeat;
+ width:145px;
+ height:43px;
+ padding:10px 0px 0px 10px;
+margin:0px;
+}
+
+
+.n2g_mire_connexion_brochure ul li {
+ font-size:10px;
+ font-weight:bold;
+ padding:0px 0px 0px 8px;
+ background:url(../img/n2g_mire_connexion_puce.gif) left 3px  no-repeat;
+ line-height:12px;
+}
+
+.n2g_mire_connexion_brochure ul li a {
+ text-decoration:none;
+ color:#3c3c3c;
+}
+
+.n2g_mire_connexion_brochure ul li a:hover {
+ color:#000;
+ text-decoration:underline;
+}
+
+
+/* --- FIN FORM CONNEXION HOME ----- */
+
+/* --- DEB MENU PRINCIPAL HOME --- */
+
+/*#n2g_menu_home_item_vide {
+  width: 180px;
+  height: 35px;
+  background:url(../img/attributs/n2g_menu_principal_item_vide.gif) repeat-x;
+  float:left;
+  ephox-visible: false; 
+}*/
+
+/* les classes definissants le menu de la home page sont les memes que pour le menu principal connecte*/
+
+
+
+/* --- FORMULAIRE DE RECHERCHE CONNECTE et DECONNECTE (factorises) --- */
+#n2g_formulaire_de_recherche_connecte, #n2g_formulaire_de_recherche_deconnecte {
+	float:right;
+	width:180px;
+	height:35px;
+	background: url(../img/refonte/n2g_menu_principal_recherche.jpg) no-repeat;
+	padding:0;
+	margin:0;
+	ephox-visible: false;
+}
+#n2g_formulaire_de_recherche_connecte form, #n2g_formulaire_de_recherche_deconnecte form {
+	margin:0;
+	padding:0;
+	position:relative;
+	ephox-visible: false;
+}
+#n2g_formulaire_de_recherche_connecte .input, #n2g_formulaire_de_recherche_deconnecte .input {
+	padding:0;
+	width:100px;
+	font-size:10px;
+	color:#9c9c9c;
+	position:absolute;
+	top:11px;
+	left:34px;
+	border:0;
+	background:none;
+	ephox-visible: false;
+}
+* html #n2g_formulaire_de_recherche_connecte .input, * html #n2g_formulaire_de_recherche_deconnecte .input {
+	top:12px;
+}
+#n2g_formulaire_de_recherche_connecte .input.input_before_focus, #n2g_formulaire_de_recherche_deconnecte .input.input_before_focus {
+	color:#666;
+	ephox-visible: false;
+}
+#n2g_formulaire_de_recherche_connecte .input.input_after_focus, #n2g_formulaire_de_recherche_deconnecte .input.input_after_focus {
+	color:#000;
+	ephox-visible: false;
+}
+#n2g_formulaire_de_recherche_connecte .submit, #n2g_formulaire_de_recherche_deconnecte .submit {
+	padding:0;
+	width:18px;
+	height:20px;
+	position:absolute;
+	top:8px;
+	right:14px;
+	background: url(../img/refonte/n2g_recherche_submit.gif) no-repeat 0 0px;
+	text-indent:-5000px;
+	font-size:11px;
+	color: #fff;
+	cursor:pointer;
+	border:none;
+	ephox-visible: false;
+}
+/*---- HACK IE7 IE6 ----*/
+
+* html #n2g_formulaire_de_recherche_connecte .submit, * html #n2g_formulaire_de_recherche_deconnecte .submit {
+	background: url(../img/refonte/n2g_recherche_submit_ie6-7.gif) no-repeat 0 0;
+	font-weight:bold;
+}
+*+html #n2g_formulaire_de_recherche_connecte .submit, *+html #n2g_formulaire_de_recherche_deconnecte .submit {
+	background: url(../img/refonte/n2g_recherche_submit_ie6-7.gif) no-repeat 0 0;
+	ephox-visible: false;
+}
+*+html #n2g_formulaire_de_recherche_connecte .input, *+html #n2g_formulaire_de_recherche_deconnecte .input {
+	ephox-visible: false;
+}
+/* --- FIN FORMULAIRE DE RECHERCHE CONNECTE et DECONNECTE (factorises) --- */
+
+
+/* --- DEB BLOC INFO --- */
+.n2g_contenu_bloc_info {
+	clear:left;
+	margin-bottom: 17px;
+	padding:11px 10px 0 0px;
+	ephox-visible: false;
+}
+.n2g_contenu_gestion_page_info {
+	padding:10px 10px 0 10px;
+}
+.n2g_contenu_bloc_info h3, .n2g_contenu_bloc_info h1 {
+	font-size:16px;
+	font-weight: bold;
+	color: #cc0000;
+	margin-bottom:21px;
+	margin:0px 10px 10px;
+	ephox-visible:false;
+}
+.n2g_contenu_bloc_info table {
+	border:solid #ccc 1px;
+	color:#000;
+	width:100%;
+	font-family: arial, "Trebuchet MS", helvetica, sans-serif;
+	font-size: 11px;
+	border-spacing:0;
+	color:#000;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info table td {
+	padding: 4px;
+	vertical-align: top;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info table a {
+	color: #333;
+	/*  background: url(../img/n2g_contenu_bloc_info_puce.gif) no-repeat 0px 3px;*/
+  background-position: left center;
+	background-repeat: no-repeat;
+	padding-left:15px;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info a:focus, .n2g_contenu_bloc_info a:hover, .n2g_contenu_bloc_info a:active {
+	color: #000;
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info a:visited {
+	color: #333;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info_item_pair {
+	background-color: #dbdbdb;
+	ephox-visible: false;
+}
+.n2g_contenu_bloc_info_col2 {
+	width: 75px;
+	text-align: center;
+	ephox-visible: false;
+}
+.n2g_contenu_gestion_page_info_texte_html p {
+	margin-bottom: 10px;
+	ephox-visible: false;
+}
+/* --- FIN BLOC INFO --- */
+
+/* --- DEB COMMUNICATION CENTRALE --- */
+.n2g_com_centrale_conteneur_ss_titre {
+	overflow:auto;
+	width:100%;
+	clear:both;
+	height:100%;
+	margin-bottom:10px;
+	ephox-visible: false;
+}
+.com_centrale_conteneur {
+	overflow:auto;
+	padding-top: 8px;
+	width:100%;
+	clear:both;
+	height:100%;
+	margin-bottom:10px;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_top {
+	padding-top:8px;
+	ephox-visible: false;
+}
+.n2g_com_centrale_onglet {
+	min-height:20px;
+	padding:3px 13px 0px 13px;
+	background: #aa0009 url(../img/n2g_bloc_actu_onglet_fond.gif) repeat-x;
+	font-size:13px;
+	color:#FFFFFF;
+	float:left;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f100 {
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f50_1 {
+	width:46%;
+	float:left;
+	padding:0% 0px 0% 3%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f50_2 {
+	width:46%;
+	float:left;
+	padding:0% 3% 0% 2%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f33_1 {
+	width:30%;
+	float:left;
+	padding:0% 0px 0% 3%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f33_2 {
+	width:30%;
+	float:left;
+	padding:0% 0px 0% 2%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f33_3 {
+	width:30%;
+	float:left;
+	padding:0% 3% 0% 2%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f25_1 {
+	width:22%;
+	float:left;
+	padding:0% 0px 0% 3%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f25_2, .com_centrale_conteneur_f25_3 {
+	width:22%;
+	float:left;
+	padding:0% 0px 0% 2%;
+	ephox-visible: false;
+}
+.com_centrale_conteneur_f25_4 {
+	width:22%;
+	float:left;
+	padding:0% 3% 0% 2%;
+	ephox-visible: false;
+}
+.com_centrale_element {
+	ephox-visible: false;
+}
+/*-------------- ATTENTION AU CALLAGE DANS IE ----------------------------
+*+html .com_centrale_conteneur_f100 {padding:0% 2% 0% 2%; ephox-visible: false; }
+*+html .com_centrale_conteneur_f50_2 {padding:0% 2% 0% 2%; ephox-visible: false; }
+*+html .com_centrale_conteneur_f33_3 {padding:0% 2% 0% 2%; ephox-visible: false; }
+*+html .com_centrale_conteneur_f25_4 {padding:0% 2% 0% 2%; ephox-visible: false; }
+/* --- FIN COMMUNICATION CENTRALE --- */
+
+/* --- DEB COMMUNICATION VERTICALE --- */
+.n2g_zone_communication_verticale {
+}
+.n2g_elt_communication_verticale {
+	padding-bottom:11px;
+}
+.n2g_elt_communication_verticale img {
+	vertical-align:top;
+	ephox-visible: false;
+}
+/* --- FIN COMMUNICATION VERTICALE --- */
+
+/* --- DEB LIEN --- */
+.n2g_lien {
+	min-height:22px;  /* redefini dans la css ie6 */
+	margin-bottom:11px;
+	display:block;
+	padding:0px 6px 0px 0px;
+	text-decoration: none;
+	color:#FFF;
+	font-size:13px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_lien img {
+	border:none;
+	float:left;
+	margin-right:11px;
+	ephox-visible: false;
+}
+.n2g_lien span {
+	background-image:url(../img/n2g_contenu_lien_puce.gif);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	display:block;
+	padding:1px 12px 0px 7px;
+	ephox-visible: false;
+}
+.n2g_lien_u_action {
+	background-image: url(../img/n2g_contenu_lien_fond_u2.gif);
+	background-repeat: repeat-x;
+	background-color: #ff9800;
+	ephox-visible: false;
+}
+.n2g_lien_u_home {
+	border:1px solid #ccc;
+	background-image:url(../img/n2g_contenu_lien_u4.gif);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding:2px 6px 0px 24px;
+	color:#333;
+	min-height:20px;  /* redefini dans la css ie6 */
+	margin-bottom:11px;
+	display:block;
+	text-decoration: none;
+	font-size:13px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_lien_u_guide {
+	background-image:url(../img/n2g_contenu_lien_fond_u5.gif);
+	background-repeat:repeat-x;
+	background-color:#8fbd2c;
+	ephox-visible: false;
+}
+.n2g_lien_u_alerte {
+	background-image:url(../img/n2g_contenu_lien_fond_u6.gif);
+	background-repeat:repeat-x;
+	background-color:#e60128;
+	ephox-visible: false;
+}
+.n2g_lien_u_defaut {
+	background-image:url(../img/n2g_contenu_lien_fond_u7.gif);
+	background-repeat:repeat-x;
+	background-color:#bebebe;
+	ephox-visible: false;
+}
+/* --- FIN LIEN --- */
+
+/* --- DEBUT LISTE LIENS --- */
+.bloc_liste_contenu_lien .n2g_lien {
+	margin-bottom:5px;
+	ephox-visible: false;
+} /* specifie l'espacement entre chaque lien dans un bloc */
+/* --- FIN LISTE LIENS --- */
+
+/* --- DEBUT BLOC ACTUALITE  --- */
+.n2g_bloc_actualite {
+	width:590px;
+	margin:7px 0 11px 0;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_onglet {
+	margin:0;
+	font-weight:normal;
+	height:20px;
+	padding:3px 13px 0px 13px;
+	background:url(../img/refonte/n2g2_bloc_actu_onglet_fond.gif) no-repeat top left;
+	font-size:13px;
+	color:#FFFFFF;
+	float:left;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_conteneur {
+	border:1px solid #c0c0c0;
+	border-bottom:none;
+	clear:both;
+	line-height:17px;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_conteneur p, .n2g_bloc_actualite_conteneur img, .n2g_bloc_actualite_conteneur ul {
+	border:none;
+	padding:0px;
+	margin:0px;
+	ephox-visible: false;
+}
+*+html .n2g_bloc_actualite_conteneur {
+	padding-top:19px;
+	ephox-visible: false;
+}
+/*--------commun a tous les blocs---------*/
+.n2g_bloc_actualite_bloc {
+	padding:0px 10px 10px 10px;
+	float:left;
+	display:inline;
+	overflow:hidden;
+	ephox-visible: false;
+	height:157px;
+}
+/*.n2g_bloc_actualite_titre {
+	font-size:13px;
+	font-weight:bold;
+	color:#505c8f;
+	line-height:17px;
+	height:35px;
+	padding-top:2px;
+}*/
+
+.n2g_bloc_actualite_titre {
+	font-size:13px;
+	font-weight:bold;
+	color:#505c8f;
+	line-height:17px;
+	height:35px;
+	padding-top:2px;
+}
+/*.n2g_bloc_actualite_conteneur a {
+	color:#000;
+	text-decoration:none;
+	font-weight:normal;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_bloc_actu_lien_puce.gif) right 4px no-repeat;
+	padding-right:15px;
+	padding-top: 35px;
+	padding-left: 10px;
+	ephox-visible: false;
+}*/
+.n2g_bloc_actualite_conteneur a {
+	color:#000;
+	text-decoration:none;
+	font-weight:normal;
+	padding-right:15px;
+	padding-top: 35px;
+	padding-left: 10px;
+	ephox-visible: false;
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 168px;
+	height: 132px;
+}
+.n2g_bloc_actualite_conteneur a:focus, .n2g_bloc_actualite_conteneur a:hover, .n2g_bloc_actualite_conteneur a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.n2g_actu_link_cliquer{
+	display: block;
+}
+.ng2_actu_link_vertical_align{
+	vertical-align: middle;
+}
+/*----- bloc 100%----------*/
+.n2g_bloc_actualite_conteneur_100 {
+	padding: 19px 5px 5px 5px;
+	border:1px solid #ccc;
+	height:1%;
+	clear:both;
+	ephox-visible: false;
+}
+/*----- bloc 50% 50%----------*/
+.n2g_bloc_actualite_conteneur_50 {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_bloc_actualite_bloc_50.gif) repeat-y;
+	overflow:auto;
+	margin-top: 19px;
+	border-bottom:1px solid #ccc;
+	height:1%;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_bloc_50 {
+	width:274px;
+	ephox-visible: false;
+}
+/*----- bloc 66% 34%----------*/
+.n2g_bloc_actualite_conteneur_66_34 {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_bloc_actualite_bloc_66_34.gif) repeat-y;
+	overflow:auto;
+	margin-top: 19px;
+	border-bottom:1px solid #ccc;
+	height:1%;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_bloc_66 {
+	width:368px;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_bloc_34 {
+	width:180px;
+	ephox-visible: false;
+}
+/*----- bloc 33% 33% 33% -----*/
+.n2g_bloc_actualite_conteneur_33 {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_bloc_actualite_bloc_33.gif) repeat-y -3px 0px;
+	overflow:auto;
+	margin-top: 19px;
+	border-bottom:1px solid #ccc;
+	height:1%;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_bloc_33 {
+	width:173px;
+	ephox-visible: false;
+	margin-right:3px;
+	position: relative;
+}
+/*----- bloc 25% 25 % 25% 25% -----*/
+.n2g_bloc_actualite_conteneur_25 {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_bloc_actualite_bloc_25.gif) repeat-y;
+	overflow:auto;
+	margin-top: 19px;
+	border-bottom:1px solid #ccc;
+	height:1%;
+	ephox-visible: false;
+}
+.n2g_bloc_actualite_bloc_25 {
+	width:127px;
+	ephox-visible: false;
+}
+/*---------- Modification des ACTUS --------*/
+
+.n2g_bloc_actualite_style1 .item_1 {
+	background:transparent url("https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Communication/Home_page/Bloc_Actu/actu-01.jpg") no-repeat scroll right bottom;
+}
+.n2g_bloc_actualite_style1 .item_2 {
+	background:transparent url("https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Communication/Home_page/Bloc_Actu/actu-02.jpg") no-repeat scroll right bottom;
+}
+.n2g_bloc_actualite_style1 .item_3 {
+	background:transparent url("https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Communication/Home_page/Bloc_Actu/actu-03.jpg") no-repeat scroll right bottom;
+
+	/*-- 10/02/09 corrige un problème de cadrage d'image-----*/
+margin-right:0;
+	width:176px;
+}
+
+/* --- FIN BLOC ACTUALITE --- */
+/* --- DEBUT BLOC LISTE RUBRIQUES --- */
+.liste_rubrique {
+	border:1px solid #bcbcbc;
+	font-size:12px;
+	margin-bottom: 11px;
+	ephox-visible: false;
+}
+/*-------- usage calculette ------------ Supprimé après MEP de Janvier 2010 (Guillaume) --------*/
+.liste_rubrique_simul_entete {
+	min-height:24px;
+	background:#ffb041 url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_rub_entete_fond.jpg) repeat-x;
+	color:#FFFFFF;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 0px 0px 12px;
+	ephox-visible: false;
+	margin:0;
+}
+.liste_rubrique_conteneur_liste_simul {
+	border:1px solid #d1d1d1;
+	border-bottom:none;
+	margin:5px 3px 7px 3px;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_liste_simul ul {
+	margin:0px 0px 4px 0px;
+	list-style:none;
+	ephox-visible: false;
+	padding:0;
+}
+.liste_rubrique_conteneur_liste_simul span, .liste_rubrique_conteneur_liste_simul strong {
+	display:block;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_liste_simul li {
+	display:block;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_rub_liste_fond.gif) repeat-x;
+	/*height:22px;*/
+  padding-top:3px;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_liste_simul li a {
+	color:#000;
+	display:block;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_rub_lien_fond.gif) no-repeat 0px top;
+	height:20px;
+	padding:0px 0px 0px 26px;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_liste_simul li a:hover, .liste_rubrique_conteneur_liste_simul li a:focus, .liste_rubrique_conteneur_liste_simul li a:active {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_rub_lien_fond.gif) no-repeat 0px bottom;
+	ephox-visible: false;
+}
+/*------  Usage Defaut -----------*/
+.liste_rubrique_defaut {
+	border:1px solid #bcbcbc;
+	font-size:12px;
+	padding:11px;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	margin-bottom: 11px;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut_entete {
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut ul {
+	margin-top:12px;
+	list-style:none;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut li {
+	padding:1px 0px 1px 15px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_defaut_fond.gif) no-repeat left 6px;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut a {
+	color:#666;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut a:hover, .liste_rubrique_defaut a:focus, .liste_rubrique_defaut a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*------  Usage Defaut 2  -----------*/
+.liste_rubrique_defaut2 {
+	border:1px solid #bcbcbc;
+	font-size:12px;
+	padding:11px;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	margin-bottom: 11px;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2_entete {
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+	color:#E00428;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2_accroche {
+	margin-top:12px;
+	font-size:11px;
+	font-weight:bold;
+	display:block;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2 ul {
+	margin-top:12px;
+	list-style:none;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2 li {
+	padding:1px 0px 1px 15px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_defaut_fond.gif) no-repeat left 6px;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2 a {
+	color:#666;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_defaut2 a:hover, .liste_rubrique_defaut2 a:focus, .liste_rubrique_defaut2 a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*------  Usage Guide -----------*/
+.liste_rubrique_guide_entete .titre {
+	background: #8fbd2c url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_guide_entete.gif) repeat-x top left;
+	min-height:30px;
+	font-size:14px;
+	font-weight:bold;
+	margin:0px;
+	color:#fff;
+	ephox-visible: false;
+}
+.liste_rubrique_guide_entete .titre div {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_guide_entete_img.gif) no-repeat left 4px;
+	margin:0 8px 0 7px;
+	padding:7px 0 0 30px;
+	min-height:23px;
+	ephox-visible: false;
+}
+.liste_rubrique_guide_entete .sous_titre {
+	padding:6px 0 1px 11px;
+	border:1px solid #bcbcbc;
+	border-bottom:0 none;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	color:#666;
+	ephox-visible: false;
+}
+.liste_rubrique_guide {
+	padding: 5px 11px 11px 11px;
+	list-style:none;
+	border:1px solid #bcbcbc;
+	border-top:none;
+	margin:0px 0px 11px 0px;
+	ephox-visible: false;
+}
+.liste_rubrique_guide li {
+	padding:1px 0px 1px 15px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_guide_puce.gif) no-repeat left 6px;
+	font-size:12px;
+	ephox-visible: false;
+}
+.liste_rubrique_guide a {
+	color:#666;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_guide a:hover, .liste_rubrique_guide a:focus, .liste_rubrique_guide a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*------  Usage Suite -----------*/
+.liste_rubrique_suite_entete {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_entete_suite.gif) repeat-x #b9b9b9;
+	min-height:21px;
+	font-size:14px;
+	font-weight:bold;
+	color:#3c3c3c;
+	padding:7px 5px 0 13px;
+	margin:0;
+	ephox-visible: false;
+}
+.liste_rubrique_suite {
+	padding:11px;
+	margin:0px;
+	list-style:none;
+	ephox-visible: false;
+}
+.liste_rubrique_suite li {
+	padding:1px 0px 1px 15px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/liste_rubrique_defaut_fond.gif) no-repeat left 6px;
+	font-size:12px;
+	ephox-visible: false;
+}
+.liste_rubrique_suite a {
+	color:#666;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.liste_rubrique_suite a:hover, .liste_rubrique_suite a:focus, .liste_rubrique_suite a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/*----- Usage Action -----*/
+.liste_rubrique_action {
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.liste_rubrique_action_titre {
+	min-height:26px;
+	background:#cecece url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_titre_fond.gif) repeat-x 0px 6px;
+	ephox-visible: false;
+}
+.liste_rubrique_action_titre_g {
+	/*  float:left;*/
+  width:6px;
+	height:6px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_titre_g.gif);
+	ephox-visible: false;
+}
+.liste_rubrique_action_titre_d {
+	height:6px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_titre_d.gif) right top;
+	font-size: 0; /* IE */
+	ephox-visible: false;
+}
+.liste_rubrique_action_titre_texte {
+	padding: 0px 6px 2px 6px;
+	font-size: 13px;
+	font-weight:bold;
+	color:#000;
+	overflow: hidden;
+	margin:0;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul {
+	margin: 0;
+	list-style:none;
+	font-size: 0; /* IE */
+	border: #cecece solid 1px;
+	padding: 5px 5px 0px 5px;
+	background: #fff;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul li {
+	margin-bottom:5px;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul li a {
+	min-height:22px;
+	padding:0 5px 0 0;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	background: #FF9800 url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_item.gif) repeat-x left top;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul li a span {
+	display:block;
+	padding: 4px 12px 4px 13px;
+	line-height: 12px;
+	overflow: hidden;
+	background: url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_item_puce.gif) no-repeat right bottom;
+	cursor: pointer;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul li a.actif {
+	padding: 0;
+	background: url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_listeRubriqueAction_item_actif.gif) left top;
+	ephox-visible: false;
+}
+.liste_rubrique_action ul li a.actif span {
+	background: none;
+	ephox-visible: false;
+}
+/*------- Usage Fiche Produit ----------------*/
+
+.liste_rubrique_fiche_produit {
+	font-size:12px;
+	margin-bottom:11px;
+	margin:5px auto 11px auto;
+	padding-top:7px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_fiche_produit_fond.gif) left top no-repeat;
+	ephox-visible: false;
+	width:440px;
+}
+.liste_rubrique_fiche_produit_entete {
+	color:#294366;
+	font-size:13px;
+	font-weight:bold;
+	display:inline;
+	background:#FFF;
+	padding:0px 7px 0px 7px;
+	margin:0px 0px 0px 43px;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit {
+	padding : 7px 0px 0px 0px;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit div {
+	padding:0 20px 5px;
+	/*display:none; En attente*/ 
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit ul {
+	margin:0px 0px 4px 0px;
+	list-style:none;
+	padding:0px 0px 12px 13px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_fiche_produit_fond_bas.gif) bottom left no-repeat;
+	overflow:auto;
+	height:1%;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit li {
+	float:left;
+	margin-left:12px;
+	display:inline;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit li a {
+	color:#626262;
+	width:175px;
+	padding:0px 0px 3px 20px;
+	display:block;
+	text-decoration:none;
+	font-weight:normal;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_fiche_produit_puce.gif) left -50px no-repeat;
+	ephox-visible: false;
+}
+.liste_rubrique_conteneur_fiche_produit li a:hover, .liste_rubrique_conteneur_fiche_produit li a:focus, .liste_rubrique_conteneur_fiche_produit li a:active {
+	color:#000;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_liste_fiche_produit_puce.gif) left 2px no-repeat;
+	ephox-visible: false;
+}
+/* ------- FIN BLOC LISTE RUBRIQUES -------- */
+
+/* ----- DEBUT RECHERCHE AGENCE ------ */
+.bloc_recherche_agence {
+	width:172px;
+	height:99px;
+	margin-bottom: 11px;
+	border:1px solid #ccc;
+	font-size:11px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_fond_bloc.gif) 100px 25px no-repeat;
+	color:#676767;
+	ephox-visible: false;
+}
+.recherche_agence_titre {
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+	padding-left:7px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_bloc_recherche_agence_titre_fond.gif) top left no-repeat;
+	ephox-visible: false;
+}
+.recherche_agence_formulaire {
+	width:92px;
+	float:left;
+	padding:7px 0px 0px 9px;
+	ephox-visible: false;
+}
+.recherche_agence_formulaire form {
+	margin:0px;
+	padding:10px 0px 0px 0px;
+	ephox-visible: false;
+}
+.recherche_agence_code {
+	width:63px;
+	border:1px solid #ccc;
+	border-right:none;
+	margin-bottom:7px;
+	float:left;
+	height:12px;
+	padding:1px;
+	font-size:10px;
+	ephox-visible: false;
+}
+.recherche_agence_btn {
+	width:16px;
+	height:16px;
+	color:#FFF;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_btn_fo.gif) no-repeat top left;
+	cursor:pointer;
+	margin:0px 0px 10px 0px;
+	font-weight:normal;
+	font-size:10px;
+	border:none;
+	text-indent:-5000px;
+	ephox-visible: false;
+}
+* html .recherche_agence_btn {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_btn_fo_ie6.gif) no-repeat top left;
+	padding-right:2px;
+	width:18px;
+	margin-left:-5px;
+}
+*+html .recherche_agence_btn {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_btn_fo_ie6.gif) no-repeat top left;
+	padding-right:2px;
+	width:18px;
+	margin-left:-5px;
+}
+.recherche_agence_formulaire a {
+	color:#666;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.recherche_agence_formulaire a:focus, .recherche_agence_formulaire a:hover, .recherche_agence_formulaire a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.recherche_agence_carte {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_fond.gif) top right no-repeat #fff;
+	display:block;
+	width:64px;
+	height:64px;
+	float:left;
+	text-indent:-5000px;
+	margin:10px 0px 0px 4px;
+	ephox-visible: false;
+}
+.recherche_agence_carte:focus, .recherche_agence_carte:hover, .recherche_agence_carte:active {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/refonte/n2g2_recherche_agence_fond.gif) bottom right no-repeat #fff;
+	ephox-visible: false;
+}
+/* --- FIN RECHERCHE AGENCE --- */
+
+/* --- DEBUT BLOC ORIENTATION --- */
+.bloc_orient {
+	clear:both;
+	background:#FFFFFF;
+	overflow:auto;
+	height:100%; /* Hack pour IE6 */
+	ephox-visible: false;
+}
+.bloc_orient_titre {
+	border-top:1px solid #ccc;
+	padding-top:11px;
+	ephox-visible: false;
+}
+.bloc_orient_onglet {
+	font-weight:normal;
+	margin:0;
+	height:20px;
+	padding:3px 13px 0px 13px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_bloc_actu_onglet_fond.gif) repeat-x;
+	font-size:13px;
+	color:#FFFFFF;
+	float:left;
+	ephox-visible: false;
+}
+.bloc_orient_conteneur_f50_g, .bloc_orient_conteneur_f50_d {
+	width:50%;
+	float:left;
+	ephox-visible: false;
+	padding:0 0px 11px 0;
+}
+.bloc_orient_conteneur_f50_g .elt_orient {
+	margin-right:5px;
+	ephox-visible: false;
+}
+.bloc_orient_conteneur_f50_d .elt_orient {
+	margin-left:5px;
+	ephox-visible: false;
+}
+.bloc_orient_conteneur_f100 {
+	width:100%;
+	float:left;
+	padding:0 0px 11px 0;
+	ephox-visible: false;
+}
+.elt_orient {
+	border:solid 1px #ccc;
+	height:150px;
+	ephox-visible: false;
+}
+.elt_orient br {
+	line-height:5px;
+}
+/*---- type d'element, texte gauche, image droite ----*/
+.elt_orient_txt_defaut, .elt_orient_txt_u1, .elt_orient_txt_g {
+	width:70%;
+	/*--height: 90px; --*/
+  padding:11px 0px 11px 13px;
+	ephox-visible: false;
+}
+.elt_orient_img_defaut, .elt_orient_img_u1, .elt_orient_img_d {
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.elt_orient_txt_u2, .elt_orient_txt_d {
+	float:right;
+	width:70%;
+	padding:11px 9px 11px 4px;
+	ephox-visible: false;
+}
+.elt_orient_img_u2, .elt_orient_img_g {
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.elt_orient_titre {
+	margin:0;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	ephox-visible: false;
+}
+.elt_orient a {
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.elt_orient a:focus, .elt_orient a:hover, .elt_orient a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/* Hauteurs d'éléments predefines */
+.elt_orient_ht_120 {
+	height:120px;
+	ephox-visible: false;
+}
+.elt_orient_ht_130 {
+	height:130px;
+	ephox-visible: false;
+}
+.elt_orient_ht_140 {
+	height:140px;
+	ephox-visible: false;
+}
+.elt_orient_ht_150 {
+	height:150px;
+	ephox-visible: false;
+}
+.elt_orient_ht_160 {
+	height:160px;
+	ephox-visible: false;
+}
+.elt_orient_ht_170 {
+	height:170px;
+	ephox-visible: false;
+}
+.elt_orient_ht_180 {
+	height:180px;
+	ephox-visible: false;
+}
+.elt_orient_ht_190 {
+	height:190px;
+	ephox-visible: false;
+}
+.elt_orient_ht_200 {
+	height:200px;
+	ephox-visible: false;
+}
+.elt_orient_ht_210 {
+	height:210px;
+	ephox-visible: false;
+}
+.elt_orient_ht_220 {
+	height:220px;
+	ephox-visible: false;
+}
+.elt_orient_ht_230 {
+	height:230px;
+	ephox-visible: false;
+}
+.elt_orient_ht_240 {
+	height:240px;
+	ephox-visible: false;
+}
+.elt_orient_ht_250 {
+	height:250px;
+	ephox-visible: false;
+}
+.elt_orient_ht_260 {
+	height:260px;
+	ephox-visible: false;
+}
+.elt_orient_ht_270 {
+	height:270px;
+	ephox-visible: false;
+}
+.elt_orient_ht_280 {
+	height:280px;
+	ephox-visible: false;
+}
+.elt_orient_ht_290 {
+	height:290px;
+	ephox-visible: false;
+}
+.elt_orient_ht_300 {
+	height:300px;
+	ephox-visible: false;
+}
+/* --- FIN BLOC ORIENTATION --- */
+
+/* --- DEBUT MESSAGE ERREUR --- */
+.n2g_msg_erreur {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: red;
+	font-weight: bold;
+	ephox-visible: false;
+}
+.n2gErreurCadre {
+	font-size: 11px;
+	border:solid 1px red;
+	ephox-visible: false;
+}
+/* --- FIN MESSAGE ERREUR --- */
+
+/* DEBUT REGROUPEMENT LISTE RUBRIQUE */
+.regrou_liste_rub_conteneur {
+	border:1px solid #ccc;
+	padding:13px 11px;
+	ephox-visible: false;
+}
+.regrou_liste_rub_titre {
+	margin:0px;
+	font-size:15px;
+	font-weight:bold;
+	color:#000000;
+	display:block;
+	ephox-visible: false;
+}
+.regrou_liste_rub_sous_titre {
+	margin:0;
+	font-size:12px;
+	font-weight:bold;
+	color:#e70429;
+	display:block;
+	margin-top:10px;
+	ephox-visible: false;
+}
+.regrou_liste_rub_accroche {
+	margin-top:5px;
+	ephox-visible: false;
+}
+.regrou_liste_rub_conteneur ul {
+	list-style:none;
+	margin:5px 0px 0px 0px;
+	padding:0px;
+	ephox-visible: false;
+}
+.regrou_liste_rub_conteneur li {
+	padding-left:15px;
+	font-size:12px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/puce_grise.gif) left 5px no-repeat;
+	ephox-visible: false;
+}
+.regrou_liste_rub_conteneur li a {
+	text-decoration:none;
+	color:#666;
+	display:block;
+	width:100%;
+	ephox-visible: false;
+}
+.regrou_liste_rub_conteneur li a:focus, .regrou_liste_rub_conteneur li a:hover, .regrou_liste_rub_conteneur li a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/* --- FIN REGROUPEMENT LISTE RUBRIQUE --- */
+
+/* ---  usage tous les PRODUITs ---*/
+/* ---  liste de rubriques  --- */
+.n2g_index_produit_intro {
+	font-size:12px;
+	margin-bottom:18px;
+	ephox-visible: false;
+}
+.n2g_index_produit_titre {
+	display:block;
+	border-bottom:1px solid #ccc;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	list-style:none;
+	ephox-visible: false;
+}
+.n2g_index_produit_liste {
+	padding:0;
+	margin:0x;
+	list-style:none;
+	ephox-visible: false;
+}
+.n2g_index_produit_liste li {
+	padding-left:15px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/index_produit_puce.gif) no-repeat left center;
+	font-size:12px;
+	line-height:20px;
+	ephox-visible: false;
+}
+.n2g_index_produit_liste li a {
+	text-decoration:none;
+	color:#000000;
+	ephox-visible: false;
+}
+.n2g_index_produit_liste li a:hover, .n2g_index_produit_liste li a:focus, .n2g_index_produit_liste li a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/* ---  FIN PRODUIT  --- */
+#n2g_zone_stats {
+	font-size:0;
+}
+/*------ HOME PAGE -------------*/	
+.n2g_mire_connexion_hp {
+	width:310px;
+	height:78px;
+	/*---- A definir suivant header----*/
+	margin:0px 0px 0px 0px;
+}
+.n2g_mire_connexion_hp .n2g_mire_connexion_titre {
+	height:25px;
+	width:310px;
+	text-indent:-5000px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_titre_deco.gif) top left no-repeat;
+}
+.n2g_mire_connexion_hp .n2g_mire_connexion_form {
+	width:155px;
+	height:65px;
+	float:left;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_form_bg_deco.gif) top left no-repeat;
+}
+.n2g_mire_connexion_hp .n2g_mire_connexion_champs {
+	width:90px;
+	border:1px solid #ccc;
+	vertical-align:top;
+	height:14px;
+	font-size:11px;
+	padding:4px 2px 2px 2px;
+	margin:21px 1px 0px 13px;
+	color:#888;
+	font-style:italic;
+}
+.n2g_mire_connexion_hp .n2g_mire_connexion_champs_actif {
+	width:90px;
+	border:1px solid #ccc;
+	/*---border:1px solid #42adff;--- A valider */
+	height:16px;
+	padding:2px;
+	vertical-align:top;
+	margin:21px 1px 0px 13px;
+	color:#000;
+	font-size:12px;
+}
+.n2g_mire_connexion_hp .n2g_mire_connexion_btn {
+	background:transparent url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_btn_ok.gif) repeat scroll 0 0;
+	border:none;
+	color:#000;
+	cursor:pointer;
+	text-indent:-5000px;
+	height:24px;
+	width:32px;
+	margin:20px 0px 0px 0px;
+}
+* html .n2g_mire_connexion_hp .n2g_mire_connexion_btn {
+	background:transparent url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_btn_ok_ie6.gif) repeat scroll 0 0;
+	font-size:11px;
+	font-weight:bold;
+	margin:17px 0px 0px 0px;
+}
+*+html .n2g_mire_connexion_hp .n2g_mire_connexion_btn {
+	background:transparent url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_btn_ok_ie6.gif) repeat scroll 0 0;
+	font-size:11px;
+	font-weight:bold;
+	margin:17px 0px 0px 0px;
+}
+.n2g_mire_connexion_hp ul {
+	float:left;
+	list-style:none;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_liste_bg_deco.gif) top left no-repeat;
+	width:145px;
+	height:80px;
+	padding:5px 0px 0px 10px;
+	margin:0px;
+}
+.n2g_mire_connexion_hp ul li {
+	font-size:10px;
+	font-weight:bold;
+	padding:0px 0px 0px 8px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_puce.gif) left 3px no-repeat;
+	line-height:12px;
+}
+.n2g_mire_connexion_hp ul li a {
+	text-decoration:none;
+	color:#3c3c3c;
+}
+.n2g_mire_connexion_hp ul li a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+/*---------------- MODE CONNECTE ------------------*/
+.n2g_mire_connexion_co {
+	width:310px;
+	overflow:auto;/*----- En attente validation du header --------*/
+}
+.n2g_mire_connexion_co .n2g_mire_connexion_titre {
+	height:25px;
+	width:310px;
+	text-indent:-5000px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_titre_co.gif) top left no-repeat;
+}
+.n2g_mire_connexion_co .n2g_mire_connexion_zone_btn {
+	width:155px;
+	height:45px;
+	float:left;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_form_bg_co.gif) top left no-repeat;
+	position:relative;
+}
+.n2g_mire_connexion_co .n2g_mire_connexion_zone_btn a {
+	display:block;
+	text-indent:-5000px;
+	width:136px;
+	height:26px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_btn_deco.gif);
+	position:absolute;
+	top:11px;
+	left:10px;
+}
+.n2g_mire_connexion_co ul {
+	float:left;
+	list-style:none;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_liste_bg_co.gif) top left no-repeat;
+	width:145px;
+	height:33px;
+	padding:12px 0px 0px 10px;
+	margin: 0px;
+}
+.n2g_mire_connexion_co ul li {
+	font-size:10px;
+	font-weight:bold;
+	padding:0px 0px 0px 8px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_puce.gif) left 3px no-repeat;
+	line-height:12px;
+}
+.n2g_mire_connexion_co ul li a {
+	text-decoration:none;
+	color:#3c3c3c;
+}
+.n2g_mire_connexion_co ul li a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+.n2g_mire_connexion_derniere_connexion {
+	clear:both;
+	color:#9a9a9a;
+	font-size:10px;
+	text-align:right;
+}
+/*---------------- PAGE BROCHURE (VERSION DEGRADEE) ----------------*/
+.n2g_mire_connexion_broch {
+	float: right;
+	width:178px;
+	height:78px;
+	overflow:auto;
+	/*----- En attente validation du header --------*/
+	margin:0px;
+}
+.n2g_mire_connexion_broch .n2g_mire_connexion_titre {
+	height:25px;
+	width:178px;
+	text-indent:-5000px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_titre_deco.gif) top left no-repeat;
+}
+.n2g_mire_connexion_broch .n2g_mire_connexion_zone_btn_brochure {
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_form_bg_broch.gif) top left no-repeat;
+	width:172px;
+	height:52px;
+	position:relative;
+	float:left;
+	margin-left: 4px;
+}
+* html .n2g_mire_connexion_broch .n2g_mire_connexion_zone_btn_brochure {
+	margin-left: 2px;
+}
+.n2g_mire_connexion_broch .n2g_mire_connexion_zone_btn_brochure a {
+	display:block;
+	text-indent:-5000px;
+	width:136px;
+	height:26px;
+	background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_mire_connexion_btn_cliquez.gif);
+	position:absolute;
+	top:15px;
+	left:19px;
+}
+
+/*---------------- css complement GSA ajout par Ayo dcma/ccm/bad le 2/12/2011 ----------------*/
+/*---- AUTO COMPLETION ----*/
+#autocomplete{
+float:left;
+padding:0px;
+margin:0px;
+border:1px solid #aaa;
+background:#eee;
+top:27px;
+left:13px;
+position:relative;
+width:145px;
+height:100px;
+font-size:11px;
+}
+
+#autocomplete a{
+  display:block;
+  padding:3px;
+  margin:0px;
+  text-decoration:none;
+  color:#000;
+}
+
+#autocomplete a:hover{
+background:#fff;
+}
+
+.autocomplete-w1 { background:url(https://static.societegenerale.fr/pri/themes/defaut/img/n2g_recherche_ombre.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+.autocomplete { font-size:11px;border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+/*---- FIN AUTO COMPLETION ----*/
+/*---------------- css complement GSA ajout par Ayo dcma/ccm/bad le 2/12/2011 ----------------*/
+
+
+/*Mention bas de page EIP */
+
+.n2g_eip_mention{
+ background:url("https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Communication/Home_page/mentions/img/n2g_mention_credit.gif") no-repeat;
+ display:inline-block;
+ text-indent:-9999px;
+  width:590px;
+ height:16px;
+ margin-top:6px;
+}

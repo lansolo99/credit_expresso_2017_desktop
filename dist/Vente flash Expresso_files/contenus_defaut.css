@@ -1,0 +1,6302 @@
+/*@charset "UTF-8";*/
+/* vers. 0.01 */
+/* ---------- */
+/* DEB COMMUN */
+/* ---------- */
+
+
+/* --- DEB MENU PRINCIPAL CONNECTE (8 items maximum) --- */
+/* navigation principale */
+#n2g_navigation_principale_connecte {
+	clear: both;
+	width: 980px;
+	height: 35px;
+	/*position: relative;*/
+  background:url(../img/refonte/menu_haut_refonte_fond.gif) repeat-x;
+	ephox-visible: false;
+}
+/* --- Menu LGN --- */
+#n2g_navigation_principale_connecte #n2g_menu_lgn {
+	list-style-type: none;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	ephox-visible: false;
+}
+/* Menu LGN et Menu hors LGN : tous les items */
+#n2g_navigation_principale_connecte #n2g_menu_lgn li {
+	display: block;
+	float: left;
+	ephox-visible: false;
+}
+/* Menu LGN et Menu hors LGN : items actifs uniquement */
+#n2g_navigation_principale_connecte #n2g_menu_lgn li a, #n2g_navigation_principale_connecte #n2g_menu_lgn li span {
+	width: 100px;
+	height: 35px;
+	display: block;
+	ephox-visible: false;
+}
+/* Pour masquer les libelles et rester accessible
+   Remarque :
+   Le texte portee par l'image illustrant un item est lie au texte cache */
+#n2g_navigation_principale_connecte #n2g_menu_lgn a, #n2g_navigation_principale_connecte #n2g_menu_lgn span {
+	text-indent: -5000px;
+	outline: none; /* defini pour FF pour eviter le cadre au moment du clic */
+	ephox-visible: false;
+}
+/* MENU LGN - item - INACTIF (par defaut)*/
+#n2g_navigation_principale_connecte #n2g_menu_lgn li a, #n2g_navigation_principale_connecte #n2g_menu_lgn li span {
+	background-position: top left;
+	ephox-visible: false;
+}
+/* MENU LGN - item - ACTIF (par defaut)*/
+#n2g_navigation_principale_connecte #n2g_menu_lgn li a:focus, #n2g_navigation_principale_connecte #n2g_menu_lgn li a:hover, #n2g_navigation_principale_connecte #n2g_menu_lgn li a:active, #n2g_navigation_principale_connecte #n2g_menu_lgn li a.actif, #n2g_navigation_principale_connecte #n2g_menu_lgn li a.actif:focus, #n2g_navigation_principale_connecte #n2g_menu_lgn li a.actif:hover, #n2g_navigation_principale_connecte #n2g_menu_lgn li a.actif:active {
+	background-position: bottom left;
+	ephox-visible: false;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container   {
+	width:800px;
+	height:35px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_slide   {
+	width:1600px;
+	position:relative;
+	left:0px;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn {
+	float:left;
+	height:35px;
+	margin:0;
+	padding:0;
+	width:800px;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li {
+	display:table;
+	float:left;
+	list-style:none;
+	height:35px;
+	border-right:1px solid #777;
+	background:#b7b7b7;
+	text-align:center;
+	position:relative;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_6#n2g_menu_lgn_1  li a{
+	width:112px;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_6#n2g_menu_lgn_1  li.item_6 a{
+	width:114px;
+	background:url(../img/n2g_menu_lgn_bg_switch.gif) repeat-x left top;
+}
+
+/* Pour 5 ITEMS MENU GESTION */
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_5#n2g_menu_lgn_1  li a{
+	width:139px;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_5#n2g_menu_lgn_1  li.item_5 a{
+	background:url(../img/n2g_menu_lgn_bg_switch.gif) repeat-x left top;
+	font-size:11px;
+}
+/**/
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_5#n2g_menu_lgn_2  li a{
+	width:138px;
+}
+
+/* POUR 5 ONGLETS ul.nb_items_5#n2g_menu_lgn_2 */
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2  {
+}
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2  li{
+	width:130px;
+}
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2  li a{
+	width:130px;
+	display:block;
+}
+
+/* HACK IE6 MENU NON DEROULANT */
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 {
+	position:relative;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li {
+	position:absolute;
+	top:0;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li.item_1 {
+	left:0;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li.item_2 {
+	left:164px;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li.item_3 {
+	left:323px;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li.item_4 {
+	left:482px;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li.item_5 {
+	left:641px;
+}
+/**/
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a {
+	padding:0 10px;
+	text-decoration:none;
+	text-indent:0px;
+	height:35px;
+	color:#fff;
+	vertical-align:middle;
+	display:table-cell;
+	font-weight:bold;
+	text-shadow:0px 0px 1px #333;
+	-webkit-text-stroke:0 0 0 transparent;
+	cursor:pointer;
+	background:url(../img/n2g_menu_lgn_bg.gif) repeat-x left top;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_2.n2g_menu_lgn.nb_items_5 li a {
+	background:url(../img/n2g_menu_lgn_bg_switch.gif) repeat-x left top;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_5#n2g_menu_lgn_2  li.item_1 a{
+	width:143px;
+	background:url(../img/n2g_menu_lgn_bg.gif) repeat-x left top;
+	font-size:11px;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a:hover,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li.hover a,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li.actif a {
+	text-shadow:0px 0px 1px #001f3a;
+	background:url(../img/n2g_menu_lgn_bg_hover.gif) repeat-x left top!important;
+
+}
+#n2g_navigation_principale_connecte  #n2g_menu_lgn_container #container_menuswitch {
+
+	 width:0px;
+	display:none;
+}
+#n2g_navigation_principale_connecte  #n2g_menu_lgn_container #container_menuswitch li#showCatalogue {
+	width:150px;
+	border:0px;
+	border-right:1px solid #777;
+}
+
+#n2g_navigation_principale_connecte  #n2g_menu_lgn_container #container_menuswitch li#showGestion{
+	width:150px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#n2g_navigation_principale_connecte  #n2g_menu_lgn_container #container_menuswitch li#showGestion {
+		width:152px;
+	}
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container #container_menuswitch li div{
+	text-decoration:none;
+	text-indent:0px;
+	height:35px;
+	color:#fff;
+	vertical-align:middle;
+	display:table-cell;
+	font-weight:bold;
+	text-shadow:0px 0px 1px #333;
+	cursor:pointer;
+	background:url(../img/n2g_menu_lgn_bg_switch.gif) repeat-x left top;
+}
+
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container #container_menuswitch li div:hover,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container #container_menuswitch li.hover div,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container #container_menuswitch li.actif div {
+	text-shadow:0px 0px 1px #001f3a;
+	background:url(../img/n2g_menu_lgn_bg_hover.gif) repeat-x left top;
+}
+
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1 a.n2g_menu_lgn_messagerie  {
+	background:url(../img/n2g_menu_lgn_item_1_bg.gif) no-repeat 100% 0;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1 a.n2g_menu_lgn_messagerie span {
+	/* left: -8px; */
+    position: relative;
+	display:inline-block;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1 a.n2g_menu_lgn_messagerie span.n2g_lgn_msg_mg_boite_reception_nombre_mail {
+	color:#666;
+	text-shadow:none;
+    position: relative;
+	display:inline-block;
+	width:21px;
+}
+
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_6 li.item_1 a.n2g_menu_lgn_messagerie span.n2g_lgn_msg_mg_boite_reception_nombre_mail {
+	left:9px;
+}
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.nb_items_5 li.item_1 a.n2g_menu_lgn_messagerie span.n2g_lgn_msg_mg_boite_reception_nombre_mail {
+    left: 23px;
+}
+
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1 a.n2g_menu_lgn_messagerie:hover,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1.actif a.n2g_menu_lgn_messagerie:hover,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1.actif a.n2g_menu_lgn_messagerie,
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1:hover a.n2g_menu_lgn_messagerie {
+	background:url(../img/n2g_menu_lgn_item_1_bg_hover.gif) no-repeat 100% 0!important;
+}
+
+#n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#n2g_menu_lgn_1 li.item_1 a.n2g_menu_lgn_messagerie div.dropShadow span.n2g_lgn_msg_mg_boite_reception_nombre_mail {
+	visibility:hidden;
+}
+
+/* FIX IE6&7 POUR CENTRAGE VERTICAL MENU HAUT */
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a {
+  display: block;
+  width:115px;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a span {
+	display: none;
+	vertical-align: middle;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a b {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#container_menuswitch li div span {
+	display: none;
+	vertical-align: middle;
+}
+
+* html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#container_menuswitch li div b {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+*+html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a {
+  display: block;
+  width:115px;
+}
+*+html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a span {
+  display: none;
+   vertical-align: middle;
+}
+*+html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul.n2g_menu_lgn li a b {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  }
+
+*+html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#container_menuswitch li div span {
+	display: none;
+	vertical-align: middle;
+}
+
+*+html #n2g_navigation_principale_connecte #n2g_menu_lgn_container ul#container_menuswitch li div b {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* --- FIN MENU PRINCIPAL CONNECTE --- */
+
+
+/* --- DEB MENU PRINCIPAL AIDE --- */
+/* --- Navigation principale --- */
+#n2g_navigation_principale_aide {
+	clear: both;
+	width: 650px;
+	height: 35px;
+	background:url(../img/refonte/menu_haut_refonte_fond.gif) repeat-x;
+	/*position: relative;*/
+  list-style-type: none;
+	ephox-visible: false;
+}
+#n2g_menu_aide {
+	padding:0px;
+	margin:0px;
+}
+/* --- Menu Navigation Aide : tous les items --- */
+#n2g_menu_aide li {
+	display: block;
+	float: left;
+	ephox-visible: false;
+}
+/* --- Menu Navigation Aide : items actifs uniquement --- */
+#n2g_menu_aide li a, #n2g_menu_aide li span {
+	display: block;
+	width: 93px;
+	height: 35px;
+	text-indent: -5000px; /* Pour masquer les libelles et rester accessible : le texte de l'image est lie au texte cache */
+	outline: none; /* defini pour FF pour eviter le cadre au moment du clic */
+	background-position:left top;
+	ephox-visible: false;
+}
+#n2g_menu_aide a:focus, #n2g_menu_aide a:hover, #n2g_menu_aide a:active, #n2g_menu_aide a.actif, #n2g_menu_aide a.actif:focus, #n2g_menu_aide a.actif:hover, #n2g_menu_aide a.actif:active {
+	background-position:left bottom;
+	ephox-visible: false;
+}
+#n2g_menu_aide li.item_1 a, #n2g_menu_aide li.item_1 span {width: 72px;}
+#n2g_menu_aide li.item_2 a, #n2g_menu_aide li.item_2 span {width: 97px;}
+#n2g_menu_aide li.item_3 a, #n2g_menu_aide li.item_3 span {width: 60px;}
+#n2g_menu_aide li.item_4 a, #n2g_menu_aide li.item_4 span {width: 84px;}
+#n2g_menu_aide li.item_5 a, #n2g_menu_aide li.item_5 span {width: 85px;}
+#n2g_menu_aide li.item_6 a, #n2g_menu_aide li.item_6 span {width: 99px;}
+#n2g_menu_aide li.item_7 a, #n2g_menu_aide li.item_7 span {width: 85px;}
+#n2g_menu_aide li.item_8 a, #n2g_menu_aide li.item_8 span {width: 68px;}
+/* --- FIN MENU PRINCIPAL AIDE --- */
+
+/* -- DEB MENU TRANSVERSE - */
+/* Navigation principale */
+#n2g_navigation_principale_transverse {
+	clear: both;
+	width: 980px;
+	height: 35px;
+	background:url(../img/refonte/menu_haut_refonte_fond.gif) repeat-x;
+	ephox-visible: false;
+}
+#n2g_menu_transverse {
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+	ephox-visible: false;
+}
+#n2g_menu_transverse li {
+	display: block;
+	float: left;
+	ephox-visible: false;
+}
+#n2g_menu_transverse li a, #n2g_menu_transverse li span {
+	width: 155px;
+	height: 35px;
+	display: block;
+	text-indent:-5000px;
+	outline:none;
+	ephox-visible: false;
+}
+#n2g_menu_transverse a:focus, #n2g_menu_transverse a:hover, #n2g_menu_transverse a:active, #n2g_menu_transverse a.actif, #n2g_menu_transverse a.actif:focus, #n2g_menu_transverse a.actif:hover, #n2g_menu_transverse a.actif:active {
+	background-position:left top;
+	ephox-visible: false;
+}
+/* config onglet sur site pri*/
+#n2g_menu_transverse li.item_1_pri a, #n2g_menu_transverse li.item_1_pri span {
+	width: 179px;
+	ephox-visible: false;
+}
+#n2g_menu_transverse li.item_2_pri a, #n2g_menu_transverse li.item_2_pri span {
+	width: 427px;
+	margin-left: 1px;
+	margin-right: 1px;
+	ephox-visible: false;
+}
+#n2g_menu_transverse li.item_3_pri a, #n2g_menu_transverse li.item_3_pri span {
+	width: 191px;
+	margin-right: 1px;
+	ephox-visible: false;
+}
+/* config onglet sur site pri_secure */
+#n2g_menu_transverse li.item_1_prisec a, #n2g_menu_transverse li.item_1_prisec span {
+	width: 179px;
+	ephox-visible: false;
+}
+#n2g_menu_transverse li.item_2_prisec a, #n2g_menu_transverse li.item_2_prisec span {
+	width: 618px;
+	margin-left: 1px;
+	margin-right: 1px;
+	ephox-visible: false;
+}
+/*
+#n2g_navigation_principale_transverse #n2g_menu_transverse li.item_4 a {}
+*/
+/* -- FIN MENU TRANSVERSE - */
+
+/* --- DEB ZONE QUI SEPARE LE MENU PRINCIPAL DU CHEMIN DE FER --- */
+.n2g_separateur_zones_menu_et_cdf {
+	font-size:0;
+	clear:both;
+	width:978px;
+	height:4px;
+	border-left: solid #ccc 1px;
+	border-right: solid #ccc 1px;
+	background-color: #fff;
+	ephox-visible: false;
+}
+/* --- FIN ZONE QUI SEPARE LE MENU PRINCIPAL DU CHEMIN DE FER --- */
+
+/* --- DEB CHEMIN DE FER --- */
+#n2g_cdf_conteneur {
+	clear: both;
+	border: solid #ccc 1px;
+	border-bottom: 0 none;
+	width: 978px;
+	font-size: 10px;
+	background-color:#a7a7a7;
+	overflow:auto;
+	ephox-visible: false;
+}
+#n2g_cdf_titre {
+	float: left;
+	padding: 4px 3px 2px 6px;
+	margin:0;
+	width:68px;
+	ephox-visible: false;
+}
+/* utiliser cette classe si on a pas de titre de chemin de fer (RGO_AFF12011) */
+.n2g_cdf_titre_pas_renseigne {
+	background-image: none;
+	ephox-visible: false;
+}
+.n2g_cdf_titre_renseigne {
+	color: #000;
+	/*  background-color: #484848;*/
+/*  background-image: url(../img/n2g_cdf_titre_fond.jpg);*/
+  background-repeat: repeat-x;
+	background-position: 0px top;
+	ephox-visible: false;
+}
+#n2g_cdf_contenu {
+	background:#FFFFFF;
+	width:901px;
+	float: left;
+	ephox-visible: false;
+}
+#n2g_cdf_contenu ul {
+	border-left: solid #ccc 1px;
+	list-style : none;
+	color: #333;
+	line-height: 14px;
+	margin:0px;
+	padding: 3px 10px 3px 6px;
+	ephox-visible: false;
+}
+#n2g_cdf_contenu li {
+	display: inline;
+	ephox-visible: false;
+}
+#n2g_cdf_contenu li a {
+	color: #414141;
+	background-color: #fff;
+	text-decoration:none;
+	ephox-visible: false;
+}
+#n2g_cdf_contenu li a:focus, #n2g_cdf_contenu li a:hover, #n2g_cdf_contenu li a:active {
+	color: #1675cc;
+	ephox-visible: false;
+}
+/* pour styler un separateur */
+#n2g_cdf_contenu li.n2g_cdf_separateur {
+	ephox-visible: false;
+}
+/* pour styler le nom de la page courante */
+#n2g_cdf_contenu li.n2g_cdf_page_courante {
+	color: #1675cc;
+	ephox-visible: false;
+}
+/* --- FIN CHEMIN DE FER --- */
+
+/* contenus de la ZONE CENTRE HAUT */
+/* --- CHROME --- */
+.n2g_contenu_chrome {
+	margin:0;
+	padding:0;
+	padding:10px 10px 11px 10px;
+	position:relative;
+	ephox-visible: false;
+}
+.n2g_contenu_chrome h3, .n2g_contenu_chrome h1 {
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-weight: bold;
+	color: #cc0000;
+	ephox-visible: false;
+}
+.n2g_contenu_chrome p {
+	margin:0;
+	padding:0;
+	font-size: 11px;
+	position:absolute;
+	top:16px;
+	right:10px;
+	ephox-visible: false;
+}
+.n2g_contenu_chrome a {
+	margin:0;
+	padding:0;
+	color: #000;
+	ephox-visible: false;
+}
+.n2g_contenu_chrome a:focus, .n2g_contenu_chrome a:hover, .n2g_contenu_chrome a:active {
+	color: #000;
+	ephox-visible: false;
+}
+/* --- FIN CHROME --- */
+
+/* contenus de la ZONE GAUCHE */
+
+
+
+
+/* --- DEB MENU SECTION --- */
+
+.n2g_menu_section ul {
+	padding:0px;
+	border-bottom:1px solid #ccc;
+	list-style: none;
+	clear:both;
+	overflow: hidden;
+	margin:0px 8px 10px 8px;
+	ephox-visible: false;
+}
+* html .n2g_menu_section ul {
+	margin:0px 8px 10px 8px;
+}
+.n2g_menu_section_titre {
+	background:url(../img/refonte/menu_lgn_titre_fond_g.gif) no-repeat top left;
+	height:42px;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:-1px;
+	position:relative;
+	ephox-visible: false;
+}
+.n2g_menu_section_titre_texte {
+	width:100%;
+	text-align:center;
+	height:33px;
+	padding:12px 0px 0px 0px;
+	ephox-visible: false;
+	background:url(../img/refonte/menu_lgn_titre_fond_d.gif) no-repeat right top;
+}
+/*------- A retirer suite à la refonte  -*/
+.n2g_menu_section_titre_g {
+	display:none;
+	ephox-visible: false;
+}
+.n2g_menu_section_titre_d {
+	display:none;
+	ephox-visible: false;
+}
+/*-----------------------------*/
+
+
+
+.n2g_menu_section_item {
+	display:block;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:url(../img/refonte/menu_lgn_item_fond.gif) repeat-y top left;
+	ephox-visible: false;
+}
+.n2g_menu_section_item a {
+	display:block;
+	padding:5px 2px 5px 17px;
+	border-bottom:1px solid #e7e7e7;
+	border-top:1px solid #fff;
+	color:#000;
+	text-decoration:none;
+	ephox-visible: false;
+}
+* html .n2g_menu_section_item a {
+	height:1px;
+}
+/* Menu sous section : sous item actif */
+.n2g_menu_section li a:focus, .n2g_menu_section li a:hover, .n2g_menu_section li a:active, .n2g_menu_section_item a.actif {
+	background:url(../img/refonte/menu_lgn_item_actif.gif) center left no-repeat;
+	color:#FFF;
+	border-top:none;
+	padding:6px 2px 5px 17px;
+	ephox-visible: false;
+}
+/* --- FIN MENU SECTION --- */
+
+
+
+/* --- DEB MENU SERVICES ET CONTRATS --- */
+.n2g_menu_srv_contrats {
+	background:url(../img/refonte/menu_lgn_sc_titre_fond_g.gif) no-repeat top left;
+	overflow: hidden;
+	color:#000;
+	ephox-visible: false;
+}
+/* Titre du menu */
+.n2g_menu_srv_contrats_titre {
+	text-align:center;
+	display: block;
+	font-weight:bold;
+	background:url(../img/refonte/menu_lgn_sc_titre_fond_d.gif) no-repeat right top;
+	height:32px;
+	padding-top:10px;
+	font-weight:bold;
+	margin-bottom:-1px;
+	font-size: 13px;
+	ephox-visible: false;
+}
+* html .n2g_menu_srv_contrats_titre {
+	margin-bottom:0px;
+}
+/*-------- ITEM ---------*/
+
+.n2g_menu_srv_contrats ul {
+	padding:0px;
+	border-bottom:1px solid #ccc;
+	list-style: none;
+	clear:both;
+	overflow: hidden;
+	margin:-1px 8px 10px 8px;
+}
+* html .n2g_menu_srv_contrats ul {
+	margin:0px 8px 10px 8px;
+	border-bottom:1px solid #ccc;
+}
+.n2g_menu_srv_contrats_item, .n2g_menu_srv_contrats_item_shf {
+	display:block;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:url(../img/refonte/menu_lgn_item_fond.gif) repeat-y top left;
+	ephox-visible: false;
+}
+.n2g_menu_serv_cont_puce {
+	ephox-visible: false;
+}
+.n2g_menu_srv_contrats_item a, .n2g_menu_srv_contrats_item_shf a {
+	display:block;
+	padding:5px 2px 5px 17px;
+	border-bottom:1px solid #e7e7e7;
+	border-top:1px solid #fff;
+	line-height:14px;
+	color:#000;
+	text-decoration:none;
+}
+/* Item actif */
+.n2g_menu_srv_contrats_item a.actif, .n2g_menu_srv_contrats_item_shf a.actif {
+	background:url(../img/refonte/menu_lgn_item_actif.gif) center left no-repeat;
+	color:#FFF;
+	border-top:none;
+	padding:6px 2px 5px 17px;
+	ephox-visible: false;
+}
+/* Iitem inactif */
+.n2g_menu_srv_contrats_item a:focus, .n2g_menu_srv_contrats_item a:hover, .n2g_menu_srv_contrats_item a:active, .n2g_menu_srv_contrats_item_shf a:focus, .n2g_menu_srv_contrats_item_shf a:hover, .n2g_menu_srv_contrats_item_shf a:active {
+	background:url(../img/refonte/menu_lgn_item_actif.gif) center left no-repeat;
+	color:#FFF;
+	border-top:none;
+	padding:6px 2px 5px 17px;
+	ephox-visible: false;
+}
+/* --- FIN MENU SERVICES ET CONTRATS --- */
+
+/* --- DEB BROCHURE MENU GAUCHE --- */
+/* DEBUT Titre *//*
+.n2g_ngp_menu_accueil_section .n2g_ngp_menu_accueil_section_titre {
+  font-size: 14px;
+  display: block;
+  background:url(../img/n2g_brochue_menu_gauche_entete.jpg) no-repeat #373737;
+  padding:5px 2px 4px 11px;
+  min-height:23px;
+  width:161px;
+  color: #fff;
+  text-decoration: none;
+  font-weight:bold;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:hover,
+.n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:focus,
+.n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:active,
+.n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre.actif{
+  background:url(../img/n2g_brochue_menu_gauche_entete_select.jpg) no-repeat #096ac8;
+  ephox-visible: false;
+}
+/* FIN Titre */
+/* DEBUT général .n2g_navigation *//*
+.n2g_ngp_menu_accueil_section .n2g_navigation {
+  margin:0;
+  padding:0;
+  width: 174px;
+  margin-bottom:10px;
+  list-style: none;
+  overflow: hidden;
+  border-bottom: solid #ccc 1px;
+  color:#000;
+  background:#fff;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section .n2g_navigation li {
+  border: solid #ccc 1px;
+  border-bottom: 0 none;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section  .n2g_navigation li li {
+  border-left: none;
+  border-right: none;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section .n2g_navigation a, .n2g_ngp_menu_accueil_section .n2g_navigation span {
+  display: block;
+  font-size:12px;
+  color: #423f37;
+  text-decoration: none;
+  ephox-visible: false;
+}
+/* FIN général .n2g_navigation */
+/*  DEBUT menu statique *//*
+.n2g_ngp_menu_accueil_section_pliable a,
+.n2g_ngp_menu_accueil_section_pliable span {
+  min-height:13px; /* redefini pour IE6
+  font-size:12px;
+}
+.n2g_ngp_menu_accueil_section_pliable a.plie,
+.n2g_ngp_menu_accueil_section_pliable a.deplie,
+.n2g_ngp_menu_accueil_section_pliable span.deplie{
+  padding: 9px 15px 7px 18px;
+  line-height:17px;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.plie{
+  background: url(../img/n2g_ngp_menu_accueil_section_pliable_plie.gif) #d5d5d5 no-repeat;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.deplie,
+.n2g_ngp_menu_accueil_section_pliable span.deplie{
+  background: url(../img/n2g_ngp_menu_accueil_section_pliable_deplie.gif) #d5d5d5 no-repeat;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.actif,
+.n2g_ngp_menu_accueil_section_pliable a:hover,
+.n2g_ngp_menu_accueil_section_pliable a:focus,
+.n2g_ngp_menu_accueil_section_pliable a:active{
+  color: #fff;
+  background: url(../img/n2g_ngp_menu_accueil_section_pliable_deplie_over.gif) #1478d8 no-repeat;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  background: url(../img/n2g_ngp_brochure_menu_gauche_image_fond_item_niveau_1.jpg) repeat-x right bottom;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item li {
+  border-top:1px solid #ccc;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_item a {
+  padding:8px 15px 7px 32px;
+  display: block;
+  color: #423f37;
+  text-decoration: none;
+  line-height:16px;
+  ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a.actif,
+.n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:focus,
+.n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:hover,
+.n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:active {
+  color: #fff;
+  background: url(../img/n2g_ngp_menu_accueil_soussection_over.gif) 0 0;
+  ephox-visible: false;
+}
+/*  FIN menu statique */
+/*  DEBUT menu javascript *//*
+.n2g_navigation .n2g_openedToggleSubMenu span, .n2g_navigation .toggleSubMenu a{
+    padding:9px 15px 7px 18px;
+    line-height:17px;
+    background: url(../img/n2g_ngp_menu_accueil_section_pliable_deplie.gif) #d5d5d5 no-repeat;
+    ephox-visible: false;
+}
+
+.n2g_navigation .n2g_openedToggleSubMenu span{
+ background: url(../img/n2g_ngp_menu_accueil_section_pliable_deplie.gif) #d5d5d5 no-repeat;
+  ephox-visible: false;
+}
+.n2g_navigation .toggleSubMenu a {
+ background: url(../img/n2g_ngp_menu_accueil_section_pliable_plie.gif) #d5d5d5 no-repeat;
+  ephox-visible: false;
+}
+.n2g_navigation .subMenu, .n2g_navigation .n2g_openedSubMenu {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    ephox-visible: false;
+}
+.n2g_navigation .subMenu li, .n2g_navigation .n2g_openedSubMenu li {
+    border-right:none;
+    border-left:none;
+    border-top:1px solid #ccc;
+    ephox-visible: false;
+}
+.n2g_navigation .n2g_openedSubMenu, .n2g_navigation .subMenu{
+ background: url(../img/n2g_ngp_brochure_menu_gauche_image_fond_item_niveau_1.jpg) repeat-x right bottom;
+}
+.n2g_navigation .n2g_openedSubMenu a, .n2g_navigation .subMenu a {
+  padding:8px 15px 7px 18px;
+  padding-left: 28px;
+  font-size:12px;
+  line-height:16px;
+  ephox-visible: false;
+}
+.n2g_navigation .subMenu a {
+ line-height:16px;
+  ephox-visible: false;
+}
+.n2g_navigation .open a, .n2g_navigation .open span {
+    background: url(../img/n2g_ngp_menu_accueil_section_pliable_deplie.gif) #d5d5d5 no-repeat;
+    ephox-visible: false;
+}
+.n2g_navigation .subMenu li a,
+.n2g_navigation .n2g_openedSubMenu li a{
+  background: none;
+  ephox-visible: false;
+}
+.n2g_navigation .subMenu li a:hover,
+.n2g_navigation .subMenu li a:focus,
+.n2g_navigation .subMenu li a:active,
+.n2g_navigation .subMenu li a.actif,
+.n2g_navigation .n2g_openedSubMenu li a:hover,
+.n2g_navigation .n2g_openedSubMenu li a:focus,
+.n2g_navigation .n2g_openedSubMenu li a:active,
+.n2g_navigation .n2g_openedSubMenu li a.actif{
+  color: #fff;
+  background: url(../img/n2g_ngp_menu_accueil_soussection_over.gif) 0 0;
+  ephox-visible: false;
+}
+/* FIN menu javascript */
+/* DEBUT item unique *//*
+.n2g_navigation .n2g_item_unique {
+  background: url(../img/n2g_menu_item_inactif.gif) repeat-x center top;
+  padding:8px 15px 7px 18px;
+  line-height:16px;
+  ephox-visible: false;
+}
+.n2g_navigation .n2g_item_unique:hover,
+.n2g_navigation .n2g_item_unique:focus,
+.n2g_navigation .n2g_item_unique:active,
+.n2g_navigation a.actif {
+  background: url(../img/n2g_ngp_bmg_item_niveau_1_actif.gif) 0 0;
+  color:#fff;
+  ephox-visible: false;
+}
+/* FIN item unique*/
+
+			/*-------------------- MODIF REFONTE ---------------------------*/
+
+/* --- DEB BROCHURE MENU GAUCHE --- */
+/* DEBUT Titre */
+
+.n2g_ngp_menu_accueil_section {
+	font-family:Arial, Helvetica, sans-serif; /* A supprimer au passage su site en arial*/
+}
+.n2g_ngp_menu_accueil_section .n2g_ngp_menu_accueil_section_titre {
+	font-size: 13px;
+	display: block;
+	background:url(../img/refonte/bmg_entete.gif) no-repeat top left #f3f3f3;
+	height:23px;
+	width:160px;
+	padding:9px 7px;
+	position:relative;
+	margin-bottom:-1px;
+	color: #fff;
+	text-decoration: none;
+	text-align:center;
+	font-weight:bold;
+	ephox-visible: false;
+}
+* html .n2g_ngp_menu_accueil_section .n2g_ngp_menu_accueil_section_titre {
+	margin-bottom:0px;
+}
+.n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:hover, .n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:focus, .n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre:active, .n2g_ngp_menu_accueil_section a.n2g_ngp_menu_accueil_section_titre.actif {
+	background:url(../img/refonte/bmg_entete.gif) no-repeat bottom left;
+	ephox-visible: false;
+}
+/* FIN Titre */
+
+
+
+/*---------------- ITEM GENERAL ---------------------*/
+.n2g_navigation a {
+	padding:9px 15px 7px 18px;
+	line-height:13px;
+	ephox-visible: false;
+}
+.n2g_navigation .n2g_item_unique:hover, .n2g_navigation .n2g_item_unique:focus, .n2g_navigation .n2g_item_unique:active, .n2g_navigation a.actif {
+	color:#fff;
+	font-weight:normal;
+	border-bottom:none;
+	padding:9px 15px 8px 18px;
+	ephox-visible: false;
+}
+/*------------- ITEM  n0 -----------------------------*/
+.n2g_ngp_menu_accueil_section .n2g_navigation {
+	margin:0 auto 0 auto;
+	padding:0;
+	z-index:1;
+	width: 158px;
+	margin-bottom:10px;
+	list-style: none;
+	overflow: hidden;
+	border-bottom: solid #ccc 1px;
+	color:#000;
+	background:#fff;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section .n2g_navigation li {
+	background:#f3f3f3;
+	ephox-visible: false;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	background:url(../img/refonte/bmg_fond_lien.gif) top left repeat-y;
+}
+.n2g_ngp_menu_accueil_section li a {
+	font-weight:normal;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #e7e7e7;
+	display: block;
+	font-size:12px;
+	color: #423f37;
+	text-decoration: none;
+	ephox-visible: false;
+}
+* html .n2g_ngp_menu_accueil_section li a {
+	height:3px;
+}
+.n2g_ngp_menu_accueil_section li a:hover, .n2g_ngp_menu_accueil_section li a.actif {
+	background:url(../img/refonte/bmg_fond_lien_actif.gif) center left no-repeat;
+}
+/*---------- PLIE/DEPLIE AVEC PAGE ---------------*/
+.n2g_ngp_menu_accueil_section_pliable a, .n2g_ngp_menu_accueil_section_pliable span {
+	min-height:13px; /* redefini pour IE6 */
+	font-size:12px;
+	font-weight:normal;
+}
+.n2g_ngp_menu_accueil_section_pliable a.plie {
+	background:url(../img/refonte/bmg_lien_depliable_fond.gif) no-repeat 4px 10px;
+	padding:9px 15px 9px 18px;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.plie:hover {
+	border-bottom:none;
+	padding:9px 15px 10px 18px;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.deplie, .n2g_ngp_menu_accueil_section_pliable span.deplie {
+	border-bottom:none;
+	padding:9px 15px 8px 18px;
+	background:url(../img/refonte/bmg_lien_depliable_fond_deplie.gif) 4px 12px no-repeat;
+	display: block;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_pliable a.actif, .n2g_ngp_menu_accueil_section_pliable a:hover, .n2g_ngp_menu_accueil_section_pliable a:focus, .n2g_ngp_menu_accueil_section_pliable a:active {
+	color: #fff;
+	ephox-visible: false;
+}
+/*---------------------------------------------------*/
+
+
+
+/*------------- ITEM  n-1 -----------------------------*/
+
+.n2g_ngp_menu_accueil_section .n2g_navigation li li {
+	border-left: none;
+	border-right: none;
+	background-color:#f9f9f9;
+	background-image:none;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item {
+	margin: 0px 0px -1px 0px;
+	padding: 0;
+	list-style:none;
+	ephox-visible: false;
+}
+* html .n2g_ngp_menu_accueil_section_sous_item {
+	margin:0px;
+}
+.n2g_ngp_menu_accueil_section_sous_item li {
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item li a {
+	padding:9px 15px 7px 32px;
+	display: block;
+	color: #423f37;
+	border-top:none;
+	text-decoration: none;
+	ephox-visible: false;
+}
+.n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a.actif, .n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:focus, .n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:hover, .n2g_ngp_menu_accueil_section_sous_item .n2g_ngp_menu_accueil_section_item a:active {
+	color: #fff;
+	border-bottom:none;
+	padding:9px 15px 8px 32px;
+	background:url(../img/refonte/bmg_fond_lien_sous_item_actif.gif) center left no-repeat;
+	ephox-visible: false;
+}
+/*---------------------------------------------------*/
+
+	/*  DEBUT menu javascript */
+.n2g_navigation .n2g_openedToggleSubMenu span, .n2g_navigation .toggleSubMenu a {
+	background:url(../img/refonte/bmg_lien_depliable_fond.gif) no-repeat 4px 10px;
+	ephox-visible: false;
+}
+.n2g_navigation .n2g_openedToggleSubMenu span, .n2g_navigation .toggleSubMenu a:hover {
+	background:url(../img/refonte/bmg_lien_depliable_fond.gif) no-repeat 4px 10px;
+	ephox-visible: false;
+}
+.n2g_navigation .open a, .n2g_navigation .open span {
+	background:url(../img/refonte/bmg_lien_depliable_fond_deplie.gif) 4px 12px no-repeat;
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu, .n2g_navigation .n2g_openedSubMenu {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	ephox-visible: false;
+}
+.n2g_navigation .n2g_openedToggleSubMenu span {
+	ephox-visible: false;
+}
+.n2g_navigation .toggleSubMenu a {
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu, .n2g_navigation .n2g_openedSubMenu {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu li, .n2g_navigation .n2g_openedSubMenu li {
+	ephox-visible: false;
+}
+.n2g_navigation .n2g_openedSubMenu, .n2g_navigation .subMenu {
+}
+.n2g_navigation .n2g_openedSubMenu a, .n2g_navigation .subMenu a {
+	padding:8px 15px 7px 18px;
+	padding-left: 28px;
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu a {
+	ephox-visible: false;
+}
+.n2g_navigation .open a, .n2g_navigation .open span {
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu li a, .n2g_navigation .n2g_openedSubMenu li a {
+	background: none;
+	ephox-visible: false;
+}
+.n2g_navigation .subMenu li a:hover, .n2g_navigation .subMenu li a:focus, .n2g_navigation .subMenu li a:active, .n2g_navigation .subMenu li a.actif, .n2g_navigation .n2g_openedSubMenu li a:hover, .n2g_navigation .n2g_openedSubMenu li a:focus, .n2g_navigation .n2g_openedSubMenu li a:active, .n2g_navigation .n2g_openedSubMenu li a.actif {
+	color: #fff;
+	background:url(../img/refonte/bmg_fond_lien_sous_item_actif.gif) center left no-repeat;
+	ephox-visible: false;
+}
+/* FIN menu javascript */
+
+
+
+
+/* --- FIN BROCHURE MENU GAUCHE --- */
+
+/* --- DEB INFOS MESSAGE ---- */
+.n2g_infos_msg_titre {
+	width:154px;
+	height:30px;
+	font-size: 13px;
+	color:#FFF;
+	background:url(../img/refonte/bloc_messagerie_titre_fond.gif) no-repeat top left;
+	padding: 11px 0px 0px 20px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_infos_msg_conteneur {
+	border: solid #e9e9e9 1px;
+	border-top:none;
+	padding:7px 0px 11px 0px;
+	margin:0px 9px 11px 9px;
+	text-align:center;
+	ephox-visible: false;
+}
+.n2g_infos_msg_conteneur a {
+	text-decoration: none;
+	color: #000;
+	ephox-visible: false;
+}
+/* messages : les nombres (de message et de releve eletronique) */
+.n2g_infos_msg_conteneur span {
+	color: #e60028;
+	font-weight: bold;
+	ephox-visible: false;
+}
+.n2g_infos_msg_conteneur a strong {
+	font-weight:normal;
+}
+/* --- FIN INFOS MESSAGE --- */
+
+/* DEB MES RACCOURCIS */
+.n2g_raccourcis {
+}
+.n2g_raccourcis ul {
+	clear:both;
+	width: 100%;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	border-bottom: solid #ccc 1px;
+	list-style: none;
+	font-size: 12px;
+	ephox-visible: false;
+}
+.n2g_raccourcis_titre {
+	min-height: 20px; /* redefini pour IE6 */
+	width: 100%;
+	overflow: auto;
+	font-size: 13px;
+	color: #000;
+	background:#606060 url(../img/n2g_raccourcis_titre_fond.gif) repeat-x 0px 6px;
+	ephox-visible: false;
+}
+.n2g_raccourcis_titre_g {
+	float:left;
+	width:6px;
+	height:6px;
+	background:url(../img/n2g_raccourcis_titre_g.gif);
+	ephox-visible: false;
+}
+.n2g_raccourcis_titre_d {
+	height:6px;
+	background:url(../img/n2g_raccourcis_titre_d.gif) right top;
+	ephox-visible: false;
+}
+.n2g_raccourcis_titre_texte {
+	padding: 0px 6px 2px 6px;
+	ephox-visible: false;
+}
+.n2g_raccourcis_item {
+	border-left: solid #ccc 1px;
+	border-right: solid #ccc 1px;
+	border-top: solid #ccc 1px;
+	ephox-visible: false;
+}
+.n2g_raccourcis_item a {
+	min-height: 12px; /* redefini pour IE6 */
+	padding: 4px 15px 4px 15px;
+	color: #000;
+	display: block;
+	color: #423f37;
+	background-color: #fcfcfc;
+	text-decoration: none;
+	ephox-visible: false;
+}
+.n2g_raccourcis_item a.actif {
+	color: #fff;
+	background: #0c6dcb url(../img/n2g_ngp_raccourcis_item_actif.gif) no-repeat left center;
+	ephox-visible: false;
+}
+.n2g_raccourcis li a:focus, .n2g_raccourcis li a:hover, .n2g_raccourcis li a:active {
+	color: #fff;
+	background: #0c6dcb url(../img/n2g_ngp_raccourcis_item_actif.gif) no-repeat left center;
+	ephox-visible: false;
+}
+/* FIN MES RACCOURCIS */
+
+/* DEB PANIER */
+.n2g_panier {
+	width: 174px;
+	margin-bottom: 11px; /* rappel : tous les types de contenus possedent une marge basse de 11px */
+	font-size: 11px;
+	ephox-visible: false;
+}
+.n2g_panier_titre {
+	width: 159px;
+	background:url(../img/n2g_panier_titre_fond.jpg) no-repeat #3333ff;
+	padding-left: 15px;
+	height:27px;
+	ephox-visible: false;
+}
+.n2g_panier_titre img {
+	float:left;
+	ephox-visible: false;
+}
+.n2g_panier_titre div {
+	float:left;
+	font-size: 14px;
+	color: #fff;
+	margin:5px 5px 0px 10px;
+	ephox-visible: false;
+}
+.n2g_panier_contenu {
+	width:172px;
+	border:1px solid #ccc;
+	ephox-visible: false;
+}
+/*---- Ligne Vos comptes -----*/
+.n2g_panier_vos_comptes {
+	padding-top:5px;
+	padding-bottom:10px;
+	text-align: center;
+	height:38px;
+	ephox-visible: false;
+}
+/* Ligne Vos comptes : liste deroulante */
+.n2g_panier_vos_comptes select {
+	width: 158px;
+	margin-top: 5px;
+	border: solid 1px #ccc;
+	font-size: 10px;
+	color: #000;
+	ephox-visible: false;
+}
+/*---- Ligne Solde -----*/
+.n2g_panier_solde {
+	background:#ccc;
+	margin:0px 0px 10px 0px;
+	overflow:auto;
+	ephox-visible: false;
+}
+.n2g_panier_solde_item {
+	float:left;
+	width:104px;
+	padding-left:3px;
+	ephox-visible: false;
+}
+.n2g_panier_solde_valeur {
+	color:#e60028;
+	font-weight:bold;
+	float:right;
+	width:62px;
+	text-align:right;
+	padding-right:3px;
+	ephox-visible: false;
+}
+/*--- Liste des produits ---*/
+.n2g_liste_produit {
+	border-top:1px solid #ccc;
+	list-style:none;
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	ephox-visible: false;
+}
+.n2g_liste_produit li {
+	border-bottom:1px solid #ccc;
+	padding-left:3px;
+	padding-right:3px;
+	overflow:auto;
+	ephox-visible: false;
+}
+.n2g_liste_produit li.pair {
+	background:#e0e0e0;
+	ephox-visible: false;
+}
+.n2g_liste_produit li.impair {
+	background:#eee;
+	ephox-visible: false;
+}
+.n2g_liste_produit li.total {
+	background:#ccc;
+	ephox-visible: false;
+}
+.n2g_liste_prod_item {
+	float:left;
+	width:104px;
+	ephox-visible: false;
+}
+.n2g_liste_prod_valeur {
+	float:right;
+	width:62px;
+	text-align:right;
+	ephox-visible: false;
+}
+/*-------------------*/
+.n2g_panier_contenu form {
+	padding:0px;
+	margin:0px;
+	border:none;
+	ephox-visible: false;
+}
+.n2g_panier_solde_apres_valeur {
+	float:right;
+	width:62px;
+	text-align:right;
+	font-weight:bold;
+	padding-right:3px;
+	ephox-visible: false;
+}
+.n2g_panier_submit {
+	width: 149px;
+	height: 20px;
+	cursor:pointer;
+	margin-left:10px;
+	margin:0px 0px 10px 10px;
+	text-align: center;
+	border:none;
+	background:url(../img/n2g_panier_submit.jpg);
+	ephox-visible: false;
+}
+/* FIN PANIER */
+
+
+/* --- DEB ACCES AUX COMPTES       --- */
+#n2g_ngp_acces_aux_comptes {
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+	ephox-visible: false;
+}
+#n2g_ngp_acces_aux_comptes .lien {
+	margin:2px 0px 0px auto;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background: url(../img/n2g_ngp_acces_aux_comptes_fond.jpg) no-repeat;
+	width: 180px;
+	height: 24px;
+	ephox-visible: false;
+}
+#n2g_ngp_acces_aux_comptes .lien img {
+	vertical-align: top;
+	padding-left: 12px;
+	ephox-visible: false;
+}
+#n2g_ngp_acces_aux_comptes .lien a {
+	position: relative;
+	top: 3px;
+	left: 5px;
+	color: #fff;
+	text-decoration: none;
+	ephox-visible: false;
+}
+/* --- FIN ACCES AUX COMPTES       --- */
+
+/* --- DEB FORMULAIRE DE CONNEXION --- */
+/* identification internaute */
+#n2g_form_login_titre {
+	margin:2px 0px 0px auto;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background: url(../img/n2g_login_titre_fond.gif) repeat-x;
+	width: 180px;
+	height: 24px;
+	ephox-visible: false;
+}
+#n2g_form_login_titre img {
+	vertical-align: top;
+	padding-left: 12px;
+	ephox-visible: false;
+}
+#n2g_form_login_titre span {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	ephox-visible: false;
+}
+#n2g_form_connexion_contenu {
+	border: solid #888 1px;
+	border-top: none 0;
+	margin:0 0 0 auto;
+	width: 167px;
+	padding:9px 0px 5px 11px;
+	background: #9b9b9b url(../img/n2g_form_cnx_home_fond.gif) repeat-x;
+	color: #000;
+	ephox-visible: false;
+}
+.n2g_form_connexion_bouton {
+	clear: both;
+	display: block;
+	width: 84px;
+	height: 21px;
+	background: url(../img/n2g_login_deconnexion_fond.gif) no-repeat;
+	text-align: center;
+	padding-top: 2px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	margin:0 0 0 36px;
+	ephox-visible: false;
+}
+.n2g_form_connexion_liens {
+	padding:0;
+	margin:0;
+	ephox-visible: false;
+}
+*+html .n2g_form_login_liens {
+	margin-top: -10px;
+} /*Hack IE7*/
+.n2g_form_connexion_liens li {
+	list-style: none;
+	background: url(../img/n2g_login_lien_puce.gif) no-repeat left 4px;
+	line-height:12px;
+	ephox-visible: false;
+}
+.n2g_form_connexion_liens li a {
+	padding-left: 10px;
+	font-size: 9px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	ephox-visible: false;
+}
+.n2g_form_connexion_liens li a:focus, .n2g_form_connexion_liens li a:hover, .n2g_form_connexion_liens li a:active {
+	color: #666;
+	text-decoration: underline;
+	ephox-visible: false;
+}
+/* --- FIN FORMULAIRE DE CONNEXION --- */
+
+/* --- DEB IMPRIMER CETTE PAGE --- */
+#n2g_bouton_imprimer_conteneur {
+	position:absolute;
+	margin-top: 5px;
+	top:-35px;
+	right:0;
+	ephox-visible: false;
+}
+#n2g_ngp_imprimer_cette_page {
+	background-image: url(../img/n2g_ngp_picto_imprimer.jpg);
+	background-repeat: no-repeat;
+	background-position: 2px 5px;
+	width: 139px;
+	height: 21px;
+	display:block;
+	padding-top: 8px;
+	padding-left: 35px;
+	border-top: solid #ccc 1px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #bbb;
+	text-decoration: none;
+	ephox-visible: false;
+}
+.n2g_ngp_imprimer_cette_page_on {
+	height:46px;
+	ephox-visible: false;
+}
+/* --- FIN IMPRIMER CETTE PAGE     --- */
+
+/* --- DEB AIDE --- */
+.aide_fermer {
+	position: absolute;
+	left: 364px;
+	top: 50px;
+	width: 84px;
+	height: 29px;
+	background: url(../img/n2g_aide_fermer.gif) no-repeat;
+	text-indent: -5000px;
+	outline: none; /* defini pour FF pour eviter le cadre au moment du clic */
+	ephox-visible: false;
+}
+/* --- FIN AIDE --- */
+
+/* --- DEBUT BANDEAU DEFILANT      --- */
+.n2g_gestion_ticker_info {
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+/*------ USAGE BANDEAU DEFILANT INFORMATIF --------*/
+.n2g_bando_defilant_info {
+	height:11px;
+	padding:4px 5px 12px 5px;
+	background-color:#eee;
+	ephox-visible: false;
+}
+.n2g_bando_defilant_info span {
+	margin-right: 120px;
+	ephox-visible: false;
+}
+.n2g_bando_defilant_info span a span {
+	margin-right:0;
+	ephox-visible: false;
+}
+.n2g_bando_defilant_info .n2g_msg_erreur {
+	display:inline;
+}
+/*------ USAGE BANDEAU DEFILANT ALERTE --------*/
+.n2g_bando_defilant_alerte {
+	height:11px;
+	padding:3px 5px 5px 5px;
+	background-color:#FF0000;
+	ephox-visible: false;
+}
+.n2g_bando_defilant_alerte span {
+	color:#FFFFFF;
+	margin-right: 120px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+/* ---   FIN BANDEAU DEFILANT      --- */
+
+/* ---- DEBUT ENTETE RUBRIQUE -------- */
+.n2g_entete_rubrique {
+	height:44px;
+	margin:0px;
+	padding: 22px 0px 0px 17px;
+	color:#000000;
+	font-size:25px; /*!!! Attention la typo n'est pas standard sur la maquette, donc reste Ã  definir*/
+	font-weight:bold;
+	background-color:#FFFFFF;
+	background-repeat:no-repeat;
+	background-position:right center;
+	border-left:1px solid #ccc;
+	ephox-visible: false;
+}
+/* ------ FIN ENTETE RUBRIQUE -------- */
+
+
+/* ---- DEBUT ENTETE PRODUIT --------- */
+/*---- USAGE 0 (Titre et sous-titre) ----*/
+.n2g_entete_produit_u0 {
+	border-left:1px solid #ccc;
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_conteneur_u0 {
+	padding:4px 0 4px 8px;
+	width:580px;
+	overflow:auto;
+	ephox-visible: false;
+}
+.n2g_entete_produit_fond_u0 {
+	background:url(../img/n2g_entete_produit_fond.gif);
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+	width:580px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_titre_u0 {
+	color:#e50028;
+	font-size:24px;
+	font-weight:bold;
+	padding-right: 5px;
+	margin:0px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_sous_titre_u0 {
+	color:#000;
+	font-size:19px;
+	font-weight:normal;
+	ephox-visible: false;
+}
+/*---- USAGE 1 (Visuel) ----*/
+.n2g_entete_produit_u1 {
+	width:580px;
+	overflow:auto;
+	background-color:#FFF;
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_u1 img {
+	float:left;
+	ephox-visible: false;
+}
+.n2g_entete_produit_u1 span, .n2g_entete_produit_u1 h1, .n2g_entete_produit_u1 strong {
+	margin-left:150px;
+	display:block;
+	margin-bottom:0px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_titre_u1 {
+	margin-top:9px;
+	color:#e50028;
+	font-size:24px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_entete_produit_sous_titre_u1 {
+	color:#000;
+	font-size:19px;
+	margin-bottom:1px;
+	font-weight:normal;
+	ephox-visible: false;
+}
+.n2g_entete_produit_fond_u1 {
+	background:url(../img/n2g_entete_produit_fond.gif);
+	height:66px;
+	ephox-visible: false;
+}
+/*---- USAGE 2 (Titre seul) ----*/
+.n2g_entete_produit_u2 {
+	border-left:1px solid #ccc;
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_conteneur_u2 {
+	padding:10px 0px 10px 9px;
+	width:580px;
+	overflow:auto;
+	ephox-visible: false;
+}
+.n2g_entete_produit_fond_u2 {
+	background:url(../img/n2g_entete_produit_fond.gif);
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+	width:580px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_titre_u2 {
+	float: left;
+	color:#e50028;
+	font-size:24px;
+	font-weight:bold;
+	margin:0px;
+	padding-right: 5px;
+	ephox-visible: false;
+}
+.n2g_entete_produit_accroche {
+	font-weight:bold;
+	font-size:12px;
+	ephox-visible: false;
+}
+/*----  USAGE 3 (Visuel droit en background base sur entete automatique) ----*/
+.n2g_entete_produit_u3 {
+	width: 573px;
+	padding: 25px 0px 14px 17px;
+	color:#e50028;
+	font-size:25px;
+	font-weight:bold;
+	background-color: #fff;
+	background-position: right center;
+	background-repeat: no-repeat;
+	margin-bottom: 11px;
+	ephox-visible: false;
+}
+/* ------ FIN ENTETE PRODUIT --------- */
+
+/* -- DEBUT PRODUIT SOUS MENU DETAIL - */
+.n2g_produit_sous_menu_detail {
+	margin:0px 0px 11px 0px;
+	padding:0px 5px 0px 0px;
+	font-size:12px;
+	border:1px solid #ccc;
+	border-bottom:none;
+	overflow: hidden;
+	background:url(../img/refonte/bmf_refonte_fond.gif) bottom right repeat-x #f9f9f9;
+	line-height:13px;
+	ephox-visible: false;
+}
+* html .n2g_produit_sous_menu_detail {
+	line-height:normal;
+}
+.n2g_produit_sous_menu_detail li {
+	border-bottom:1px solid #ccc;
+	ephox-visible: false;
+	background:url(../img/refonte/bmf_refonte_lien_non_actif.gif) center left no-repeat;
+}
+.n2g_produit_sous_menu_detail li a {
+	display:block;
+	width:99px;
+	border-top:1px #FFF solid;
+	padding:8px 0px 8px 18px;
+	text-decoration:none;
+	color:#000000;
+	ephox-visible: false;
+}
+* html .n2g_produit_sous_menu_detail li a {
+	overflow:visible;
+}
+.n2g_produit_sous_menu_detail li a:hover, .n2g_produit_sous_menu_detail li a:focus, .n2g_produit_sous_menu_detail .n2g_produit_sous_menu_detail_actif a {
+	background:url(../img/refonte/bmf_refonte_lien_actif.gif) left center no-repeat;
+	border-top:none;
+	padding:9px 0px 8px 18px;
+	ephox-visible: false;
+}
+.n2g_produit_sous_menu_detail_non_actif {
+	ephox-visible: false;
+}
+/* -- FIN PRODUIT SOUS MENU DETAIL --- */
+
+/* --------- DEBUT BLOC SAS ---------- */
+.n2g_bloc_sas {
+	width:509px;
+	height:79px;
+	border:1px solid #ccc;
+	/*padding:17px 0px 0px 7px;*/
+	padding:10px 15px 15px 15px; /*Update Juin 2013*/
+	ephox-visible: false;
+}
+.n2g_bloc_sas input {
+	border:none;
+	ephox-visible: false;
+}
+
+.n2g_bloc_sas  input.n2g_bloc_sas_formulaire_zone_saisie {
+	border:none;
+	ephox-visible: false;
+	border:1px solid #d6d6d6;
+	width:216px;
+	height:23px;
+}
+
+
+.n2g_bloc_sas  input.n2g_mire_connexion_btn {
+	border:none;
+	ephox-visible: false;
+	/*border:1px solid #d6d6d6;*/
+	width:53px;
+	height:27px;
+	background-color:#d02537;
+	color:#fff;
+	font-weight:bold;
+	margin-left:14px; /*Update Juin 2013*/
+	/*background-image:url("http://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_sas_arrow_white.gif");
+	background-repeat:no-repeat;
+	background-position:42px 9px;*/
+	cursor:pointer;
+}
+
+.n2g_bloc_sas_conteneur_titre {
+	/*float:left;*/
+	/*width:269px;*/
+	ephox-visible: false;
+	/*border:1px solid red;*/
+	margin-bottom:7px;
+}
+.n2g_bloc_sas_titre {
+	font-weight:bold;
+	color:#d02537;
+	text-transform:uppercase;
+	font-size:16px;
+	/*padding:0px 0px 0px 11px;*/
+/*	background:url(../img/n2g_bloc_sas_titre_puce.gif) no-repeat center left;*/
+	margin:0px 0px 10px 0px;
+	display:block;
+	ephox-visible: false;
+}
+.n2g_bloc_sas_sous_titre {
+	font-weight:bold;
+	font-size:12px;
+	/*padding:0px 0px 0px 11px;*/
+	color:#000;
+	display:block;
+	ephox-visible: false;
+}
+
+.n2g_bloc_sas_sous_titre_sub {
+	font-weight:bold;
+	font-size:12px;
+	color:#9b9a9a;
+	display:block;
+	ephox-visible: false;
+	margin-top: 3px;
+}
+
+.n2g_bloc_sas_erreur {
+	font-weight:bold;
+	font-size:12px;
+	padding:0px 0px 0px 11px;
+	text-align:center;
+	color:#FF0000;
+	border:2px solid #FF0000;
+	width:499px;
+	margin:10px 10px 0px 10px;
+	ephox-visible: false;
+}
+.n2g_bloc_sas_formulaire {
+	padding:0px;
+	margin:0px;
+	/*float:left;*/
+	ephox-visible: false;
+	/*border:1px solid red;*/
+	position:relative; /*Update Juin 2013*/
+}
+.n2g_bloc_sas_formulaire_zone_saisie {
+	/*background:url(../img/n2g_bloc_sas_formulaire_zone_saisie.gif) no-repeat center center;*/
+	/*padding:6px 4px 4px 4px;*/
+	/*text-align:center;*/
+	font-size:12px;
+	ephox-visible: false;
+}
+.n2g_bloc_sas_formulaire_btn_ok {
+	background:url(../img/n2g_form_cnx_home_btn.gif);
+	height:20px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:12px;
+	cursor:pointer;
+	ephox-visible: false;
+}
+.n2g_bloc_sas_texte_code {
+	/*margin-top:10px;*/
+	display:block;
+	font-size:11px; /*Update Juin 2013*/
+	color:#333;
+	font-weight:bold;
+	ephox-visible: false;
+	position:absolute;
+	top:0px;
+	left:314px;
+	width: 208px;
+}
+.n2g_bloc_sas_texte_code_lien {
+	font-size:11px;	/*Update Juin 2013*/
+	font-weight:bold; /*Update Juin 2013*/
+	text-decoration:underline; /*Update Juin 2013*/
+	color:#9b9a9a;
+	padding-right:15px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_sas_link_arrow_red.gif) right 3px no-repeat;
+	/*text-decoration:none;*/
+	ephox-visible: false;
+	position:absolute;
+	top:12px;
+	left: 314px;
+}
+.n2g_bloc_sas_texte_code_lien:hover, .n2g_bloc_sas_texte_code_lien:focus {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.bloc_sas_btn_rdv {
+	display:block;
+	height:18px;
+	width:117px;
+	padding-left:8px;
+	margin:40px 0px 0px 5px;
+	background:#000000 url(../img/bloc_sas_btn_rdv.gif) no-repeat;
+	float:left;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	ephox-visible: false;
+}
+/* ---------- FIN BLOC SAS ----------- */
+
+#n2g_sas_modulaire_form {
+	margin-bottom: 15px
+}
+
+#n2g_sas_modulaire_codecli {
+    background: url(../img/n2g_bloc_sas_formulaire_zone_saisie.gif) no-repeat scroll center center transparent;
+    float: left;
+    font-size: 12px;
+    padding: 6px 4px 4px;
+    text-align: center;
+
+}
+
+#n2g_sas_modulaire_submit  {
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 1px 0 0 5px;
+}
+
+#n2g_sas_modulaire_submit_img {
+  padding-top: 6px;
+}
+
+#n2g_sas_modulaire_vk {
+ line-height: 0px;
+}
+
+.n2g_sas_modulaire_conteneur {
+	width:523px;
+	height:79px;
+	border:1px solid #ccc;
+	padding:17px 0px 0px 7px;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_conteneur input {
+	border:none;
+	ephox-visible: false;
+}
+
+#n2g_sas_modulaire_form .n2g_sas_modulaire_conteneur {
+	padding-bottom: 10px;
+}
+
+.n2g_sas_modulaire_conteneur_titre {
+	float:left;
+	width:269px;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_titre {
+	font-weight:bold;
+	color:#000;
+	font-size:15px;
+	padding:0px 0px 0px 11px;
+	background:url(../img/n2g_bloc_sas_titre_puce.gif) no-repeat center left;
+	margin:0px 0px 3px 0px;
+	display:block;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_sous_titre {
+	font-weight:bold;
+	font-size:12px;
+	padding:0px 0px 0px 11px;
+	color:#666;
+	display:block;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_texte_code {
+	margin-top:10px;
+	display:block;
+	font-size:12px;
+	color:#333;
+	font-weight:bold;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_texte_code_lien {
+    background: url(../img/n2g_puce_bleue.gif) no-repeat scroll right 2px transparent;
+    color: #666666;
+    font-size: 12px;
+    padding-right: 15px;
+    text-decoration: none;
+
+}
+
+.n2g_sas_modulaire_texte_code_lien:hover, .nn2g_sas_modulaire_texte_code_lien:focus {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+
+.n2g_sas_modulaire_authentification_aide {
+    clear: both;
+    float: left;
+    margin: -20px 0 0;
+    padding: 0 0 0 270px;
+}
+* html .n2g_sas_modulaire_authentification_aide {
+    padding: 0;
+	margin:0 0 0 135px;
+	width:230px;
+}
+*+html .n2g_sas_modulaire_authentification_aide {
+    padding: 0;
+	margin-left:280px;
+	width:230px;
+}
+
+/* ---- DEBUT ACCROCHE UNITAIRE------ */
+.n2g_bloc_accroche_unitaire_conteneur {
+	width:98%;
+	margin-bottom:11px;
+	padding:1% 1% 0px 1%;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire {
+	border:solid 1px #ccc;
+	overflow:auto;
+	height:1%; /* pour eviter un bug IE6 de depassement de boite */
+	ephox-visible: false;
+}
+/*---- type d'element, texte gauche, image droite ----*/
+.n2g_element_accroche_unitaire_texte_g {
+	width:70%;
+	padding:11px 0px 11px 13px;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire_img_d {
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+/*---- type d'element, texte droite, image gauche ----*/
+.n2g_element_accroche_unitaire_texte_d {
+	width:70%;
+	float:right;
+	padding:11px 0px 11px 13px;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire_img_g {
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire_titre {
+	margin:0;
+	font-size:16px;
+	font-weight:bold;
+	color:#000;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire a {
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.n2g_element_accroche_unitaire a:focus, .n2g_element_accroche_unitaire a:hover, .n2g_element_accroche_unitaire a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+/* ---- FIN ACCROCHE UNITAIRE   ------ */
+
+
+/* ------- DEBUT PAGE INFO --------- */
+.page_info_titre {
+	display: block;
+	margin:11px 0px 3px 0px;
+	background:url(../img/page_infos_titre_fond.gif) repeat-y;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	ephox-visible: false;
+}
+.page_info_titre span {
+	padding-left:12px;
+	background:url(../img/page_infos_titre_puce.gif) no-repeat left 6px;
+	ephox-visible: false;
+}
+.page_info_date {
+	font-size:11px;
+	display:block;
+	color:#565656;
+	margin:0PX 0PX 10px 3px;
+	ephox-visible: false;
+}
+.retour_haut_page {
+	display:block;
+	width:11px;
+	height:11px;
+	text-indent:-5000px;
+	outline:none;
+	background:url(../img/puce_retour_haut_page.gif);
+	float:right;
+	margin-right:10px;
+	font-size:1px; /*-- Hack IE --*/
+	ephox-visible: false;
+}
+/* -------- FIN PAGE INFO ---------- */
+
+/* ---------- DEBUT FAQ  ----------- */
+.n2g_faq_theme_titre {
+	/*---- Détournement avant MAJ ACS du 09/04/09 ---*/ display:none;
+	margin:24px 0px;
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+	padding-right:5px;
+	padding-bottom: 30px;
+	ephox-visible: false;
+}
+.n2g_bloc_faq_unitaire {
+	margin:0;
+	padding:11px 8px;
+	border:1Px solid #ccc;
+	list-style:none;
+	ephox-visible: false;
+}
+.n2g_faq_unitaire_element {
+	text-decoration:none;
+	color:#222;
+	font-size:12px;
+	ephox-visible: false;
+}
+.n2g_faq_unitaire_element:hover, .n2g_faq_unitaire_element:focus, .n2g_faq_unitaire_element:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.n2g_bloc_faq_unitaire li {
+	padding-left:15px;
+	background:url(../img/faq_puce.gif) no-repeat left 5px;
+	ephox-visible: false;
+}
+.n2g_faq_theme_separateur_questions_reponses {
+	color:#fff;
+	border-bottom:1px dotted #ccc;
+	margin:30px 0;
+	ephox-visible: false;
+}
+.n2g_faq_unitaire_titre {
+	font-size:13px;
+	font-weight:bold;
+	color:#222;
+	padding-left:15px;
+	background:url(../img/faq_puce.gif) no-repeat left 5px;
+	display:block;
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+	ephox-visible: false;
+}
+.n2g_faq_unitaire_texte {
+	font-size:12px;
+	ephox-visible: false;
+}
+.n2g_faq_unitaire_texte_separateur_bas {
+	margin-bottom:20px;
+	ephox-visible: false;
+}
+.n2g_faq_theme_reponses {
+	list-style:none;
+	padding:0;
+	margin:0;
+	ephox-visible: false;
+}
+.n2g_faq_theme_reponses li {
+	padding:0;
+	margin:0;
+	ephox-visible: false;
+}
+/* ----------- FIN FAQ  ------------ */
+
+/* ------- DEBUT PLAN DE SITE --------- */
+.n2g_plan_site_titre {
+	background:transparent url(../img/plan_du_site_titre.jpg) repeat scroll 0%;
+	color:#FFFFFF;
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+	height:25px;
+	margin:0pt;
+	padding:3px 0px 0px 25px;
+	width:538px;
+	ephox-visible: false;
+}
+.n2g_plan_site_conteneur {
+	border:#CCC 1px solid;
+	padding:20px 0px 40px 40px;
+	width:521px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste {
+	font-size:13px;
+	line-height:18px;
+	list-style:none;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste a {
+	text-decoration:none;
+	outline:none;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste a:hover, .n2g_plan_site_liste a:focus, .n2g_plan_site_liste a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste ul {
+	list-style:none;
+	margin:0;
+	padding:5px 0 0 5px;
+	margin-bottom:5px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste li {
+	padding-left:15px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h1, .n2g_plan_site_liste h2, .n2g_plan_site_liste h3, .n2g_plan_site_liste h4, .n2g_plan_site_liste h5, .n2g_plan_site_liste h6 {
+	margin:0;
+	padding:0;
+	display:inline;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste img {
+	border:medium none;
+	margin-right:2px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste li.depliant {
+	background:transparent repeat-y scroll 19px -1px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste .sous_item {
+	background:transparent no-repeat scroll left 9px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste .non_depliable {
+	padding-left:30px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h1 {
+	color:#000000;
+	font-weight:bold;
+	font-size:14px;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h1 a {
+	color:#000000;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h2 {
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h2 a, .n2g_plan_site_liste h2 li span {
+	color:#000000;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h3 {
+	font-size:12px;
+	font-weight:normal;
+	color:#000000;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h3 a {
+	color:#000000;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h4, .n2g_plan_site_liste h5, .n2g_plan_site_liste h6, .n2g_plan_site_liste h4 li span, .n2g_plan_site_liste h5 li span, .n2g_plan_site_liste h6 li span {
+	font-size:11px;
+	font-weight:normal;
+	color:#666666;
+	ephox-visible: false;
+}
+.n2g_plan_site_liste h4 a, .n2g_plan_site_liste h5 a, .n2g_plan_site_liste h6 a {
+	font-size:11px;
+	font-weight:normal;
+	color:#666666;
+	ephox-visible: false;
+}
+/* -------- FIN PLAN DE SITE ---------- */
+
+/* --- DEB menu centre --- */
+.n2g_brochure_menu_centre {
+	border:1px solid #ccc;
+	padding:16px 1px 16px 13px;
+	overflow:auto;
+	height:100%;
+	margin-bottom: 11px;
+	ephox-visible: false;
+}
+.n2g_brochure_menu_centre a {
+	float:left;
+	overflow: hidden;
+	white-space: nowrap;
+	width:260px;
+	display:inline;
+	height:21px;
+	padding:6px 0px 0px 13px;
+	margin:0px 14px 5px 0px;
+	border-bottom:1px solid #e0e0e0;
+	color:#000;
+	font-size:13px;
+	font-weight:normal;
+	background:url(../img/orientation_simul_lien_bg.jpg) bottom left no-repeat;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.n2g_brochure_menu_centre a.actif, .n2g_brochure_menu_centre a:hover, .n2g_brochure_menu_centre a:focus, .n2g_brochure_menu_centre a:active {
+	background:url(../img/orientation_simul_lien_bg.jpg) top left no-repeat;
+	border-bottom:1px solid #0d65c3;
+	ephox-visible: false;
+}
+.n2g_brochure_menu_centre_4col a {
+	width:123px;
+}
+.n2g_brochure_menu_centre_aide2col a {
+	width:273px;
+}
+/* --- FIN menu centre  --- */
+
+/* --- DEB GLOSSAIRE --- */
+.n2g_glossaire { width: 588px;
+}
+.n2g_glossaire_titre {
+	background:url(../img/n2g_glossaire_entete.gif) no-repeat;
+	height:52px;
+	padding:14px 0px 0px 17px;
+	font-size:30px;
+	color:#e50027;
+	font-weight:bold;
+	margin:0px 0px 36px 0px;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste {
+	list-style:none;
+	color:#e50027;
+	font-size:13px;
+	font-weight:bold;
+	margin:0px 0px 36px 0px;
+	padding:0px;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste li {
+	display:inline;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste li a {
+	color:#e50027;
+	text-decoration:none;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste li a:focus, .n2g_glossaire_liste li a:hover, .n2g_glossaire_liste li a:active {
+	text-decoration:underline;
+	ephox-visible: false;
+}
+.n2g_glossaire_titre_lettre {
+	margin:0;
+	padding:0;
+	width:90%;
+	background:url(../img/n2g_glossaire_titre_lettre.gif) repeat-y;
+	min-height:12px;
+	line-height:12px;
+	font-size:13px;
+	padding:0 0 0 5px;
+	font-weight:bold;
+	color:#FFF;
+	text-transform:uppercase;
+	margin:0 0 16px 0;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste_definition {
+	margin:0px;
+	padding:0px;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste_definition dt {
+	font-size:13px;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_glossaire_liste_definition dd {
+	margin: 0px 0px 15px 0px;
+	padding:0px;
+	font-size:12px;
+	ephox-visible: false;
+}
+/* --- FIN GLOSSAIRE --- */
+
+/* --- DEB Menu bouton --- */
+.n2g_menuBouton,
+.n2g_menubouton {
+	display:block;
+	margin:0px 0px 11px 0px;
+	padding:0px 0px 0px 0px;
+	text-decoration: none;
+	color:#FFF;
+	font-size:13px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_menuBouton ul,
+.n2g_menubouton ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	ephox-visible: false;
+}
+.n2g_menuBouton li img,
+.n2g_menubouton li img {
+	float:left;
+	margin: 0px 11px 0px 0px;
+	border:none;
+	ephox-visible: false;
+}
+.n2g_menuBouton li span,
+.n2g_menubouton li span {
+	display: block;
+	padding: 1px 12px 0px 7px;
+	background: url(../img/n2g_menuBouton_puce.gif) no-repeat right bottom;
+	ephox-visible: false;
+}
+.n2g_menuBouton li,
+.n2g_menubouton li {
+	display:block;
+	margin: 0px 0px 11px 0px;
+
+	min-height:22px;  /* redefini dans la css ie6 */
+	text-decoration: none;
+	color:#FFF;
+	font-size:13px;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_menuBouton li a.usage_vert {
+	background-image:url(../img/n2g_menuBouton_fond_01.gif);
+	background-repeat:repeat-x;
+	background-color:#8fbd2c;
+	ephox-visible: false;
+}
+.n2g_menuBouton li a.usage_rouge {
+	background-image:url(../img/n2g_menuBouton_fond_02.gif);
+	background-repeat:repeat-x;
+	background-color:#e60128;
+	ephox-visible: false;
+}
+.n2g_menuBouton li a.usage_gris {
+	background-image:url(../img/n2g_menuBouton_fond_03.gif);
+	background-repeat:repeat-x;
+	background-color:#bebebe;
+	ephox-visible: false;
+}
+.n2g_menuBouton li a.usage_orange {
+	background-image:url(../img/n2g_menuBouton_fond_04.gif);
+	background-repeat:repeat-x;
+	background-color:#ff6700;
+	ephox-visible: false;
+}
+/*----------------------------------------*/
+/*--------------- Nouveau Usage ----------*/
+
+	/*---- Souscrire -*/
+.n2g_menuBouton_liste li a.usage_souscrire {
+	width:174px;
+	height:37px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_souscrire.gif);
+	padding:0px;
+}
+a.usage_souscrire_carte {
+	width:174px;
+	height:37px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_souscrire.gif);
+	padding:0px;
+	margin-bottom:5px;
+}
+/*---- Souscrire en ligne -*/
+.n2g_menuBouton_liste li a.usage_souscrire_en_ligne {
+	width:174px;
+	height:37px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_souscrire_en_ligne.gif);
+	padding:0px;
+}
+/*---- Contactez -*/
+.n2g_menuBouton_liste li a.usage_contactez {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_contactez.gif);
+	padding:0px;
+}
+/*---- demande en ligne -*/
+.n2g_menuBouton_liste li a.usage_demande_en_ligne {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_demande_ligne.gif);
+	padding:0px;
+}
+/*---- devis en ligne -*/
+.n2g_menuBouton_liste li a.usage_devis_en_ligne {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_devis_en_ligne.gif);
+	padding:0px;
+}
+/*---- devis en ligne Habitation -*/
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_habitation {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_devis_ligne_habitation.gif);
+	padding:0px;
+}
+/*---- devis en ligne automobile -*/
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_automobile {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_devis_ligne_automobile.gif);
+	padding:0px;
+}
+/*---- Demande de devis -*/
+.n2g_menuBouton_liste li a.usage_demande_devis {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_demande_devis.gif);
+	padding:0px;
+}
+/*---- Devenir client -*/
+.n2g_menuBouton_liste li a.usage_devenir_client,
+.n2g_menubouton_liste li a.usage_devenir_client {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_devenir_client.gif);
+	padding:0px;
+}
+/*---- Prendre RDV -*/
+.n2g_menuBouton_liste li a.usage_prendre_rdv {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_prendre_rdv.gif);
+	padding:0px;
+}
+li a.usage_prendre_rdv {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_prendre_rdv.gif);
+	padding:0px;
+}
+/*---- Posez une question -*/
+.n2g_menuBouton_liste li a.usage_poser_question {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_poser_question.gif);
+	padding:0px;
+}
+/*---- Abrir Cuenta -*/
+.n2g_menuBouton_liste li a.usage_abrir_cuenta {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_abrir_cuenta.gif);
+	padding:0px;
+}
+/*---- Devennir client à la Caixia -*/
+.n2g_menuBouton_liste li a.usage_client_la_caixa {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_client_la_caixa.gif);
+	padding:0px;
+}
+/*---- Contact relationship manager -*/
+.n2g_menuBouton_liste li a.usage_contact_relationship_manager {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_contact_relationship_manager.gif);
+	padding:0px;
+}
+/*---- Contact écrire pole expatrie -*/
+.n2g_menuBouton_liste li a.usage_ecrire_pole_expatrie {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_ecrire_pole_expatrie.gif);
+	padding:0px;
+}
+/*---- Openning Account -*/
+.n2g_menuBouton_liste li a.usage_opening_account {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_opening_account.gif);
+	padding:0px;
+}
+/*---- Pongasse Contacto -*/
+.n2g_menuBouton_liste li a.usage_pongasse_contacto {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_pongasse_contacto.gif);
+	padding:0px;
+}
+/*--------- Simulateur ----------*/
+.n2g_menuBouton_liste li a.usage_simulateur {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_simulateur.gif);
+	padding:0px;
+}
+
+/*--------- FAQ ----------*/
+.n2g_menuBouton_liste li a.usage_faq {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_faq.jpg);
+	padding:0px;
+}
+
+/*--------- Assistance ----------*/
+.n2g_menuBouton_liste li a.usage_assistance {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_assistance.jpg);
+	padding:0px;
+}
+
+/*--------- Contact Securite ----------*/
+.n2g_menuBouton_liste li a.usage_contactsecu {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_contactsecu.jpg);
+	padding:0px;
+}
+/*---- consulter devis -*/
+.n2g_menuBouton_liste li a.usage_consulter_devis {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/usage_btn/net_usage_consulter_devis.gif);
+	padding:0px;
+}
+
+/*---- devis assurance auto -*/
+.n2g_menuBouton_liste li a.usage_devis_assurance_auto,
+.n2g_menubouton_liste li a.usage_devis_assurance_auto {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(https://static.societegenerale.fr//pri/PRI/Themes/defaut/img/usage_btn/net_usage_devis_assurance_auto.gif);
+	padding:0px;
+}
+
+/*---- devis assurance auto -*/
+.n2g_menuBouton_liste li a.usage_credit_en_ligne,
+.n2g_menubouton_liste li a.usage_credit_en_ligne {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(https://static.societegenerale.fr//pri/PRI/Themes/defaut/img/usage_btn/net_usage_credit_en_ligne.gif);
+	padding:0px;
+}
+
+/* ---- passer un ordre ----*/
+.n2g_menubouton_liste li a.usage_passer_un_ordre {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url("../img/usage_btn/net_passer_un_ordre.gif");
+	padding:0px;
+}
+
+.n2g_menubouton_liste li a.usage_passer_un_ordre:hover {
+	background-position:bottom left;
+}
+
+.n2g_menubouton_liste li a.usage_passer_un_ordre span {
+	background:none;
+}
+
+/*------- Transfert de compte -----------*/
+.n2g_menuBouton_liste li a.usage_transfert_compte{
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../img/usage_btn/net_usage_transfer_compte.gif   );
+	padding:0px;
+}
+/*------- Fiche Pratique -----------*/
+.n2g_menuBouton_liste li a.usage_fiche_pratique,
+.n2g_menubouton_liste li a.usage_fiche_pratique,
+a.usage_fiche_pratique {
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/usage_btn/net_usage_fichepratique.jpg);
+	padding:0px;
+	margin-bottom: 10px;
+}
+
+
+/*-- FIN Menu bouton e-phox (b minuscule) --*/
+
+.n2g_menuBouton_liste li a.usage_contactez:hover,
+.n2g_menuBouton_liste li a.usage_souscrire:hover, a.usage_souscrire_carte:hover,
+.n2g_menuBouton_liste li a.usage_souscrire_en_ligne:hover,
+.n2g_menuBouton_liste li a.usage_demande_en_ligne:hover,
+.n2g_menuBouton_liste li a.usage_demande_devis:hover,
+.n2g_menuBouton_liste li a.usage_devenir_client:hover,
+.n2g_menubouton_liste li a.usage_devenir_client:hover,
+.n2g_menuBouton_liste li a.usage_prendre_rdv:hover,
+.n2g_menuBouton_liste li a.usage_poser_question:hover,
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_habitation:hover,
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_automobile:hover,
+.n2g_menuBouton_liste li a.usage_abrir_cuenta:hover,
+.n2g_menuBouton_liste li a.usage_client_la_caixa:hover,
+.n2g_menuBouton_liste li a.usage_contact_relationship_manager:hover,
+.n2g_menuBouton_liste li a.usage_ecrire_pole_expatrie:hover,
+.n2g_menuBouton_liste li a.usage_opening_account:hover,
+.n2g_menuBouton_liste li a.usage_pongasse_contacto:hover,
+.n2g_menuBouton_liste li a.usage_simulateur:hover,
+.n2g_menuBouton_liste li a.usage_faq:hover,
+.n2g_menuBouton_liste li a.usage_assistance:hover,
+.n2g_menuBouton_liste li a.usage_contactsecu:hover,
+.n2g_menuBouton_liste li a.usage_consulter_devis:hover,
+.n2g_menuBouton_liste li a.usage_devis_assurance_auto:hover,
+.n2g_menubouton_liste li a.usage_devis_assurance_auto:hover,
+.n2g_menuBouton_liste li a.usage_credit_en_ligne:hover,
+.n2g_menubouton_liste li a.usage_credit_en_ligne:hover,
+.n2g_menuBouton_liste li a.usage_fiche_pratique:hover,
+.n2g_menubouton_liste li a.usage_fiche_pratique:hover,
+a.usage_fiche_pratique:hover
+{
+	background-position:bottom left;
+}
+
+.n2g_menuBouton_liste li a.usage_demande_en_ligne span,
+.n2g_menuBouton_liste li a.usage_souscrire span,
+.n2g_menuBouton_liste li a.usage_souscrire_en_ligne span,
+.n2g_menuBouton_liste li a.usage_contactez span,
+.n2g_menuBouton_liste li a.usage_demande_devis span,
+.n2g_menuBouton_liste li a.usage_devenir_client span,
+.n2g_menubouton_liste li a.usage_devenir_client span,
+.n2g_menuBouton_liste li a.usage_prendre_rdv span,
+.n2g_menuBouton_liste li a.usage_poser_question span,
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_habitation span,
+.n2g_menuBouton_liste li a.usage_devis_en_ligne_automobile span,
+.n2g_menuBouton_liste li a.usage_abrir_cuenta span,
+.n2g_menuBouton_liste li a.usage_client_la_caixa span,
+.n2g_menuBouton_liste li a.usage_contact_relationship_manager span,
+.n2g_menuBouton_liste li a.usage_ecrire_pole_expatrie span,
+.n2g_menuBouton_liste li a.usage_opening_account span,
+.n2g_menuBouton_liste li a.usage_pongasse_contacto span,
+.n2g_menuBouton_liste li a.usage_simulateur span,
+.n2g_menuBouton_liste li a.usage_faq span,
+.n2g_menuBouton_liste li a.usage_assistance span,
+.n2g_menuBouton_liste li a.usage_contactsecu span,
+.n2g_menuBouton_liste li a.usage_consulter_devis span,
+.n2g_menuBouton_liste li a.usage_devis_assurance_auto span,
+.n2g_menubouton_liste li a.usage_devis_assurance_auto span,
+.n2g_menuBouton_liste li a.usage_credit_en_ligne span,
+.n2g_menubouton_liste li a.usage_credit_en_ligne span,
+.n2g_menuBouton_liste li a.usage_transfert_compte span,
+.n2g_menuBouton_liste li a.usage_fiche_pratique  span,
+.n2g_menubouton_liste li a.usage_fiche_pratique  span
+ {
+	background:none;
+}
+/* --- FIN Menu bouton --- */
+/*-- DEBUT Bloc d'envoi de l'url webmobile par SMS--*/
+#n2g_ngp_bloc_sms {
+	width:174px;
+	min-height:220px;
+	border-bottom:solid #c2c2c2 1px;
+	color: #5a5a5a;
+	background:url(../img/n2g_ngp_fond_img_SMS.jpg) #ededef no-repeat;
+	font-size:13px;
+	line-height:20px;
+	font-family: arial, "Trebuchet MS", helvetica, sans-serif;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms abbr {
+	border:0 none;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms dfn {
+	font-style:normal;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms p, #n2g_ngp_bloc_sms div {
+	margin:0;
+	padding:0;
+	text-align: center;
+	padding-left:15px;
+	padding-right:15px;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms .titre {
+	color:#927055;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:11px;
+	padding-bottom:16px;
+	line-height:18px;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms .commentaire {
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:16px;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms form {
+	margin:0;
+	padding:0;
+	padding-left:8px;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms .champ_de_saisie_du_no_de_mobile {
+	margin:0;
+	border:0 none;
+	vertical-align:top;
+	padding:2px;
+	width:77px;
+	height:16px;
+	border:solid #aab0b6 1px;
+	margin-right:4px;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms .btn_validation {
+	margin:0;
+	padding:0;
+	border:0 none;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	background:url(../img/n2g_ngp_fond_bouton_SMS.jpg) #ff9800 no-repeat top left;
+	border:solid #9c866c 1px;
+	width:68px;
+	height:22px;
+	letter-spacing:0;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms #n2g_web2mobileDivResponse {
+	font-size:11px;
+	line-height:17px;
+	padding-left:11px;
+	padding-right:11px;
+	padding-bottom:5px;
+	display:none;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms #n2g_web2mobileDivResponse em {
+	color:#ff6d00;
+	text-decoration: none;
+	font-style:normal;
+	ephox-visible: false;
+}
+#n2g_ngp_bloc_sms iframe {
+	width:0;
+	height:0;
+	display:none;
+	ephox-visible: false;
+}
+/*-- FIN Bloc d'envoi de l'url webmobile par SMS--*/
+
+
+
+/* DEB MON INFO BOURSE */
+.n2g_info_bourse {
+}
+.n2g_info_bourse ul {
+	clear:both;
+	width: 100%;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	border-bottom: solid #ccc 1px;
+	list-style: none;
+	font-size: 12px;
+	ephox-visible: false;
+}
+.n2g_info_bourse_titre {
+	min-height: 20px; /* redefini pour IE6 */
+	width: 100%;
+	overflow: auto;
+	font-size: 13px;
+	color: #000;
+	background:#606060 url(../img/n2g_infobourse_titre_fond.gif) repeat-x 0px 6px;
+	ephox-visible: false;
+}
+.n2g_info_bourse_titre_g {
+	float:left;
+	width:6px;
+	height:6px;
+	background:url(../img/n2g_infobourse_titre_g.gif);
+	ephox-visible: false;
+}
+.n2g_info_bourse_titre_d {
+	height:6px;
+	background:url(../img/n2g_infobourse_titre_d.gif) right top;
+	ephox-visible: false;
+}
+.n2g_info_bourse_titre_texte {
+	padding: 0px 6px 2px 6px;
+	ephox-visible: false;
+	font-weight:bold;
+}
+.n2g_info_bourse_item {
+	border-left: solid #ccc 1px;
+	border-right: solid #ccc 1px;
+	border-top: solid #ccc 1px;
+	ephox-visible: false;
+}
+.n2g_info_bourse_item a {
+	min-height: 12px; /* redefini pour IE6 */
+	padding: 4px 15px 4px 15px;
+	color: #000;
+	display: block;
+	color: #423f37;
+	background:url(../img/n2g_info_bourse_puce_off.gif) no-repeat 6px 6px;
+	background-color: #fcfcfc;
+	text-decoration: none;
+	ephox-visible: false;
+}
+.n2g_info_bourse_item a.actif {
+	color: #fff;
+	background: #0665c4 url(../img/n2g_infobourse_item_actif.gif) no-repeat left top;
+	ephox-visible: false;
+}
+.n2g_info_bourse li a:focus, .n2g_info_bourse li a:hover, .n2g_info_bourse li a:active {
+	color: #fff;
+	background: #0665c4 url(../img/n2g_infobourse_item_actif.gif) no-repeat left top;
+	ephox-visible: false;
+}
+/* FIN MON INFO BOURSE */
+
+
+
+/*-- DEB Boutons Action Apres Vente --*/
+.n2g_boutonsActionApresVente_action {
+	margin-bottom:11px;
+	ephox-visible: false;
+	border: 1px solid #ccc;
+}
+.n2g_boutonsActionApresVente_action_titre {
+	min-height:26px;
+	background:#cecece url(../img/n2g_boutonsActionApresVente_action_titre_fond.gif) repeat-x 0px 6px;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action_titre_g {
+	width:6px;
+	height:6px;
+	background:url(../img/n2g_boutonsActionApresVente_action_titre_g.gif);
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action_titre_d {
+	height:6px;
+	background:url(../img/n2g_boutonsActionApresVente_action_titre_d.gif) right top;
+	font-size: 0; /* IE */
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action_titre_texte {
+	padding: 0px 6px 2px 6px;
+	font-size: 13px;
+	font-weight:bold;
+	color:#000;
+	overflow: hidden;
+	ephox-visible: false;
+	margin:0;
+}
+.n2g_boutonsActionApresVente_action ul {
+	margin: 0;
+	list-style:none;
+	font-size: 0; /* IE */
+	padding: 0px 5px 0px 5px;
+	background: #fff;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action ul li {
+	margin-bottom:11px;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action ul li a, .n2g_boutonsActionApresVente_action ul li span, .n2g_boutonsActionApresVente_action ul li div {
+	padding:0 5px 0 0;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	background: #FF9800 url(../img/n2g_boutonsActionApresVente_action_item.gif) repeat-x left top;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action ul li a span, .n2g_boutonsActionApresVente_action ul li div span, .n2g_boutonsActionApresVente_action ul li span span {
+	display:block;
+	padding: 4px 12px 4px 9px;
+	line-height: 12px;
+	overflow: hidden;
+	background: url(../img/n2g_boutonsActionApresVente_action_item_puce.gif) no-repeat right bottom;
+	cursor: pointer;
+	margin-top: 10px;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action ul li a.actif {
+	padding: 0;
+	background: url(../img/n2g_boutonsActionApresVente_action_item_actif.gif) left top;
+	ephox-visible: false;
+}
+.n2g_boutonsActionApresVente_action ul li a.actif span {
+	background: none;
+	padding:4px 12px 4px 13px;
+	ephox-visible: false;
+}
+
+.n2g_boutonsActionApresVente_action_unique {
+	border: none;
+}
+/*-- FIN Boutons Action Apres Vente --*/
+
+/*-- DEB Liste onglets --*/
+.n2g_liste_onglets {
+	clear: both;
+	float: left;
+	margin:5px 0px 0px 0px;
+	padding:0;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.n2g_liste_onglets .n2g_msg_erreur {
+	display: inline-block;
+}
+.n2g_liste_onglets li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.n2g_liste_onglets li.item_1 a {
+	border-left: none;
+	width: 101px;
+}
+.n2g_liste_onglets li.item_2 a {
+	width: 120px;
+}
+.n2g_liste_onglets li.item_3 a {
+	width: 109px;
+}
+.n2g_liste_onglets li a {
+	float: left;
+	padding: 4px 14px 0px;
+	margin: 0;
+	height: 20px;
+	border-left: solid 1px #979797;
+	background:transparent url(../img/n2g_liste_onglets.gif) repeat-x scroll left top;
+	color:#423F37;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.n2g_liste_onglets li a.actif {
+	background:transparent url(../img/n2g_liste_onglets_actif.gif) no-repeat scroll left top;
+	color: #FFF;
+}
+.n2g_bloc_liste_onglets {
+	clear: both;
+	padding: 5px 0px 10px 0px;
+	border: solid 1px #CECECE;
+}
+.n2g_liste_onglets_ombrage {
+	height: 5px;
+	background:transparent url(../img/n2g_liste_onglets_ombrage.gif) repeat-x scroll left top;
+}
+/* Le pave suivant precise l'espace avant les blocs sur les Gabarits Px.
+   Il a ete defini dans ce fichier pour le centraliser, mais il aurait du etre reparti sur les CSS Px.
+   Attention: IE6 double la valeur du margin-left pour le n2g_liste_onglets.
+   Cette valeur est donc surchargee dans le fichier CSS IE6.
+*/
+#n2g_zone_centre_lgn .n2g_liste_onglets, #n2g_zone_centre_lgn .n2g_bloc_liste_onglets, #n2g_zone_centre_lgn .n2g_liste_onglets_ombrage {
+	margin-left: 10px;
+}
+/*-- FIN Liste onglets --*/
+
+/*-- DEB Formulaire Container --*/
+.n2g_container_erreur_bloc {
+	padding: 0 0 40px 0;
+	margin: 0 auto;
+	border: solid 1px #CECECE;
+	text-align: center;
+}
+.n2g_container_erreur_bloc_ctnv2{
+  padding: 40px 0;
+  margin: 0 auto;
+  border: solid 1px #CECECE;
+  text-align: center;
+}
+.n2g_container_erreur_msg {
+	border:1px solid #CECECE;
+	margin:21px 45px;
+	padding:15px 22px;
+	text-align:center;
+	width:414px;
+}
+.n2g_container_erreur_retour, .n2g_container_erreur_alternatif {
+	background:transparent url(../img/n2g_container_bouton.gif) repeat-x scroll left bottom;
+	border:1px solid #BBBBBB;
+	color:#0446A4;
+	font-weight:bold;
+	height:18px;
+	padding:0 30px;
+	text-decoration:none;
+}
+.n2g_container_bloc_preview {
+	margin: 0pt auto;
+	background-color: #777;
+	color: white;
+	text-align: center;
+}
+.n2g_container_bloc_ai {
+	text-align: center;
+}
+.n2g_container_formulaire {
+	margin: 0px auto;
+	border: none;
+}
+/*-- FIN Formulaire Container --*/
+
+/*-- DEB Liste prestations --*/
+.n2g_liste_prestations {
+}
+/*-- FIN Liste prestations --*/
+
+
+/*--MESSALIA--*/
+.n2g_messalia_titre_rouge_bold {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#cc0000;
+	font-weight:bold;
+	line-height:22px;
+}
+.n2g_messalia_typo_bold {
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif
+}
+.n2g_messalia_filet_gris {
+	padding-top: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+	/*margin : 10px 12px 10px 10px;*/
+  margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 12px;
+	margin-right: 10px;
+	padding-left: 5px;
+	line-height: 14px;
+	padding-bottom: 10px;
+	border:1px solid #ccc;
+}
+.n2g_messalia_fond_bleu {
+	padding-right: 5px;
+	font-size: 12px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	line-height: 16px;
+	background: #ccdbff;
+	border:1px solid #ccdbff;
+}
+.n2g_messalia_caracteristiques_contrat {
+	padding-right: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	line-height: 16px;
+	background: #e5e5e5;
+	border:1px solid #e5e5e5;
+	font:normal normal normal 12px/13px arial, sans-serif;
+}
+.n2g_messalia_selecteur {
+	margin-top:7px;
+	margin-bottom:15px;
+	text-align: center;
+}
+.n2g_messalia_filet_interieur2 {
+	height: 65px;
+	padding-right: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	line-height: 14px;
+	border:1px solid #e5e5e5;
+	margin-bottom:10px;
+	font:normal normal normal 12px/13px arial, sans-serif;
+}
+.n2g_messalia_informations_contrat {
+	padding-right: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	line-height: 16px;
+	background: #e5e5e5;
+	border:1px solid #e5e5e5;
+	font:normal normal normal 12px/13px arial, sans-serif;
+}
+.n2g_messalia_style_table {
+	font-size:12px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	line-height: 14px;
+	font:normal normal normal 12px/13px arial, sans-serif;
+	margin-bottom:10px;
+}
+.n2g_messalia_style_td {
+	border:1px solid #e5e5e5;
+	padding-left:5px;
+}
+.n2g_messalia_bloc_conditions_envoi {
+	padding-right: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	line-height: 14px;
+	border:1px solid #e5e5e5;
+	font:normal normal normal 12px/13px arial, sans-serif;
+	margin-bottom:10px;
+}
+.n2g_messalia_solde {
+	padding-left: 7px;
+	padding-top: 6px;
+	height:25px;
+	font:normal normal normal 12px/13px arial, sans-serif;
+}
+.n2g_messalia_float {
+	float:left;
+}
+.n2g_messalia_heure_envoi {
+	height: 12px;
+	padding-right: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	line-height: 14px;
+	border:1px solid #e5e5e5;
+	margin-top:7px;
+	margin-bottom:15px;
+	font:normal normal normal 12px/13px arial, sans-serif;
+}
+.n2g_messalia_fleche_bleu {
+	background-image:url(../img/n2g_contenu_fleches_bleues.jpg);
+	background-repeat:no-repeat;
+	background-position:80px;
+	color:#616161;
+}
+/* --------------------------- */
+/* ---- Formatage de lien ---- */
+/* --------------------------- */
+
+.n2g_messalia_net_lien {
+	color:#888;
+	text-decoration:none;
+	font-weight:bold;
+}
+.n2g_messalia_net_lien:focus, .n2g_messalia_net_lien:hover, .n2g_messalia_net_lien:active {
+	text-decoration:underline;
+}
+/* --------------------------- */
+/* ---- Formatage de lien aide ---- */
+/* --------------------------- */
+
+.n2g_messalia_aide_lien {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:10px;
+	line-height:35pt;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.n2g_messalia_aide_lien:focus, .n2g_messalia_aide_lien:hover, .n2g_messalia_aide_lien:active {
+	line-height:35pt;
+	text-decoration:underline;
+}
+
+ /*--FIN MESSALIA--*/
+
+
+/* -----Liste Prestation Param usage SELECT---- */
+td.n2g_noBorder {
+	border-style:none;
+}
+select.listePrestrationParametrable {
+	font-size:10px;
+	width:250px;
+}
+.n2g_comboOptionRole {
+	color: #000000;
+	background-color: #eeeeee;
+	font-style:italic;
+	font-weight:bold;
+	font-size:11px;
+}
+.n2g_comboOptionRole option {
+	background-color:white;
+}
+.n2g_option_fille {
+	padding-left:5px;
+}
+/* -------Fin Liste Prestation Param usage SELECT---- */
+
+ /* -------Synthese Prestations sans soldes */
+ .n2g_LGNTableHead {
+	background-color : #CCDBFF;
+	padding : 1px;
+	color : #000000;
+	font : bold 13px arial, sans-serif;
+	text-align : center;
+}
+.n2g_LGNTableHead2 {
+	background-color : #E5E5E5;
+	padding : 1px;
+	color : black;
+	font-weight : bold;
+	text-align : center;
+}
+.n2g_LGNTableRow td, .n2g_LGNTableRow th {
+	border-top : 1px solid #E5E5E5;
+	border-left : 1px solid #E5E5E5;
+}
+.n2g_LGNTableColumn {
+	padding : 0px 2px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.n2g_LGNTableColumn2 {
+	padding : 0px 20px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.n2g_ongletA {
+	border :0 solid;
+	margin :0;
+	padding : 0 10px 0 10px;
+	width : 570px;
+}
+.n2g_LGNTableA {
+	border-collapse : collapse;
+	border-spacing : 0;
+	border : 1px solid #E5E5E5;
+	color : #000000;
+	background-color : #ffffff;
+	font-family : arial, sans-serif;
+	font-size : 13px;
+	padding : 0;
+	text-align : left;
+	width : 576px;
+	margin : 0 auto;
+	table-layout: fixed;
+}
+.n2g_ombreTableau {
+	background-image:url("../img/n2g_ombre.gif");
+	background-repeat:no-repeat;
+	font-size:1px;
+	height:7px;
+	margin:0 auto;
+	width:570px;
+}
+.n2g_LGNTableColumn a:link, .n2g_LGNTableColumn a:visited, .n2g_LGNTableColumn2 a:link, .n2g_LGNTableColumn2 a:visited {
+	color: #333333;
+	text-decoration:underline;
+}
+.n2g_LGNTableColumn a:hover, .n2g_LGNTableColumn a:active, .n2g_LGNTableColumn2 a:hover, .n2g_LGNTableColumn2 a:active {
+	color: #999999;
+	text-decoration:underline;
+}
+.n2g_left {
+	text-align:left;
+}
+.n2g_right {
+	text-align:right;
+}
+.n2g_center {
+	text-align:center;
+}
+/* -------FIN Synthese Prestations sans soldes */
+
+  /** DEBUT NOUVELLES RESTIT **/
+
+.n2g_form_restit_titre_niveau1 {
+	font-size:18px;
+	color:#cc0000;
+	font-weight:bold;
+	line-height:22px;
+}
+.n2g_form_restit_titre_niveau2 {
+	font-weight:bold;
+	font-size:12px;
+	line-height:16px;
+}
+.n2g_form_restit_imprimante {
+	background:url(../img/imprimante.jpg);
+	width:31px;
+	height:32px;
+	float:right;
+}
+.n2g_form_restit_filet_gris {
+	padding :5px;
+	border:1px solid #ccc;
+}
+.n2g_form_restit_filet_gris_libelle_caract_contrat {
+	padding-top: 1px;
+	margin-top:1px;
+	border:1px solid #ccc;
+}
+.n2g_form_restit_filet_gris_libelle_caract_contrat2 {
+	margin: 5px;
+	border:1px solid #ccc;
+}
+.n2g_form_restit_bloc_fond_bleu_bloc1 {
+	padding-right: 5px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	background: #ccdbff;
+	background-color:#ccdbff;
+	width:70%;
+}
+.n2g_form_restit_selecteur table form {
+	margin:0;
+}
+.n2g_form_restit_tableau {
+	font-size:12px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.n2g_form_restit_tableau_cellule_td {
+	/*border:1px solid #e5e5e5;*/
+	padding-right:5px;
+	padding-left:5px;
+}
+.n2g_form_restit_tableau_operation {
+	font-size:12px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin-top:7px;
+	margin-bottom:10px;
+}
+.n2g_form_restit_tableau_actions {
+	font-size:12px;
+	margin:0 auto;
+}
+.n2g_form_restit_filet_gris_libelle2 {
+	border:1px solid #CCCCCC;
+	margin:10px 10px 10px 12px;
+	width:574px;
+}
+
+.n2g_form_restit_bloc_fond_uni_bleu-tableau {
+	background: #ccdbff;
+	margin-top:2px;
+	margin-left:2px;
+	margin-right:2px;
+	padding-top:15px;
+	padding-bottom:2px;
+}
+.n2g_form_restit_mentions_legales {
+	font-size:11px;
+	margin-top:5px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+/* --------------------------- */
+/* ---- Formatage de lien aide ---- */
+/* --------------------------- */
+
+.n2g_form_restit_aide {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:10px;
+	line-height:35pt;
+}
+.n2g_form_restit_aide:focus, .n2g_form_restit_aide:hover, .n2g_form_restit_aide:active {
+	line-height:35pt;
+	text-decoration:underline;
+}
+.n2g_form_restit_lien_support {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	margin-left:5px;
+	text-decoration:underline;
+}
+.n2g_form_restit_lien_support:focus, .n2g_form_restit_lien_support:hover {
+	text-decoration:underline;
+}
+.n2g_form_restit_lien_support:active {
+	text-decoration:underline;
+}
+.n2g_form_restit_bloc_fond_bleu {
+	padding-right: 5px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	background: #ccdbff;
+	border:1px solid #ccdbff;
+}
+.n2g_form_restit_bloc_fond_bleu2 {
+	background: #ccdbff;
+	padding-right: 5px;
+	padding-left: 5px;
+	border:1px solid #ccdbff;
+	line-height:17px;
+	margin:10px 12px 0 11px;
+}
+.n2g_form_restit_bloc_fond_bleu3 {
+	background: #ccdbff;
+	margin-top:35px;
+	padding-right: 0px;
+	padding-left: 5px;
+	border:1px solid #ccdbff;
+	line-height:17px;
+}
+.n2g_form_restit_bloc_fond_gris {
+	padding-right: 5px;
+	padding-left: 5px;
+	background: #e5e5e5;
+	border:1px solid #e5e5e5;
+}
+.n2g_form_restit_selecteur table tr {
+	margin-top:7px;
+	margin-bottom:7px;
+	width:100%;
+}
+#form1 {
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	border-bottom:2px solid #ccc;
+	margin-bottom:7px;
+}
+
+
+ /* -----FIN NOUVELLES RESTITS--------- */
+
+
+
+/*---------- DEBUT PAGE SYNTHESE ET CONTRAT ----------*/
+
+.n2g_synth_cont_titre {
+	font-size:14px;
+	color:#cc0048;
+	font-weight:bold;
+	margin:15px 0px 10px 0px;
+}
+
+.n2g_synth_cont {
+	font-size:11px;
+	color:#676767;
+	font-weight:bold;
+}
+
+.n2g_synth_cont_colonne {
+	float:left;
+	width:280px;
+	overflow:auto;
+	height:1%;
+	padding:10px 10px 10px 0px;
+}
+
+.n2g_synth_cont_blc_2
+ {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2.gif) top left no-repeat;
+	height:42px;
+	margin-bottom:10px;
+}
+.n2g_synth_cont_blc_3
+ {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2.gif) top left no-repeat;
+	height:42px;
+	margin-bottom:10px;
+}
+
+.n2g_synth_cont_blc_2_titre {
+	padding:13px 0px 0px 10px;
+	float:left;
+	width:115px;
+}
+
+.n2g_synth_cont_blc_3 .n2g_synth_cont_blc_2_titre{
+	padding:7px 0px 0px 10px;
+}
+
+.n2g_synth_cont_blc_2_content
+ {
+	float:right;
+	width:155px;
+}
+.n2g_synth_cont_blc_2 a{
+	display:block;
+	height:14px;
+	float:left;
+	padding:4px 15px 0 5px;
+	text-decoration:none;
+	color:#676767;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2_puce.gif) right 7px no-repeat;
+}
+.n2g_synth_cont_blc_3 a {
+	display:block;
+	height:14px;
+	float:left;
+	padding:4px 15px 0 5px;
+	text-decoration:none;
+	color:#676767;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2_puce.gif) right 7px no-repeat;
+}
+
+.n2g_synth_cont_blc_2 a:hover {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2_puce.gif) right -13px no-repeat;
+		color:#333;
+}
+
+
+.n2g_synth_cont_blc_3 a:hover {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_2_puce.gif) right -13px no-repeat;
+		color:#333;
+}
+
+.n2g_synth_cont_blc_2 .lien1 {
+	width:57px;
+}
+
+.n2g_synth_cont_blc_3 .lien1 {
+	line-height:11px;
+	margin-bottom:5px;
+	width:120px;
+}
+* html .n2g_synth_cont_blc_3 .lien1 {
+	margin-bottom:0px;
+}
+
+.n2g_synth_cont_blc_2 .lien2 {
+	width:126px;
+}
+.n2g_synth_cont_blc_3 .lien2 {
+	width:126px;
+}
+* html .n2g_synth_cont_blc_3 .lien2 {
+	margin-top:-4px;
+}
+
+.n2g_synth_cont_blc {
+	height:42px;
+	margin-bottom:10px;
+}
+
+.n2g_synth_cont_blc a {
+	display:block;
+	padding:13px 10px 0px 10px;
+	height:29px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_a.gif) top left no-repeat;
+	text-decoration:none;
+	color:#676767;
+	outline:none;
+}
+
+.n2g_synth_cont_blc a.double {
+	padding:7px 10px 0px 10px;
+	height:35px;
+}
+
+.n2g_synth_cont_blc a span {
+	cursor:pointer;
+}
+
+.n2g_synth_cont_blc a:hover {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_synth_cont_blc_a.gif) bottom left no-repeat;
+	color:#333;
+}
+
+.n2g_synth_cont_blc a .coup1 {
+	display:block;
+	width:220px;
+}
+
+.n2g_synth_cont_blc a .coup2 {
+	display:block;
+	width:220px;
+}
+
+.n2g_synth_cont_blc a .coup3 {
+	display:block;
+	width:160px;
+}
+
+
+/*--------- Bouton colonne gauche ---------*/
+
+.n2g_btn_generique,
+.n2g_btn_generique--actif {
+	display:block;
+	width:174px;
+	height:39px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_generique.gif) top left no-repeat;
+	margin-bottom:10px;
+	line-height:39px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	text-rendering: optimizeLegibility;
+}
+
+.n2g_btn_generique:hover,
+.n2g_btn_generique--actif {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_generique.gif) bottom left no-repeat;
+}
+
+
+
+.n2g_btn_synthese_contrat {
+	display:block;
+	text-indent:-5000px;
+	outline:none;
+	width:174px;
+	height:39px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_synthese_contrat.gif) top left no-repeat;
+	margin-bottom:10px;
+	outline:none;
+}
+
+.n2g_btn_synthese_contrat:hover,
+.n2g_btn_synthese_contrat_actif {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_synthese_contrat.gif) bottom left no-repeat;
+}
+
+
+.n2g_btn_assurance_prevoyance {
+	display:block;
+	text-indent:-5000px;
+	outline:none;
+	width:174px;
+	height:39px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_assurance_prevoyance.gif) top left no-repeat;
+	margin-bottom:10px;
+}
+
+.n2g_btn_assurance_prevoyance:hover,
+.n2g_btn_assurance_prevoyance_actif {
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_assurance_prevoyance.gif) bottom left no-repeat;
+}
+
+
+.n2g_btn_filigrane{
+	display:block;
+	text-indent:-5000px;
+	outline:none;
+	width:174px;
+	height:40px;
+	background-image:url(https://static.homologation.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_filigrane.gif);
+	background-repeat: no-repeat;
+	margin-bottom:10px;
+}
+	.n2g_btn_filigrane:hover,
+	.n2g_btn_filigrane_actif {
+		background-position: bottom left;
+	}
+
+
+.n2g_btn_coordonnees_agence {
+	display:block;
+	text-indent:-5000px;
+	outline:none;
+	width:174px;
+	height:42px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/01-LGN/Synthese_contrat/n2g_btn_coordonnees_agence.gif) top left no-repeat;
+	margin-bottom:10px;
+}
+
+
+/*---------- FIN PAGE SYNTHESE ET CONTRAT ----------*/
+
+.n2g_formulaire_web_call_back {
+ border:1px solid black;
+}
+
+.n2g_bloc_sas_modulaire{
+ padding:0px;
+ margin:0px;
+ float:left;
+ ephox-visible: false;
+}
+
+/*-------------------- LPP -----------------------*/
+
+.n2g_ngp_lpp_liste_libelle {
+ width:175px;
+}
+.n2g_ngp_lpp_liste_prestation {
+ width:250px;
+}
+n2g_ngp_lpp_liste_solde {
+ width:170px;
+}
+.n2g_ngp_lpp_liste_libelle_personnalise {
+ padding-left:4px;
+}
+.n2g_ngp_lpp_tableau {
+ table-layout:fixed;
+}
+.n2g_ngp_lpp_tableau_titre_service {
+ width:170px;
+}
+.n2g_ngp_lpp_tableau_titre_descriptif {
+ width:145px;
+}
+.n2g_ngp_lpp_tableau_titre_numero_contrat {
+ width:165px;
+}
+.n2g_ngp_lpp_tableau_titre_libelle {
+ width:90px;
+}
+
+
+/* ------------------------------------------------- GESTION MENU GAUCHE --------------------------------------------------------- */
+.n2g_menu_section_usage_bourse a {
+	display:block;
+}
+/* DEBUT Titre */
+
+.n2g_menu_section_usage_bourse_niv1 {
+	font-family:Arial, Helvetica, sans-serif; /* A supprimer au passage su site en arial*/
+}
+.n2g_menu_section_usage_bourse_niv1 .n2g_menu_section_usage_bourse_niv1_titre {
+	font-size: 13px;
+	display: block;
+	background:url(../img/n2g_mg_entete_left.gif) no-repeat top left #f3f3f3;
+	height:32px;
+	padding:0 0 9px;
+	_padding:0;
+	z-index:2;
+	position:relative;
+	margin-bottom:-1px;
+	_margin-bottom:0px;
+	color: #fff;
+	text-decoration: none;
+	text-align:center;
+	font-weight:bold;
+	ephox-visible: false;
+}
+.n2g_menu_section_usage_bourse_niv1 .n2g_menu_section_usage_bourse_niv1_titre span{
+	display:block;
+	background:url(../img/n2g_mg_entete_right.gif) no-repeat top right transparent;
+	padding:9px 0 9px;
+	height:23px;
+}
+.n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:hover, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:focus, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:active, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre.actif {
+	background:url(../img/n2g_mg_entete_left.gif) no-repeat top left;
+	_background:url(../img/n2g_mg_entete_left.gif) no-repeat top left;
+	ephox-visible: false;
+}
+.n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:hover span, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:focus span, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre:active span, .n2g_menu_section_usage_bourse_niv1 a.n2g_menu_section_usage_bourse_niv1_titre.actif {
+	background:url(../img/n2g_mg_entete_right.gif) no-repeat top right;
+	ephox-visible: false;
+}
+.n2g_menu_bourse {
+	font-size:12px;
+}
+.n2g_menu_bourse ul {
+	list-style: none;
+	margin:0px;
+}
+.n2g_menu_bourse a {
+	text-decoration:none;
+}
+
+/* FIN Titre */
+.n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container {
+	position:relative;
+	padding-right: 38px;
+}
+
+.n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container span.n2g_lgn_compteur{
+	font-weight:bold;
+	height:17px;
+	width:29px;
+	display:block;
+	padding:3px 0 0 5px;
+	text-align:center;
+	color:#4894d5;
+	cursor:pointer;
+	background:url(../img/n2g_lgn_compteur_off.gif) 0% 0% no-repeat;
+	position:absolute;
+	top: 50%;
+	right:3px;
+	margin-top: -0.8em;
+}
+
+* html .n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container {
+	margin-bottom:-15px;
+}
+
+
+.n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container:hover span.n2g_lgn_compteur,
+.n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container.actif span.n2g_lgn_compteur {
+	color:#222;
+	background:url(../img/n2g_lgn_compteur_on.gif) 0% 0% no-repeat;
+	margin-top: -0.75em;
+}
+
+* html .n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container:hover span.n2g_lgn_compteur {
+	margin-top: -0.8em;
+}
+
+* html .n2g_menu_section ul li.n2g_menu_section_item a.n2g_lgn_compteur_container.actif span.n2g_lgn_compteur {
+	margin-top: -0.8em;
+}
+
+/*---------------- LISTE --------------------*/
+.n2g_menu_section_usage_bourse_niv2 {
+	border-top:none;
+	margin:0 auto 10px auto;
+	padding:0;
+	list-style: none;
+	color:#000;
+}
+.n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique {
+	padding:5px 11px 7px 11px;
+	display:block;
+	line-height:13px;
+	border-top:1px solid #fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-right:8px;
+	margin-left:8px;
+	text-decoration:none;
+	font-size:12px;
+	background:url(../img/n2g_mg_item_fond.gif) repeat-y top left #F5F5F5;
+	color: #423f37;
+}
+* html .n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique {
+	height:1px;
+	line-height:14px;
+}
+.n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique:hover, .n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique:focus, .n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique:active, .n2g_menu_section_usage_bourse_niv2 a.n2g_menu_section_usage_bourse_item_unique.n2g_menu_section_usage_bourse_actif_u {
+	background:url(../img/n2g_mg_fond_lien_actif.gif) center left no-repeat;
+	padding:5px 15px 7px 11px;
+	_padding:5px 11px 9px 11px;
+	_border-top:0;
+	_border-bottom:0;
+	color:#fff;
+}
+
+/*------------- ITEM DEPLIABLE AVEC SOUS ITEM -----------------------------*/
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant {
+	line-height:13px;
+	border-top:1px solid #fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	display: block;
+	font-size:12px;
+	color: #423f37;
+	padding-left:8px;
+	margin-left:8px;
+	margin-right:8px;
+	text-decoration: none;
+	background:url(../img/n2g_mg_item_fond.gif) repeat-y top left #F5F5F5;
+	cursor:pointer;
+	display:block;
+	overflow:auto;
+}
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant div {
+	padding:6px 25px 8px 5px;
+	margin-right:8px;
+	background:url(../img/n2g_mg_item_puce_plus.gif) no-repeat right center;
+}
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:hover div,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:focus div,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:active div {
+	background:url(../img/n2g_mg_item_puce_plus_on.gif) no-repeat right center;
+	padding:7px 25px 9px 5px;
+	border:none;
+	color:#fff;
+}
+
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant.hover_d div,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant.actif_d div {
+	background:url(../img/n2g_mg_item_puce_moins.gif) no-repeat right center;
+	padding:7px 25px 9px 5px;
+	border:none;
+	color:#fff;
+
+}
+* html .n2g_menu_section_usage_bourse_niv2 a.item_depliant.hover_d div {
+	background:url(../img/n2g_mg_item_puce_moins.gif) no-repeat right center;
+	padding:7px 19px 7px 4px;
+	border:none;
+	color:#fff;
+}
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:active,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:active,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant.actif_d:hover,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant.actif_d {
+	background:url(../img/n2g_mg_fond_lien_sous_item_actif.gif) center left no-repeat;
+	border:none;
+	color:#fff;
+	padding-left:8px;
+}
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:hover,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:focus,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant.hover_d {
+	background:url(../img/n2g_mg_fond_lien_sous_item_hover.gif) center left no-repeat;
+	border:none;
+	color:#fff;
+	padding-left:8px;
+}
+* html .n2g_menu_section_usage_bourse_niv2 a.item_depliant:hover,
+.n2g_menu_section_usage_bourse_niv2 a.item_depliant:focus,
+ .n2g_menu_section_usage_bourse_niv2 a.item_depliant.hover_d {
+	background:url(../img/n2g_mg_fond_lien_sous_item_hover.gif) center left no-repeat!important;
+}
+/*-------------- LISTE SOUS ITEM -----------------*/
+
+.n2g_menu_section_usage_bourse_niv2 ul {
+	padding: 5px 0px 5px 0px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ddd;
+	margin-right:8px;
+	margin-left:8px;
+	list-style:none;
+}
+
+* html .n2g_menu_section_usage_bourse .n2g_menu_section_usage_bourse_niv1 ul.n2g_menu_section_usage_bourse_niv2 li {
+	line-height:0px;
+}
+* html .n2g_menu_section_usage_bourse .n2g_menu_section_usage_bourse_niv1 ul.n2g_menu_section_usage_bourse_niv2 li li{
+	line-height:15px;
+}
+
+.n2g_menu_section_usage_bourse_niv2 ul li a {
+	color:#666666;
+	padding:2px 5px 1px 19px;
+	display:block;
+	text-decoration:none;
+	font-size:12px;
+	background:url(../img/n2g_mg_sous_item_puce.gif) 7px -84px no-repeat;
+}
+* html .n2g_menu_section_usage_bourse_niv2 ul li a {
+	height:1%;
+	background:url(../img/n2g_mg_sous_item_puce.gif) 7px -84px no-repeat;
+}
+.n2g_menu_section_usage_bourse_niv2 ul a:hover, .n2g_menu_section_usage_bourse_niv2 ul a:focus, .n2g_menu_section_usage_bourse_niv2 ul a:active, .n2g_menu_section_usage_bourse_niv2 ul a.n2g_menu_section_usage_bourse_niv2_actif_su {
+	background:url(../img/n2g_mg_sous_item_puce.gif) 7px 6px no-repeat;
+	color:#0269c8;
+}
+* html .n2g_menu_section_usage_bourse_niv2 ul a:hover, * html .n2g_menu_section_usage_bourse_niv2 ul a:focus, * html .n2g_menu_section_usage_bourse_niv2 ul a:active, * html .n2g_menu_section_usage_bourse_niv2 ul a.n2g_menu_section_usage_bourse_niv2_actif_su {
+	background:url(../img/n2g_mg_sous_item_puce.gif) 7px 6px no-repeat;
+	padding:2px 5px 1px 19px;
+}
+.n2g_menu_bourse .ngp_ombre {
+	background:url(../img/n2g_ombre_bas_centre.gif) repeat-x left top;
+	overflow:auto;
+	height:4px;
+	font-size:0px;
+}
+.n2g_menu_bourse .ngp_ombre_droite {
+	float:right;
+	background:url(../img/n2g_ombre_bas_droite.gif);
+	width:54px;
+	height:4px;
+	font-size:0px;
+}
+.n2g_menu_bourse .ngp_ombre_gauche{
+	float:left;
+	background:url(../img/n2g_ombre_bas_gauche.gif);
+	width:54px;
+	height:4px;
+	font-size:0px;
+}
+/* ---- FIN GESTION MENU GAUCHE ------------------ */
+
+/* ---- BOUTONS AOE ------------------ */
+
+.liste_rubrique_brs_aoe {
+	width:172px;
+	font-family:Arial;
+	font-size:12px;
+	margin:0 0 15px;
+}
+.liste_rubrique_brs_aoe .n2g_index_brs_aoe_liste{
+	padding:0;
+	margin:0;
+	list-style:none;
+	border:1px solid #ccc;
+	border-top:0;
+	border-bottom:0;
+}
+.liste_rubrique_brs_aoe .n2g_index_brs_aoe_liste li {
+	width:170px;
+	margin:0;
+	padding:0;
+}
+.liste_rubrique_brs_aoe .n2g_index_brs_aoe_liste a{
+	display:block;
+	background:url(../img/n2g_btn_aoe_std_bg.gif) 0% 50% repeat-y;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	color:#000;
+	text-decoration:none;
+	padding:8px 0 8px 7px;
+	cursor:pointer;
+	width:163px;
+}
+.liste_rubrique_brs_aoe .n2g_index_brs_aoe_liste a:hover{
+	display:block;
+	background:url(../img/n2g_btn_aoe_hover_bg.gif) 0% 50% repeat-y;
+	color:#fff;
+	text-decoration:none;
+}
+.liste_rubrique_brs_aoe .n2g_index_brs_aoe_liste li.item_1 a{
+	border-top:1px solid #ccc;
+}
+
+
+/* ---- FIN BOUTONS AOE ------------------ */
+
+/**************Debut styles ESO*/
+.n2g_bloc_aiguillage{
+  padding-left:10px;
+}
+.n2g_bloc_restit {
+	display:inline;
+  margin-top:7px;
+	margin-bottom:7px;
+	width:100%;
+	}
+
+.n2g_text_choix {
+  border:1px solid #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.n2g_text_choix_unique {
+  border:1px solid #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:280px;
+}
+
+.n2g_text_liste_choix {
+  width:280px;
+  margin-left:85px;
+  border:1px solid #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:10px;
+  margin-right:35px;
+  margin-bottom:5px;
+}
+
+.n2g_bouton_liste_choix {
+  display:inline;
+  position:relative;
+  width:150px;
+  height:30px;
+  border-style:none;
+  background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/Epargner/Service_Epargne_Solidaire/btn_souscrire_orange.gif) no-repeat;
+  cursor:pointer;
+}
+
+.n2g_bouton_liste {
+  display:inline;
+  position:relative;
+  width:50px;
+  height:30px;
+  border-style:none;
+  background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/Epargner/Service_Epargne_Solidaire/btn_ok_orange.gif) no-repeat left top;
+  cursor:pointer;
+}
+
+.n2g_error_msg{
+  display:inline;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  color:#FF0000;
+}
+
+.n2g_filet_gris{
+  height:1px;
+	line-height:1px;
+	background-color:#969696;
+	font-size:0px;
+	border:0px;
+	border-collapse:collapse;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.n2g_selection{
+  display:inline;
+  margin-left:60px;
+  border:1px solid #fff;
+}
+.n2g_text_select{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  width:280px;
+  margin-right:60px;
+  margin-bottom:5px;
+}
+/***********Fin styles ESO ************/
+
+/**********Debut nouvel usage boutons APV menu_action*******/
+.n2g-menu-apv {
+	width:174px;
+	font-size:12px;
+	margin:0 0 15px;
+}
+
+.n2g-menu-apv *{
+	padding:0;
+	margin:0;
+}
+
+.n2g-menu-apv .n2g-menu-apv-title{
+	background:url(../img/n2g_btn_apv_title_bg.gif) 0% 0% no-repeat;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	padding:13px 0;
+	height:17px;
+}
+
+.n2g-menu-apv .n2g-menu-apv-btn {
+	width:159px;
+	margin:0 0 0 7px;
+}
+.n2g-menu-apv .n2g-menu-apv-btn a{
+ display:block;
+ background:url(../img/n2g_btn_apv_std_bg.gif) 0% 0% repeat-y;
+ border-bottom:1px solid #ccc;
+ border-top:1px solid #fff;
+ color:#000;
+ text-decoration:none;
+ padding:8px 0 8px 7px;
+ cursor:pointer;
+ width:152px;
+}
+
+.n2g-menu-apv .n2g-menu-apv-btn a:hover{
+ background:url(../img/n2g_btn_apv_hover_bg.gif) 0% 0% repeat-y;
+ border-bottom:1px solid #ccc;
+ border-top:1px solid #fff;
+ color:#fff;
+ text-decoration:none;
+}
+
+
+.n2g-menu-apv .n2g-menu-apv-btn a span{
+ display:block;
+ background:url(../img/n2g_btn_apv_std_arrow.gif) 95% 50% no-repeat;
+ padding:0 25px 0 0;
+}
+
+.n2g-menu-apv .n2g-menu-apv-btn a:hover span{
+ background:url(../img/n2g_btn_apv_hover_arrow.gif) 95% 50% no-repeat;
+}
+
+.n2g-menu-apv .n2g-menu-apv-btn.n2g-menu-apv-btn-first a{
+ border-top:0;
+}
+.n2g-menu-apv.n2g-menu-apv-notitle .n2g-menu-apv-btn.n2g-menu-apv-btn-first a{
+ border-top:1px solid #ccc;
+}
+/**********Fin nouvel usage boutons APV menu_action*******/
+
+/*************************JAZZ2***************************/
+.n2g_form_restit_bloc_fond_gris_services_jazz {
+ background: #e5e5e5;
+ margin-top:0px;
+ padding-right: 0px;
+ padding-left: 5px;
+ border:1px solid #e5e5e5;
+ line-height:15px;
+}
+.n2g_form_restit_filet_gris_libelle_options {
+	margin: 10px 12px 10px 10px;
+	border:1px solid #ccc;
+	padding-bottom:0px;
+}
+.n2g_net_lien {
+    color:#000;
+    text-decoration:underline;
+}
+.n2g_form_restit_fleche_bleue2{
+	padding-left:5px;
+	background-image:url(../img/n2g_contenu_fleches_bleues.jpg);
+	background-repeat: no-repeat;
+	display:inline;
+	margin-right:5px;
+}
+.n2g_form_restit_fleche_grise{
+ background-image:url(../img/n2g_contenu_fleche_grise.gif);
+ background-repeat: no-repeat;
+ display:inline;
+ margin-right:10px;
+}
+/* ----------------------------------- */
+/* ---- Formatage de lien_option ----- */
+/* ----------------------------------- */
+
+.n2g_net_lien_option {
+    color:#000;
+    text-decoration:none;
+ }
+
+.n2g_net_lien_option:focus,
+.n2g_net_lien_option:hover,
+.n2g_net_lien_option:active {
+    text-decoration:none;
+
+}
+.n2g_form_restit_titre_options {
+ font-size:14px;
+ color:#cc0000;
+ font-weight:bold;
+ line-height:22px;
+ padding-left:20px;
+}
+/*********************************************************/
+
+/**************************************************/
+/*                   AGENCE DIRECTE               */
+/**************************************************/
+
+.n2g_ad_bloc_contact {
+	width:174px;
+	font-size: 12px;
+	color:#404040;
+	margin-bottom: 10px;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_agence {
+	width: 170px;
+	height:200px;
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/n2g_ad_bkg-agence.jpg) left top no-repeat;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_agence .n2g_ad_agence_directe {
+	text-indent: -5000px;
+	display: block;
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/n2g_ad_bloc_agence_directe.jpg) left top no-repeat;
+	width: 153px;
+	height: 36px;
+	margin:15px 0 0 9px;
+	float: left;
+	display:inline;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_agence .n2g_ad_contactez_nous {
+	text-indent: -5000px;
+	display: block;
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/n2g_ad_bloc_contact.jpg) left top no-repeat;
+	width: 153px;
+	height: 50px;
+	margin:12px 0 0 9px;
+	float: left;
+	display:inline;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_agence .n2g_ad_horaires {
+	color:#909090;
+	font-size: 9px;
+	margin: 5px 10px 0 10px;
+	display: block;
+	line-height: 10px;
+	float: left
+}
+.n2g_ad_bloc_contact .n2g_ad_addr_agence {
+	margin-top: 14px;
+	padding: 0 10px 0 36px;
+	font-size: 12px;
+	float: left;
+	line-height: 13px
+}
+.n2g_ad_bloc_contact .n2g_ad_addr_agence .n2g_ad_addr_ville {
+	font-size: 11px;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_small {
+	width: 115px;
+	height: 33px;
+	margin-top: 3px;
+	display: block;
+	text-decoration: none;
+	color:#404040;
+	padding: 8px 15px 0 40px;
+	line-height: 12px;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_small:hover {
+	color: #d50000;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_rdv_conseiller {
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/images/n2g_ad_contact-rdv-conseiller.jpg) left top no-repeat;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_visio {
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/images/n2g_ad_contact-visio.jpg) left top no-repeat;
+}
+.n2g_ad_bloc_contact .n2g_ad_contact_mail {
+	background: url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/00-perennes/02-Devenir_Client/06-agence_directe/02-Module/00-Bloc_contact_AD_LGN/images/images/n2g_ad_contact-mail.jpg) left top no-repeat;
+	height: 36px;
+	padding-top: 12px;
+	height: 29px;
+}
+
+
+/***** WCB 2011 *****/
+
+.n2g_wcb2011_container {
+	height:180px;
+	margin-bottom:11px;
+	position:relative;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_header,
+.n2g_wcb2011_container .n2g_wcb2011_section,
+.n2g_wcb2011_container .n2g_wcb2011_3955_collection {
+	text-indent:-5000px;
+	background-position: top left;
+	background-repeat:no-repeat;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_header {
+	height:42px;
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_header.gif);
+}
+.n2g_wcb2011_container .n2g_wcb2011_header.n2g_wcb2011_mrh_header {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_header_mrh.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_section {
+	height:83px;
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_section.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_votre_numero {
+	position:absolute;
+	height:20px;
+	width:90px;
+	left:13px;
+	top: 98px;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_votre_numero input {
+	border: 1px solid #BBBBBB;
+    width: 90px;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_btn {
+	position:absolute;
+	height:23px;
+	width:26px;
+	left:111px;
+	top: 98px;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955 {
+	height:54px;
+	text-indent:-100000px;
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_alterna {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_alterna.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_assurance {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_assurance.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_cartes {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_cartes.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_collection {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_collection.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_devenirclient {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_devenirclient.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_epargne {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_epargne.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_pel {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_pel.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_livret_a {
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_livret_a.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_essentielauto {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_essentielauto.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_expresso {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_expresso.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_informations {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_informations.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_option {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_option.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_plus {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_plus.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_rendezvous {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_rendezvous.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_solidaire {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_solidaire.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_somusic {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_somusic.gif);
+}
+
+.n2g_wcb2011_container .n2g_wcb2011_3955_messalia {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_messalia.gif);
+}
+.n2g_wcb2011_container .n2g_wcb2011_3955_rugby {
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_rugby.gif);
+}
+.n2g_wcb2011_container .n2g_wcb2011_3955_plus_rugby {
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_rugby.gif);
+}
+.n2g_wcb2011_container .n2g_wcb2011_3955_expresso_rugby {
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_rugby.gif);
+}
+.n2g_wcb2011_container .n2g_wcb_3955_protection_juridique {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb_3955_protection_juridique.png);
+}
+
+.n2g_wcb2011_container .n2g_wcb2013_3955_stock_option_azur {
+	background-image:url(../../../../pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2013_3955_stock_option_azur.gif);
+}
+
+/*-- WCB sur page DEVIS --*/
+
+.n2g_wcb2011_container.n2g_wcb_large {
+	height: 206px;
+	margin:-9px 0 0;
+	position: relative;
+	width:372px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_bg_large_assur.jpg) 0 0 no-repeat;
+	float:left;
+}
+.n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_header  {
+	background:none;
+}
+ .n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_section  {
+	background:none;
+}
+.n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_votre_numero {
+	left: 40px;
+	top: 162px;
+}
+.n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_votre_numero input {
+	width:154px;
+	height:20px;
+}
+
+.n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_btn {
+	height: 26px;
+	width: 28px;
+	left: 200px;
+	top: 159px;
+}
+
+.n2g_wcb2011_container.n2g_wcb_large .n2g_wcb2011_section {
+	height: 50px;
+	width: 170px;
+	position:absolute;
+	top:55px;
+	left:73px;
+	background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/02-Modules/08-Webcallback_2011/images/n2g_wcb2011_3955_assur_large.gif) 0 0 no-repeat;
+}
+
+/*-- WCB souscrire en agence --*/
+
+.n2g_wcb2011_mrh_souscrire_agence {
+ float: left;
+    height: 204px;
+    position: relative;
+    width: 355px;
+ background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_wcb2011_mrh_souscrire_agence_bg.jpg) 0 0 no-repeat;
+}
+ .n2g_wcb2011_mrh_souscrire_agence.classique {
+	margin-top: 21px;
+}
+
+.n2g_wcb2011_mrh_souscrire_agence a {
+ position: absolute;
+ display:block;
+ height: 60px;
+    text-indent: -5000px;
+    width: 252px;
+ left: 80px;
+    top: 113px;
+ background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_wcb2011_mrh_souscrire_agence_btn.png) 0 0 no-repeat;
+}
+
+.n2g_wcb2011_mrh_souscrire_agence a:hover {
+ background:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_wcb2011_mrh_souscrire_agence_btn_hover.png) 0 0 no-repeat;
+}
+
+
+
+
+
+/* --- Debut Bloc Contact --- */
+
+.n2g_lgn_bloc_contact {
+	width:572px;
+	background-color:#FFF;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_titre {
+	font-size:14px;
+	height:30px;
+	text-align:center;
+	padding:20px 0 0;
+	font-weight:bold;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu {
+	overflow:auto;
+	_zoom:1;
+	padding:8px 0;
+}
+
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_bis {
+	padding:0;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_gauche {
+	float:left;
+	width:190px;
+	margin:0 31px 0 0;
+	text-align:right;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_droite {
+	float:left;
+	width:335px;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_centre {
+	float: left;
+	padding-right: 5px;
+	width: 185px;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre,
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence {
+	background-color:#f0f0f0;
+	position:relative;
+	height:auto;
+	font-weight:bold;
+	margin:10px 0 0 ;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence {
+	background-color:#dddddd;
+	border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid #BBBBBB;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last {
+	background-color:#f0f0f0;
+	position:relative;
+	height:auto;
+	font-weight:bold;
+	margin:10px 0 0 ;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_conseiller {
+	position:absolute;
+	top:3px;
+	right:3px;
+	height:23px;
+	width:156px;
+	text-indent:-5000px;
+	background:url(../img/n2g_lgn_bloc_contact_contenu_conseiller_btn_plie.gif) no-repeat left top;
+	border:1px solid #e4e4e4;
+	z-index:1;
+	cursor:pointer;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_conseiller.deplie {
+	position:absolute;
+	top:3px;
+	right:3px;
+	height:23px;
+	width:156px;
+	text-indent:-5000px;
+	background:url(../img/n2g_lgn_bloc_contact_contenu_conseiller_btn_deplie.gif) no-repeat left top;
+	border:1px solid #e4e4e4;
+	z-index:1;
+	cursor:pointer;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last .n2g_lgn_bloc_contact_contenu_conseiller {
+	position:absolute;
+	top:10px;
+	right:3px;
+	height:23px;
+	width:156px;
+	text-indent:-5000px;
+	background:url(../img/n2g_lgn_bloc_contact_contenu_conseiller_btn_plie.gif) no-repeat left top;
+	border:1px solid #e4e4e4;
+	cursor:pointer;
+
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last .n2g_lgn_bloc_contact_contenu_conseiller.deplie {
+	position:absolute;
+	top:10px;
+	right:3px;
+	height:23px;
+	width:156px;
+	text-indent:-5000px;
+	background:url(../img/n2g_lgn_bloc_contact_contenu_conseiller_btn_deplie.gif) no-repeat left top;
+	border:1px solid #e4e4e4;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_conseiller:hover,
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last .n2g_lgn_bloc_contact_contenu_conseiller:hover,
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_conseiller.deplie:hover,
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last .n2g_lgn_bloc_contact_contenu_conseiller.deplie:hover {
+	border:1px solid #d2d2d2;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence .n2g_lgn_bloc_contact_contenu_col_droite,
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu.n2g_lgn_bloc_contact_contenu_titre_agence_last .n2g_lgn_bloc_contact_contenu_col_droite {
+	float:left;
+	width:168px;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_bloc_horaire {
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_bloc_horaire .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_droite .n2g_lgn_bloc_contact_jour {
+	width:74px;
+	float:left;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_bloc_horaire .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_droite .n2g_lgn_bloc_contact_heure {
+	width:255px;
+	float:left;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_droite .n2g_lgn_bloc_contact_horaire_agence.n2g_lgn_plie {
+	border:1px #848383 solid;
+	width:119px;
+	height:16px;
+	background:url(../img/n2g_lgn_bloc_contact_horaire_agence_deplie_bg.gif) 5px 5px no-repeat #FFF;
+	padding:1px 0 0 19px;
+	color:#848383;
+	cursor:pointer;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu .n2g_lgn_bloc_contact_contenu_col_droite .n2g_lgn_bloc_contact_horaire_agence.n2g_lgn_deplie {
+	border:1px #848383 solid;
+	width:119px;
+	height:16px;
+	background:url(../img/n2g_lgn_bloc_contact_horaire_agence_plie_bg.gif) 5px 5px no-repeat #FFF;
+	padding:1px 0 0 19px;
+	color:#848383;
+	cursor:pointer;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li {
+	display:inline-block;
+	width:188px;
+	height:31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a,
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span {
+	display:block;
+	text-indent:-5000px;
+	background-image:url(../img/n2g_lgn_bloc_contact_contacter_conseiller_sprite_btn.gif);
+	background-repeat:no-repeat;
+	width:191px;
+	height:31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span {
+	background-image:url(../img/n2g_lgn_bloc_contact_contacter_conseiller_sprite_btn_noactif.gif);
+}
+
+* html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li {
+	display:inline;
+	zoom:1;
+}
+
+* html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li {
+	display:inline;
+	zoom:1;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li {
+	display:inline;
+	zoom:1;
+	width:190px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li {
+	display:inline;
+	zoom:1;
+	width:190px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li a.last,
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li span.last {
+	width:190px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li a.last {
+	width:192px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li span.last {
+	width:192px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li a.last {
+	width:192px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller li span.last {
+	width:192px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_ecrire_un_message {
+	background-position:0 0;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_ecrire_un_message:hover {
+	background-position:-191px 0;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_rdv {
+	background-position:0 -31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_rdv:hover {
+	background-position:-191px -31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_tel {
+	background-position:0 -62px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_tel:hover{
+	background-position:-191px -62px;
+}
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_ecrire_un_message {
+	background-position:0 0;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_ecrire_un_message:hover {
+	background-position:-191px 0;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_rdv {
+	background-position:0 -31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_rdv:hover {
+	background-position:-191px -31px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_tel {
+	background-position:0 -62px;
+}
+
+.n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller span.n2g_lgn_bloc_contact_tel:hover{
+	background-position:-191px -62px;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_tel:hover {
+	background-color:#2b589a;
+}
+
+*+html .n2g_lgn_bloc_contact ul.n2g_lgn_bloc_contact_contenu_contacter_conseiller a.n2g_lgn_bloc_contact_tel:hover {
+	background-color:#2b589a;
+}
+
+.n2g_lgn_bloc_contact .n2g_lgn_bloc_contact_contenu_last {
+    padding: 8px 0;
+}
+
+/* --- Fin Bloc Contact --- */
+/* --- Bouton "Mes Contacts" --- */
+.n2g_btn_contacts {
+	background: url("../img/n2g_btn_contacts.gif")  0px 0px no-repeat;
+	width:174px;
+	height:39px;
+	text-indent:-99999px;
+	display:block;
+}
+
+.n2g_btn_contacts:hover {
+	background: url("../img/n2g_btn_contacts.gif")  0px -39px no-repeat;
+}
+/* --- Fin bouton "Mes Contacts" --- */
+/* --- DÃ©but Raccourcis Contact --- */
+
+.n2g_bloc_raccourcis_contact {
+	width:174px;
+}
+
+.n2g_bloc_raccourcis_contact .n2g_bloc_raccourcis_contact_header {
+	color:#FFF;
+	background-image:url(../img/n2g_bloc_raccourcis_contact_header_bg.gif);
+	height: 32px;
+    padding: 12px 0 0 15px;
+	font-weight:bold;
+}
+
+.n2g_bloc_raccourcis_contact .n2g_bloc_raccourcis_contact_contenu {
+	width:153px;
+	margin-left:9px;
+	border:1px solid #ccc;
+	border-top:0;
+}
+
+.n2g_bloc_raccourcis_contact .n2g_bloc_raccourcis_contact_contenu a {
+	display:block;
+	background:url(../img/n2g_bloc_raccourcis_contact_lien_bg.gif) #f8f8f8 135px 10px no-repeat;
+	width:146px;
+	height:20px;
+	color:#424141;
+	text-decoration:none;
+	border-top:1px solid #dfdfdf;
+	border-bottom:1px solid #fff;
+	padding:6px 0 0 7px;
+}
+
+.n2g_bloc_raccourcis_contact .n2g_bloc_raccourcis_contact_contenu a:hover {
+	background:url(../img/n2g_bloc_raccourcis_contact_lien_bg_hover.gif) #fff 135px 10px no-repeat;
+}
+
+.n2g_bloc_raccourcis_contact .n2g_bloc_raccourcis_contact_contenu a.first {
+	border-top:0;
+}
+
+/* --- Fin Raccourcis Contact --- */
+
+/* --- Message indispo popin --- */
+.n2g_message_indispo_zone_texte {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 12px;
+    margin: 10px auto;
+    min-height: 90px;
+    padding: 20px 0 5px 15px;
+    width: 350px;
+}
+
+.n2g_message_indispo_zone_texte .titre {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.n2g_message_indispo_zone_texte .titre {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.n2g_message_indispo_zone_texte a.back {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.n2g_message_indispo_zone_texte a {
+    color: #505050;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.n2g_message_indispo_zone_lien {
+    padding: 0 0 0 360px;
+}
+
+.n2g_message_indispo_zone_lien.n2g_message_indispo_zone_lien2 {
+    padding: 0 0 0 315px;
+}
+
+.n2g_message_indispo_zone_lien a {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 31px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.n2g_message_indispo_zone_lien a.n2g_message_indispo_btn_contact {
+    background: url("../img/n2g_message_indispo_btn_contact.gif") no-repeat scroll 0 0 transparent;
+    height: 31px;
+    margin: 0;
+    padding: 0;
+    text-indent: -10000px;
+    width: 128px;
+}
+
+.n2g_message_indispo_zone_lien a.n2g_message_indispo_btn_contact:hover {
+	width:157px;
+	height:31px;
+	 background: url("../img/n2g_message_indispo_btn_contact.gif")  0px -31px no-repeat;
+	text-indent:-10000px;
+	padding:0;
+	margin:0;
+}
+
+.n2g_message_indispo_no_contacts {
+	margin: auto;
+}
+
+/* --- Fin message indispo popin --- */
+
+
+/* --- Debut contenus MRH (Webcallback, lien webmail...) --- */
+.n2g_mrh_contenus_actiondevis{
+	width:721px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.n2g_mrh_contenus_actiondevisact{
+	float:left;
+	width:355px;
+	position:relative;
+	height:204px;
+}
+.n2g_mrh_contenus_immediat{
+	padding-left:10px;
+}
+.n2g_mrh_contenus_titredevis{
+	text-transform:uppercase;
+	font-size:16px;
+	color:#626262;
+	font-weight:bold;
+	padding:5px 15px;
+}
+
+.n2g_mrh_contenus_titredevis.n2g_mrh_contenus_titredevis_restitution {
+	padding:5px 0;
+}
+
+.n2g_mrh_contenus_titredevis strong{
+	color:#5c79a5;
+}
+.n2g_mrh_contenus_soulignetitre{
+	position:absolute;
+	z-index:2;
+	top:30px;
+}
+img.n2g_mrh_contenus_actionbg{
+	position:absolute;
+	z-index:1;
+	top:24px;
+}
+.n2g_mrh_contenus_blocact{
+	position:absolute;
+	z-index:3;
+	left:30px;
+	top:70px;
+}
+.n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent{
+	position:absolute;
+	z-index:4;
+	top:-40px; /* Mise à jour */
+	left:-22px;
+	width:292px;
+	margin-left:20px;
+}
+
+.n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_mrh_contenus_blocactcontent_3955 {
+	width:246px;
+	height:56px;
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_mrh_contenus_3955_reduit.png);
+	text-indent:-5000px;
+}
+
+* html .n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_mrh_contenus_blocactcontent_3955 {
+	background: none;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_mrh_contenus_3955_reduit.png", sizingMethod="scale");
+
+}
+
+.n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_mrh_contenus_blocactcontent_ad {
+	width:245px;
+	height:72px;
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/img/n2g_mrh_contenus_e4_ad.png);
+	text-indent:-5000px;
+	margin-top:54px;
+}
+
+* html .n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_mrh_contenus_blocactcontent_ad {
+	background: none;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_mrh_contenus_e4_ad.png", sizingMethod="scale");
+
+}
+
+.n2g_mrh_contenus_agence .n2g_mrh_contenus_blocactcontent{
+	position:absolute;
+	z-index:4;
+	top:52px;
+	left:50px;
+}
+
+.n2g_mrh_contenus_agence .n2g_mrh_contenus_blocactcontent a {
+	display:block;
+	width:252px;
+	height:60px;
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/img/n2g_mrh_contenus_agencebtn.png);
+	text-indent:-5000px;
+}
+
+.n2g_mrh_contenus_agence .n2g_mrh_contenus_blocactcontent a:hover {
+	background-image:url(https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/img/n2g_mrh_contenus_agencebtn_hover.png);
+}
+
+* html .n2g_mrh_contenus_agence .n2g_mrh_contenus_blocactcontent a {
+	background: none;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_mrh_contenus_agencebtn.png", sizingMethod="scale");
+	cursor:pointer;
+}
+
+* html .n2g_mrh_contenus_agence .n2g_mrh_contenus_blocactcontent a:hover {
+	background: none;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/Formulaires/Contenus/visuel/n2g_mrh_contenus_agencebtn_hover.png", sizingMethod="scale");
+}
+
+/* AJOUT */
+.n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_webcallback_telephone {
+	display:block;
+	margin: 11px 0 0 4px;
+	clear:both;
+	padding:0;
+}
+
+.n2g_mrh_contenus_immediat .n2g_mrh_contenus_blocactcontent .n2g_webcallback_valider {
+	display:block;
+	margin-top:3px;
+	width:252px;
+	height:60px;
+	border:none;
+}
+
+/* --- Fin contenus MRH (Webcallback, lien webmail...) --- */
+
+
+
+/*  FORMULAIRES PRI ANONYMES  */
+
+.n2g_formulaire .n2g_formulaire_bouton_agence {
+	background: url(../img/btn_trouver_une_agence.gif) no-repeat 0 0;
+	height :23px;
+	width :177px;
+	clear : both;
+	border: 0 none;
+	margin-top: 3px;
+}
+
+.n2g_formulaire .n2g_formulaire_rouge,.n2g_formulaire_summary .n2g_formulaire_rouge {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.n2g_formulaire .n2g_formulaire_rowlabel_large label,.n2g_formulaire_summary .n2g_formulaire_rowlabel_large label {
+	background-color: #FFFFFF;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	padding: 7px 0;
+	text-align: left;
+	width: 410px;
+}
+
+.n2g_formulaire .n2g_formulaire_introduction,.n2g_formulaire_summary .n2g_formulaire_introduction {
+	background-color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	text-align: left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: 0px;
+	padding-left: 5%;
+}
+
+.n2g_formulaire .n2g_formulaire_asterisque,.n2g_formulaire_summary .n2g_formulaire_asterisque {
+	background-color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	text-align: left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: 0px;
+	padding-left: 5%;
+}
+
+.n2g_formulaire .n2g_formulaire_introduction_center,.n2g_formulaire_summary .n2g_formulaire_introduction_center {
+	background-color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: 0px;
+	padding-left: 30px;
+	color : #319ABD;
+}
+
+.n2g_formulaire .n2g_formulaire_information_5chiffres,.n2g_formulaire_summary .n2g_formulaire_information_5chiffres {
+	background-color: #FFFFFF;
+	color: #333333;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-top: 8px;
+	float: left;
+}
+
+.n2g_formulaire .n2g_formulaire_information_italique,.n2g_formulaire_summary .n2g_formulaire_information_italique {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	margin-top : 4px;
+	font-style : italic;
+}
+
+.n2g_formulaire .n2g_formulaire_sous_titre_italique,.n2g_formulaire_summary .n2g_formulaire_sous_titre_italique {
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	padding-left: 5%;
+}
+
+.n2g_formulaire .n2g_formulaire_sous_titre,.n2g_formulaire_summary .n2g_formulaire_sous_titre {
+	color : #DE5531;
+	font-weight : bold;
+	font-family : Arial,Helvetica,sans-serif;
+	font-size : 14px;
+	padding-left : 5%
+}
+
+.n2g_formulaire .n2g_formulaire_titreBloc,.n2g_formulaire_summary .n2g_formulaire_titreBloc {
+	color : #94B663;
+	border-top : 1px solid #ADA69C;
+	border-bottom : 1px solid #ADA69C;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-style : italic;
+	display : block;
+	font-size : 18px;
+	font-weight : bold;
+	clear: both;
+	float: left;
+	width: 105%;
+	margin-top : 15px;
+	margin-bottom : 15px;
+}
+
+.n2g_formulaire .n2g_formulaire_conditions_generales,.n2g_formulaire_summary .n2g_formulaire_conditions_generales {
+	background-color: #FFFFFF;
+	display: block;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	margin-left: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top: 1px;
+	width: 92%;
+}
+
+.n2g_formulaire .n2g_formulaire_declaration-italique,.n2g_formulaire_summary .n2g_formulaire_declaration-italique {
+	font-style: italic;
+}
+
+.n2g_formulaire .n2g_formulaire_align-middle,.n2g_formulaire_summary .n2g_formulaire_align-middle {
+	position: absolute;
+	top: 30%;
+}
+
+.n2g_formulaire .n2g_formulaire_relative ,.n2g_formulaire_summary .n2g_formulaire_relative {
+	position: relative;
+}
+
+.n2g_formulaire .n2g_formulaire_rowlabel,.n2g_formulaire_summary .n2g_formulaire_rowlabel{
+	float: left;
+	width: 170px;
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: left;
+	vertical-align: middle middle;
+	background-color: #FFFFFF;
+	padding: 7px 5px;
+}
+
+.n2g_formulaire .n2g_formulaire_information,.n2g_formulaire_summary .n2g_formulaire_information{
+	font-size: 9px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	margin-left: 0px;
+	margin-bottom : 8px;
+	margin-top : 8px;
+}
+
+.n2g_formulaire .n2g_formulaire_conclusion,.n2g_formulaire_summary .n2g_formulaire_conclusion  {
+	color: black;
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: top;
+	background-color: #EFEFEF;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 8px 10px 10px 0px;
+	float: left;
+	width: 95%;
+	padding-left:5%;
+	clear:both;
+}
+
+.n2g_formulaire .n2g_formulaire_radioText,.n2g_formulaire_summary .n2g_formulaire_radioText{
+	width: 20px;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	position: relative;
+	text-align: right;
+	top: 3px;
+	vertical-align: middle;
+}
+
+.n2g_formulaire .n2g_formulaire_row,.n2g_formulaire_summary .n2g_formulaire_row {
+	display: block;
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	clear: both;
+	float: left;
+	width: 95%;
+	padding-left: 5%;
+	position: relative;
+}
+
+.n2g_formulaire .n2g_formulaire_row div,.n2g_formulaire_summary .n2g_formulaire_row div {
+	float: left;
+}
+
+
+.n2g_formulaire .n2g_formulaire_row div label,.n2g_formulaire_summary .n2g_formulaire_row div label {
+	height: 35px;
+	padding-top: 12px;
+	padding-bottom : 12px;
+}
+
+
+.n2g_formulaire .n2g_formulaire_inlineLabel,.n2g_formulaire_summary .n2g_formulaire_inlineLabel {
+	background-color: #FFFFFF;
+	display: block;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	margin-left: 0;
+	margin-top: 0;
+	padding: 2px 5px 3px;
+}
+
+.n2g_formulaire .n2g_formulaire_row input[type="text"],.n2g_formulaire_summary .n2g_formulaire_row input[type="text"]{
+	margin-left: 5px;
+	width: 172px;
+	height: 16px;
+	padding: 1 1 1 1px;
+	margin-top: 3px;
+}
+
+.n2g_formulaire .n2g_formulaire_radioText_large,.n2g_formulaire_summary .n2g_formulaire_radioText_large{
+	width: 150px;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	position: relative;
+	top: 0px ;
+	vertical-align: middle;
+	clear : both;
+	text-align : right;
+}
+
+.n2g_formulaire .n2g_formulaire_checkbox_label,.n2g_formulaire_summary .n2g_formulaire_checkbox_label{
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	display: block;
+	padding : 0 0 0 0px;
+	margin-top:0px;
+	margin-bottom : 5px;
+	margin-left : 0px;
+	margin-right:0px;
+	float: left;
+	background-color: #FFFFFF;
+	width: 60%;
+	height : auto;
+}
+
+.infoCompteLabel {
+	text-align: right;
+	font-size: 0.9em;
+	background-color: rgb(249, 247, 242);
+	color: rgb(204, 204, 204);
+	font-style: italic;
+}
+
+.infoCompteDiv {
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.n2g_formulaire .n2g_formulaire_declaration,.n2g_formulaire_summary .n2g_formulaire_declaration{
+	font-size : 13px;
+}
+
+.n2g_formulaire .n2g_formulaire_field_val,.n2g_formulaire_summary .n2g_formulaire_field_val {
+	color: #333333;
+	display: block;
+	float: left;
+	font-family: Arial,Verdana,sans-serif;
+	font-size: 12px;
+	margin-top: 7px;
+	margin-right : 20px;
+}
+
+.lieu_signature_pdf {
+	display: inline-block;
+	margin-top: 17px;
+	vertical-align: middle;
+	width: 250px;
+}
+
+.date_signature_pdf {
+	display: inline-block;
+	margin-top: 17px;
+	vertical-align: middle;
+	width: 150px;
+}
+
+.n2g_formulaire .n2g_formulaire_clear_both,.n2g_formulaire_summary .n2g_formulaire_clear_both{
+	clear : both;
+}
+
+.n2g_formulaire .n2g_formulaire_field_ok,.n2g_formulaire_summary .n2g_formulaire_field_ok {
+	background-image: url("../img/check.png");
+	background-repeat: no-repeat;
+	color: black;
+	display: inline;
+	float: none;
+	margin-left: 5px;
+	width: 20px;
+}
+
+.n2g_formulaire .n2g_formulaire_boutons,.n2g_formulaire_summary .n2g_formulaire_boutons  {
+	clear: both;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.n2g_formulaire .n2g_formulaire_summary {
+	display: none;
+}
+
+.n2g_formulaire .n2g_formulaire_demandeencours,.n2g_formulaire_summary .n2g_formulaire_demandeencours {
+	text-align: center;
+}
+
+.n2g_formulaire .n2g_formulaire_ok ,.n2g_formulaire_summary .n2g_formulaire_ok {
+	text-align: center;
+}
+
+.n2g_formulaire .n2g_formulaire_erreur,.n2g_formulaire_summary .n2g_formulaire_erreur {
+	text-align: center;
+}
+
+.n2g_formulaire,.n2g_formulaire_summary {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.n2g_formulaire .n2g_formulaire_form ,.n2g_formulaire_summary .n2g_formulaire_form {
+	padding: 5px;
+}
+
+.n2g_formulaire .n2g_formulaire_notice ,.n2g_formulaire_summary .n2g_formulaire_notice {
+	font-weight: bold;
+	background-color: #E5E5E5;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	padding-left: 5%;
+}
+
+.n2g_formulaire .n2g_formulaire_mandatory,.n2g_formulaire_summary .n2g_formulaire_mandatory {
+	font-weight: bold;
+}
+
+.n2g_formulaire .n2g_formulaire_hr,.n2g_formulaire_summary .n2g_formulaire_hr {
+	color: #CCCCCC;
+	float: left;
+	height: 1px;
+	margin-top: 3px;
+	width: 100%;
+}
+
+.n2g_formulaire .n2g_formulaire_titreBloc2,.n2g_formulaire_summary .n2g_formulaire_titreBloc2{
+	font-weight : bold;
+	font-family : Arial,Verdana,sans-serif;
+	font-size : 14px;
+	text-align : center;
+}
+
+.n2g_formulaire .n2g_formulaire_radio,.n2g_formulaire_summary .n2g_formulaire_radio {
+	float: none;
+	width: 13px;
+}
+
+.n2g_formulaire .n2g_formulaire_row input,.n2g_formulaire_summary .n2g_formulaire_row input{
+	float: left;
+	margin-right: 10px;
+	text-align: left;
+}
+
+.radioText input {
+	width: 70px;
+}
+
+.n2g_formulaire .n2g_formulaire_row label.radioText,.n2g_formulaire_summary .n2g_formulaire_row label.radioText {
+	width: 50px;
+	text-align: right;
+}
+
+/* HACK IE6 */
+* html .n2g_formulaire .n2g_formulaire_row input,* html .n2g_formulaire .n2g_formulaire_row input {
+	width: 170px;
+}
+
+.n2g_formulaire .n2g_formulaire_row input[type="text"],.n2g_formulaire_summary .n2g_formulaire_row input[type="text"] {
+	width: 170px;
+}
+
+.n2g_formulaire .n2g_formulaire_petit_input,.n2g_formulaire_summary .n2g_formulaire_petit_input{
+	width: 80px;
+}
+
+.n2g_formulaire .n2g_formulaire_row input[type="checkbox"],.n2g_formulaire_summary .n2g_formulaire_row input[type="checkbox"] {
+	width: 20px;
+	margin : 0 0 0 0px;
+	padding : 0 0 0 0px;
+}
+.n2g_formulaire .n2g_formulaire_row input[type="radio"],.n2g_formulaire_summary .n2g_formulaire_row input[type="radio"] {
+	width: 13px;
+}
+
+.n2g_formulaire .n2g_formulaire_row select,.n2g_formulaire_summary .n2g_formulaire_row select {
+	margin-left : 5px;
+	margin-right : 5px;
+	float: left;
+	color: black;
+}
+
+.n2g_formulaire .n2g_formulaire_row textarea,.n2g_formulaire_summary .n2g_formulaire_row textarea {
+	width: 170px;
+	margin-left: 5px;
+	height: 48px;
+	resize: none;
+	border : #cccccc 1px solid;
+	float : left;
+	margin-right : 5px;
+}
+
+.n2g_formulaire .n2g_formulaire_row select,.n2g_formulaire_summary .n2g_formulaire_row select {
+    color: black;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.n2g_formulaire .n2g_formulaire_spacer,.n2g_formulaire_summary .n2g_formulaire_spacer {
+	clear: both;
+}
+
+.n2g_formulaire .n2g_formulaire_field_error,.n2g_formulaire_summary .n2g_formulaire_field_error {
+	color: red;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	width: 170px;
+}
+
+.n2g_formulaire  input.n2g_formulaire_field_error,.n2g_formulaire_summary  input.n2g_formulaire_field_error {
+	color: black;
+	width: 170px;
+	margin: 0px 5px 0px 0px;
+	padding: 0px 0px 2px 0px;
+	text-align: left;
+}
+
+.n2g_formulaire .n2g_formulaire_img_summary,.n2g_formulaire_summary .n2g_formulaire_img_summary {
+	float: left;
+}
+
+/* print */
+.n2g_formulaire .n2g_formulaire_print_entete {
+
+}
+
+.n2g_formulaire .n2g_formulaire_print_logo {
+
+}
+
+.n2g_formulaire .n2g_formulaire_print_date {
+	float: right;
+}
+
+.n2g_formulaire .n2g_formulaire_print_titre {
+	text-align: center;
+}
+
+.n2g_formulaire .n2g_formulaire_print_body {
+	text-align: center;
+}
+
+.n2g_formulaire .n2g_formulaire_print_footer {
+	text-align: center;
+	background-color: #E5E5E5;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.n2g_formulaire .ui-datepicker { width: 16em; padding: .2em .2em 0; display: none; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-prev { left:2px; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-next { right:2px; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;}
+.n2g_formulaire .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.n2g_formulaire .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.n2g_formulaire .ui-datepicker select.ui-datepicker-month,
+.n2g_formulaire .ui-datepicker select.ui-datepicker-year { width: 49%;}
+.n2g_formulaire .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.n2g_formulaire .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.n2g_formulaire .ui-datepicker td { border: 0; padding: 1px; }
+.n2g_formulaire .ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.n2g_formulaire .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+.n2g_formulaire .ui-datepicker.ui-datepicker-multi { width:auto; }
+.n2g_formulaire .ui-datepicker-multi .ui-datepicker-group { float:left; }
+.n2g_formulaire .ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.n2g_formulaire .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.n2g_formulaire .ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.n2g_formulaire .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.n2g_formulaire .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.n2g_formulaire .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.n2g_formulaire .ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.n2g_formulaire .ui-datepicker-row-break { clear:both; width:100%; }
+
+.n2g_formulaire .ui-datepicker-rtl { direction: rtl; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.n2g_formulaire .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.n2g_formulaire .ui-datepicker-cover {
+	display: none; /*sorry for IE5*/
+	display/**/: block; /*sorry for IE5*/
+	position: absolute; /*must have*/
+	z-index: -1; /*must have*/
+	filter: mask(); /*must have*/
+	top: -4px; /*must have*/
+	left: -4px; /*must have*/
+	width: 200px; /*must have*/
+	height: 200px; /*must have*/
+}
+
+.n2g_formulaire .ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+.n2g_formulaire .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
+.n2g_formulaire .ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .1em 0; }
+.n2g_formulaire .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.n2g_formulaire .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.n2g_formulaire .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.n2g_formulaire .ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.n2g_formulaire .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.n2g_formulaire .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.n2g_formulaire .ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.n2g_formulaire .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.n2g_formulaire .ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.n2g_formulaire .ui-progressbar { height:2em; text-align: left; }
+.n2g_formulaire .ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+
+.n2g_formulaire .ui-resizable { position: relative;}
+.n2g_formulaire .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.n2g_formulaire .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.n2g_formulaire .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.n2g_formulaire .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.n2g_formulaire .ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.n2g_formulaire .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.n2g_formulaire .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.n2g_formulaire .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.n2g_formulaire .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.n2g_formulaire .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+
+.n2g_formulaire .ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+
+.n2g_formulaire .ui-slider { position: relative; text-align: left; }
+.n2g_formulaire .ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; }
+.n2g_formulaire .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.n2g_formulaire .ui-slider-horizontal { height: .8em; }
+.n2g_formulaire .ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.n2g_formulaire .ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.n2g_formulaire .ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.n2g_formulaire .ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.n2g_formulaire .ui-slider-vertical { width: .8em; height: 100px; }
+.n2g_formulaire .ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.n2g_formulaire .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.n2g_formulaire .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.n2g_formulaire .ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+.n2g_formulaire .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.n2g_formulaire .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.n2g_formulaire .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.n2g_formulaire .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.n2g_formulaire .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.n2g_formulaire .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.n2g_formulaire .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.n2g_formulaire .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.n2g_formulaire .ui-tabs .ui-tabs-hide { display: none !important; }
+
+.n2g_formulaire .ui-widget { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 0.8em/*{fsDefault}*/; }
+.n2g_formulaire .ui-widget .ui-widget { font-size: 1em; }
+.n2g_formulaire .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
+.n2g_formulaire .ui-widget-content { border: 1px solid #aaaaaa/*{borderColorContent}*/; background: #ffffff/*{bgColorContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/; color: #222222/*{fcContent}*/; }
+.n2g_formulaire .ui-widget-content a { color: #222222/*{fcContent}*/; }
+.n2g_formulaire .ui-widget-header { border: 1px solid #aaaaaa/*{borderColorHeader}*/; background: #cccccc/*{bgColorHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/; color: #222222/*{fcHeader}*/; font-weight: bold; }
+.n2g_formulaire .ui-widget-header a { color: #222222/*{fcHeader}*/; }
+
+.n2g_formulaire .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3/*{borderColorDefault}*/; background: #e6e6e6/*{bgColorDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #555555/*{fcDefault}*/; }
+.n2g_formulaire .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555/*{fcDefault}*/; text-decoration: none; }
+.n2g_formulaire .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #999999/*{borderColorHover}*/; background: #dadada/*{bgColorHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcHover}*/; }
+.n2g_formulaire .ui-state-hover a, .ui-state-hover a:hover { color: #212121/*{fcHover}*/; text-decoration: none; }
+.n2g_formulaire .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa/*{borderColorActive}*/; background: #ffffff/*{bgColorActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcActive}*/; }
+.n2g_formulaire .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121/*{fcActive}*/; text-decoration: none; }
+.n2g_formulaire .ui-widget :active { outline: none; }
+
+.n2g_formulaire .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1/*{borderColorHighlight}*/; background: #fbf9ee/*{bgColorHighlight}*/ 50%/*{bgHighlightXPos}*/ 50%/*{bgHighlightYPos}*/ repeat-x/*{bgHighlightRepeat}*/; color: #363636/*{fcHighlight}*/; }
+.n2g_formulaire .ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636/*{fcHighlight}*/; }
+.n2g_formulaire .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a/*{borderColorError}*/; background: #fef1ec/*{bgColorError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/; color: #cd0a0a/*{fcError}*/; }
+.n2g_formulaire .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a/*{fcError}*/; }
+.n2g_formulaire .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a/*{fcError}*/; }
+.n2g_formulaire .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.n2g_formulaire .ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.n2g_formulaire .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+.n2g_formulaire .ui-icon { width: 16px; height: 16px; }
+
+.n2g_formulaire .ui-corner-tl { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-tr { -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-bl { -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-br { -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-top { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-bottom { -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-right {  -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-left { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+.n2g_formulaire .ui-corner-all { -moz-border-radius: 4px/*{cornerRadius}*/; -webkit-border-radius: 4px/*{cornerRadius}*/; border-radius: 4px/*{cornerRadius}*/; }
+
+.n2g_formulaire .ui-widget-overlay { background: #aaaaaa/*{bgColorOverlay}*/ 50%/*{bgOverlayXPos}*/ 50%/*{bgOverlayYPos}*/ repeat-x/*{bgOverlayRepeat}*/; opacity: .3;filter:Alpha(Opacity=30)/*{opacityOverlay}*/; }
+.n2g_formulaire .ui-widget-shadow { margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/; padding: 8px/*{thicknessShadow}*/; background: #aaaaaa/*{bgColorShadow}*/ 50%/*{bgShadowXPos}*/ 50%/*{bgShadowYPos}*/ repeat-x/*{bgShadowRepeat}*/; opacity: .3;filter:Alpha(Opacity=30)/*{opacityShadow}*/; -moz-border-radius: 8px/*{cornerRadiusShadow}*/; -webkit-border-radius: 8px/*{cornerRadiusShadow}*/; border-radius: 8px/*{cornerRadiusShadow}*/; }
+
+
+//**   FIN CSS FORMULAIRES PRI ANONYMES  **/
+
+
+/* REALISER UN DEVIS */
+
+.n2g_lgn_blocrealiserevis {
+	width:174px;
+}
+
+.n2g_lgn_blocrealiserevis .n2g_lgn_blocrealiserevis_header {
+	color:#FFF;
+	background-image:url(https://static.societegenerale.fr//pri/PRI/Themes/defaut/img/n2g_lgn_blocrealiserevis_header_bg.gif);
+	background-repeat:no-repeat;
+	height: 32px;
+    padding: 12px 0 0 15px;
+	font-weight:bold;
+	text-indent:-99999px;
+}
+
+.n2g_lgn_blocrealiserevis .n2g_lgn_blocrealiserevis_contenu {
+	width:153px;
+	margin-left:9px;
+	border:1px solid #ccc;
+	border-top:0;
+}
+
+.n2g_lgn_blocrealiserevis .n2g_lgn_blocrealiserevis_contenu a {
+	display:block;
+	background:url(https://static.societegenerale.fr//pri/PRI/Themes/defaut/img/n2g_lgn_blocrealiserevis_lien_bg.gif) #f8f8f8 135px 10px no-repeat;
+	width:146px;
+	height:20px;
+	color:#424141;
+	text-decoration:none;
+	border-top:1px solid #dfdfdf;
+	border-bottom:1px solid #fff;
+	padding:6px 0 0 7px;
+}
+
+.n2g_lgn_blocrealiserevis .n2g_lgn_blocrealiserevis_contenu a:hover {
+	background:url(https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_lgn_blocrealiserevis_lien_bg_hover.gif) #fff 135px 10px no-repeat;
+}
+
+.n2g_lgn_blocrealiserevis .n2g_lgn_blocrealiserevis_contenu a.first {
+	border-top:0;
+}
+
+
+#n2g_navigation_principale_deconnecte {
+	background:url(../../../img/erreur/n2g_menu_haut_erreur_fond.gif) repeat-x;
+}
+
+#n2g_navigation_principale_connecte {
+	background:url(../../../img/erreur/n2g_menu_haut_erreur_fond.gif) repeat-x;
+}
+
+/*----------------------*/
+/*-- DEB Page indispo --*/
+/*----------------------*/
+
+.n2g_page_indispo_zone_texte {
+  width:350px;
+  min-height:90px;
+  padding:20px 0px 5px 15px;
+  margin: 50px 0px 0px 120px;
+  border:1px solid #ccc;
+  font-size:12px;
+  color:#666;
+}
+.n2g_page_indispo_zone_texte .titre {
+  display:block;
+  margin-bottom:20px;
+  font-size:16px;
+  font-weight:bold;
+  color:#000;
+}
+.n2g_page_indispo_zone_texte a {
+  font-weight:bold;
+  color:#505050;
+  text-decoration:none;
+}
+.n2g_page_indispo_zone_texte a.back {
+  font-weight: normal;
+  font-style: italic;
+}
+.n2g_page_indispo_zone_texte a:hover,
+.n2g_page_indispo_zone_texte a:focus,
+.n2g_page_indispo_zone_texte a:active {
+  text-decoration:underline;
+}
+
+
+/*----------------------*/
+/*-- NOUVEAUX BOUTONS  --*/
+/*----------------------*/
+.n2g_page_indispo_zone_lien {
+  padding: 20px 0px 80px 75px;
+}
+.n2g_page_indispo_zone_lien a {
+  float:left;
+  height:31px;
+  font-size:12px;
+  color:#FFFFFF;
+  text-decoration:none;
+  padding:0;
+}
+.n2g_page_indispo_zone_lien a.n2g_page_indispo_btn_plan {
+	width:89px;
+	height:31px;
+	background: url(https://static.societegenerale.fr//pri/img/erreur/n2g_btn_404_plan.gif) 0% 0% no-repeat;
+	text-indent:-10000px;
+	padding:0;
+	margin:0 15px 0 124px
+}
+.n2g_page_indispo_zone_lien a.n2g_page_indispo_btn_contact {
+	width:128px;
+	height:31px;
+	background: url(https://static.societegenerale.fr//pri/img/erreur/n2g_btn_404_contact.gif) 0% 0% no-repeat;
+	text-indent:-10000px;
+	padding:0;
+	margin:0;
+}
+.n2g_page_indispo_zone_lien a.n2g_page_indispo_btn_contact:hover {
+	width:157px;
+	height:31px;
+	background: url(https://static.societegenerale.fr//pri/img/erreur/n2g_btn_404_contact.gif) 0px -31px no-repeat;
+	text-indent:-10000px;
+	padding:0;
+	margin:0;
+}
+
+
+/*---------------------------*/
+/*-- Fiche Déclic Régulier --*/
+/*-- et Déclic Seuil --------*/
+/*---------------------------*/
+
+
+a#n2g_declic_regulier_seuil_regulier {
+    background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_declic_regulier_seuil_regulier.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding: 0;
+    text-indent: -5000px;
+    width: 174px;
+}
+
+
+a#n2g_declic_regulier_seuil_seuil {
+    url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_declic_regulier_seuil_seuil.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding: 0;
+    text-indent: -5000px;
+    width: 174px;
+}
+
+
+
+ /*a.usage_fiche_pratique:hover {*/
+ a#n2g_declic_regulier_seuil_regulier:hover, a#n2g_declic_regulier_seuil_seuil:hover {
+    background-position: left bottom;
+}
+
+
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+
+/*UPDATE bloc sas - Juin 2013*/
+
+.n2g_bloc_non_client{
+width:509px;
+height:319px;
+margin-top:15px;
+padding:15px;
+padding-top:10px;
+border: 1px solid #CCCCCC;
+margin-bottom:30px;
+}
+
+.n2g_bloc_non_client_ppi{
+width:509px;
+height:114px;
+}
+
+.n2g_bloc_non_client  .n2g_bloc_sas_titre{
+margin-bottom:16px;
+}
+
+
+.n2g_bloc_non_client .n2g_bloc_non_client_button{
+font-size:15px;
+color:#fff;
+text-transform:uppercase;
+text-decoration:none;
+display:block;
+background-color:#d02437;
+width:202px;
+height:11px;
+font-weight:bold;
+padding-left:27px;
+padding-top:5px;
+padding-bottom:11px;
+margin-left:140px;
+margin-top:38px;
+background-image:url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_sas_arrow_white.gif");
+background-repeat:no-repeat;
+background-position:203px 8px;
+}
+
+
+.n2g_bloc_non_client_fonctions{
+margin-top:38px;
+width:504px;
+height:136px;
+color:#9b9a9a;
+font-size:13px;
+}
+
+.n2g_bloc_non_client_fonctions strong{
+color:#d0223b;
+}
+
+.n2g_bloc_non_client_fonctions span{
+display:inline-block;
+zoom: 1;
+*display: inline;
+vertical-align:top;
+margin-right:36px;
+}
+
+.n2g_bloc_non_client_fonctions_top{
+margin-bottom:30px;
+}
+
+
+.n2g_bloc_non_client_fonctions_top div{
+display:inline-block;
+zoom: 1;
+*display: inline;
+}
+
+.n2g_bloc_non_client_fonctions_top div:first-child{
+margin-right: 35px;
+}
+
+.n2g_bloc_non_client_fonctions_top div:first-child span{
+background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_non_client_fonctions_sprite.jpg");
+background-position: 0px 0px;
+background-repeat: no-repeat;
+width:26px;
+height:41px;
+margin-left: 21px;
+margin-right:26px;
+}
+
+
+.n2g_bloc_non_client_fonctions_top .n2g_bloc_non_client_fonctions_top_last_child{
+background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_non_client_fonctions_sprite.jpg");
+background-position: -61px -6px;
+background-repeat: no-repeat;
+width:46px;
+height:30px;
+margin-left:6px;
+margin-top:7px;
+margin-right:18px;
+}
+
+.n2g_bloc_non_client_fonctions_bottom div{
+display:inline-block;
+zoom: 1;
+*display: inline;
+}
+
+.n2g_bloc_non_client_fonctions_bottom div:first-child{
+margin-right: 72px;
+}
+
+
+.n2g_bloc_non_client_fonctions_bottom div:first-child span{
+background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_non_client_fonctions_sprite.jpg");
+background-position: -125px -4px;
+background-repeat: no-repeat;
+width:60px;
+height:35px;
+margin-right: 8px;
+margin-left: 5px;
+margin-top: 10px;
+}
+
+
+.n2g_bloc_non_client_fonctions_bottom  .n2g_bloc_non_client_fonctions_bottom_last_child{
+background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_bloc_non_client_fonctions_sprite.jpg");
+background-position: -214px -2px;
+background-repeat: no-repeat;
+width:25px;
+height:39px;
+margin-top: 4px;
+margin-right: 24px;
+}
+
+
+.n2g_bloc_non_client_fonctions_text{
+display:inline-block;
+zoom: 1;
+*display: inline;
+}
+
+
+ /* AJOUT/ MODIF Q1616 */
+
+a.usage_fiche_pratique_lyxor {
+    background-image: url("https://static.societegenerale.fr/pri/PRI/Themes/defaut/img/n2g_lyxor_planet.jpg");
+	width:174px;
+	height:39px;
+	text-indent:-5000px;
+	display:block;
+	outline:none;
+	background-position:top left;
+	background-repeat:no-repeat;
+    padding:0px;
+	margin-bottom: 10px;
+}
