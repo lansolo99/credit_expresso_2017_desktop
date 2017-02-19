@@ -1,0 +1,327 @@
+/*********/
+/* RESET */
+/*********/
+header, nav, footer, figure, section, article {
+  display: block; }
+
+html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, a, em, font, img, strong, sub, sup, dl, dt, dd, ul, ol, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none; }
+
+/*********/
+/* GENERAL */
+/*********/
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+/*  Modifs gabarit pri  */
+#n2g_conteneur_milieu {
+  padding-bottom: 0px;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc; }
+
+#n2g_zone_milieu {
+  margin-top: 0px; }
+
+#n2g_zone_centre {
+  padding-left: 0;
+  padding-right: 0;
+  width: 978px !important;
+  float: none;
+  height: auto !important; }
+
+a {
+  text-decoration: underline; }
+
+/*******************************
+	Contenu vente flash Expresso
+*******************************/
+/*  GRID SYSTEM */
+/*  SECTIONS  */
+.n2g_section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  zoom: 1; }
+
+/*  COLUMN SETUP  */
+.n2g_col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 0%; }
+
+.n2g_col:first-child {
+  margin-left: 0; }
+
+.n2g_clear {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*  GRID OF TWO  */
+.n2g_span_1_of_2 {
+  width: 50%; }
+
+/* Mixins */
+/* Wrapper */
+.n2g_expresso_wrapper {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  /*Exemple*/
+  /* Bandeau */
+  /*Action*/
+  /*Banniere*/
+  /*Mentions*/ }
+  .n2g_expresso_wrapper #n2g_expresso_exemple {
+    background: #fafafa;
+    padding: 20px 30px;
+    font-size: 14px;
+    color: #151325;
+    line-height: 1.3em; }
+    .n2g_expresso_wrapper #n2g_expresso_exemple strong {
+      font-size: 16px; }
+    .n2g_expresso_wrapper #n2g_expresso_exemple sup {
+      font-size: 0.6em; }
+  .n2g_expresso_wrapper #n2g_expresso_bandeau {
+    overflow: hidden;
+    position: relative;
+    width: 978px;
+    height: 520px;
+    background: url("../img/n2g_theme.jpg") no-repeat;
+    padding: 0;
+    margin: 0; }
+    .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expressso_date {
+      position: relative;
+      margin-top: 38px;
+      width: 100%;
+      text-align: center;
+      background-color: #e60028;
+      height: 45px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 21px;
+      padding: 0; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expressso_date div {
+        position: relative;
+        left: 54px;
+        display: block;
+        padding-top: 10px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expressso_date img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -32px;
+        left: 166px;
+        transform: rotate(-10deg); }
+    .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_titre {
+      text-align: center;
+      position: relative;
+      margin: auto;
+      margin-top: 40px;
+      width: 700px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_titre h1 {
+        position: relative;
+        font-weight: 300;
+        font-size: 42px;
+        color: #202e3a;
+        margin: auto;
+        text-transform: uppercase; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_titre h1 strong {
+          font-style: italic; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_titre h1 sup {
+          font-size: 0.4em;
+          vertical-align: top;
+          position: relative;
+          top: 2px; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_titre h1 img {
+          margin-left: 7px; }
+    .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_taux {
+      text-align: center;
+      position: relative;
+      margin: auto;
+      margin-top: 0px;
+      width: 560px;
+      height: 110px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_taux h2 {
+        position: relative;
+        font-weight: bold;
+        font-size: 116px;
+        color: #e60028;
+        float: left;
+        width: auto; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_taux h2 span {
+          letter-spacing: 8px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_taux div {
+        color: #202e3a;
+        margin-left: 36px;
+        margin-top: 18px;
+        text-align: left;
+        float: left;
+        width: 160px;
+        font-size: 17px;
+        line-height: 24px; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau .n2g_expresso_taux div strong {
+          display: block;
+          font-size: 24px;
+          margin-bottom: 4px; }
+    .n2g_expresso_wrapper #n2g_expresso_bandeau a.n2g_button {
+      text-decoration: none;
+      position: relative;
+      display: block;
+      padding: 0;
+      padding-top: 19px;
+      padding-left: 25px;
+      font-size: 19px;
+      font-weight: bold;
+      margin: auto;
+      height: 40px;
+      text-align: left;
+      border-radius: 3px;
+      border-bottom: 2px #7d7d7d solid; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau a.n2g_button sup {
+        font-size: 0.5em;
+        vertical-align: top;
+        position: relative;
+        top: 2px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau a.n2g_button img {
+        position: absolute;
+        right: 25px;
+        top: 19px;
+        width: 8px;
+        height: 20px; }
+      .n2g_expresso_wrapper #n2g_expresso_bandeau a.n2g_button.white {
+        margin-top: 40px;
+        width: 285px;
+        color: #202e3a;
+        background-color: #ffffff;
+        transition: background-color 0.2s ease-out; }
+        .n2g_expresso_wrapper #n2g_expresso_bandeau a.n2g_button.white:hover {
+          background-color: #e5e5e5; }
+  .n2g_expresso_wrapper #n2g_expresso_action {
+    background-color: #f2f2f2;
+    height: 120px; }
+    .n2g_expresso_wrapper #n2g_expresso_action .n2g_col {
+      margin-top: 30px; }
+    .n2g_expresso_wrapper #n2g_expresso_action .n2g_span_1_of_2 {
+      text-align: center; }
+    .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button {
+      text-decoration: none;
+      position: relative;
+      display: block;
+      padding: 0;
+      padding-top: 19px;
+      padding-left: 25px;
+      font-size: 19px;
+      font-weight: bold;
+      margin: auto;
+      height: 40px;
+      text-align: left;
+      border-radius: 3px;
+      border-bottom: 2px #7d7d7d solid;
+      position: relative; }
+      .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button sup {
+        font-size: 0.5em;
+        vertical-align: top;
+        position: relative;
+        top: 2px; }
+      .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button img {
+        position: absolute;
+        right: 25px;
+        top: 19px;
+        width: 8px;
+        height: 20px; }
+      .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark {
+        width: 285px;
+        color: #ffffff;
+        background-color: #ffffff;
+        transition: background-color 0.2s ease-out; }
+        .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark:hover {
+          background-color: #f4f4f4; }
+        .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark.black {
+          left: 30px;
+          background-color: #17192c;
+          border-bottom: 2px solid #020006; }
+          .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark.black:hover {
+            background-color: #0c0d14; }
+        .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark.red {
+          right: 30px;
+          background-color: #e60028;
+          border-bottom: 2px solid #a02426; }
+          .n2g_expresso_wrapper #n2g_expresso_action a.n2g_button.dark.red:hover {
+            background-color: #bd0727; }
+  .n2g_expresso_wrapper #n2g_expresso_banniere {
+    background-color: white; }
+    .n2g_expresso_wrapper #n2g_expresso_banniere a.n2g_bfm {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      margin: auto;
+      margin-top: 37px;
+      margin-bottom: 17px;
+      height: 62px;
+      width: 743px;
+      border: 1px solid #cccccc;
+      background-color: white;
+      color: #2d2d2c;
+      font-size: 16px;
+      padding: 22px 32px;
+      padding-bottom: 29px;
+      line-height: 27px; }
+      .n2g_expresso_wrapper #n2g_expresso_banniere a.n2g_bfm strong {
+        color: #007ac2;
+        font-size: 19px; }
+      .n2g_expresso_wrapper #n2g_expresso_banniere a.n2g_bfm img.n2g_bfm_logo {
+        float: left;
+        /* vertical-align: top; */ }
+      .n2g_expresso_wrapper #n2g_expresso_banniere a.n2g_bfm span {
+        display: block;
+        position: relative;
+        top: 3px;
+        float: left;
+        vertical-align: top;
+        margin-left: 27px; }
+      .n2g_expresso_wrapper #n2g_expresso_banniere a.n2g_bfm img.n2g_chevron {
+        position: absolute;
+        right: 20px;
+        top: 43px;
+        width: 8px;
+        height: 20px; }
+  .n2g_expresso_wrapper #n2g_expresso_mentions {
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #000000;
+    background: #ffffff; }
+    .n2g_expresso_wrapper #n2g_expresso_mentions a {
+      color: #000000; }
+    .n2g_expresso_wrapper #n2g_expresso_mentions .n2g_expresso_mentions {
+      counter-reset: mention_count;
+      margin-bottom: 10px; }
+      .n2g_expresso_wrapper #n2g_expresso_mentions .n2g_expresso_mentions dt {
+        position: relative;
+        padding: 0px 0 12px 0;
+        padding-left: 25px;
+        line-height: 15px; }
+        .n2g_expresso_wrapper #n2g_expresso_mentions .n2g_expresso_mentions dt span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          *top: -5px;
+          font-size: 12px; }
+        .n2g_expresso_wrapper #n2g_expresso_mentions .n2g_expresso_mentions dt.last {
+          margin-bottom: 0; }
+      .n2g_expresso_wrapper #n2g_expresso_mentions .n2g_expresso_mentions.small {
+        font-size: 12px;
+        line-height: 16px; }
+
+/*# sourceMappingURL=n2g_expresso.css.map */

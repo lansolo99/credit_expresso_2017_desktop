@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#n2g_zone_haut_droite {
+  position: relative;
+}
+
+/* --- MILIEU/GAUCHE (174 + 5 = 179px) --- */
+#n2g_zone_gauche {
+	width: 174px;
+	float: left;
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+/* --- MILIEU/CENTRE (15 + 590 + 15 = 620px) --- */
+#n2g_zone_centre {
+  width: 590px;
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* --- MILIEU/CENTRE/MILIEU --- */
+#n2g_zone_centre_milieu {
+}
+/* --- MILIEU/CENTRE/GAUCHE --- */
+#n2g_zone_centre_gauche {
+  width: 212px;
+  margin-right: 15px;
+  float: left;
+}
+/* --- MILIEU/CENTRE/DROITE --- */
+#n2g_zone_centre_droite {
+  width: 363px;
+  float: left;
+}
+/* --- MILIEU/CENTRE/BAS --- */
+#n2g_zone_centre_bas {
+  clear: both;
+}
+
+/* --- MILIEU/DROIT (174px + 5px = 179px) --- */
+#n2g_zone_droite {
+  width: 174px;
+	float: left;
+	padding-right: 5px;
+	padding-left: 0px;
+}
+
+
+/* --- MILIEU/CENTRE/BAS --- */
+/*#n2g_zone_milieu {
+	overflow: visible;
+}
+#n2g_zone_gauche, #n2g_zone_centre, #n2g_zone_droite {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+*/

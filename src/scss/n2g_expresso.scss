@@ -1,0 +1,418 @@
+	/*********/
+	/* RESET */
+	/*********/
+
+	header, nav, footer, figure, section, article {display: block;}
+	html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, a, em, font, img, strong, sub, sup, dl, dt, dd, ul, ol, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, p {margin: 0;	padding: 0;	border: 0;	outline: 0; text-decoration: none;}
+
+
+
+
+	/*********/
+	/* GENERAL */
+	/*********/
+
+
+	body {
+	  font-family: 'Arial', sans-serif;
+		height: 100%;
+		background-color: white;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+	}
+
+	/*  Modifs gabarit pri  */
+
+	#n2g_conteneur_milieu{
+			padding-bottom: 0px;
+			border-right:1px solid #cccccc;
+			border-left:1px solid #cccccc;
+	}
+
+
+	#n2g_zone_milieu{
+	margin-top: 0px;
+	}
+
+	#n2g_zone_centre{
+		padding-left: 0;
+		padding-right: 0;
+		width: 978px !important;
+		float:none;
+		height: auto !important;
+	}
+
+	a{
+	  text-decoration: underline;
+	}
+
+
+	/*******************************
+		Contenu vente flash Expresso
+	*******************************/
+
+
+	/*  GRID SYSTEM */
+
+
+	/*  SECTIONS  */
+	.n2g_section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+		zoom:1;
+	}
+
+	/*  COLUMN SETUP  */
+	.n2g_col {
+		display: block;
+		float:left;
+		margin: 1% 0 1% 0%;
+	}
+	.n2g_col:first-child { margin-left: 0; }
+
+  .n2g_clear {content:""; display:table; clear:both;}
+
+	/*  GRID OF TWO  */
+	.n2g_span_1_of_2 {
+		width: 50%;
+	}
+
+
+	/* MIXINS*/
+
+	@mixin n2g_button{
+		text-decoration: none;
+		position: relative;
+		display: block;
+		width: 300px;
+		height: 56px;
+		padding: 0;
+		font-size: 16px;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin: auto;
+		border-radius:3px;
+		border-bottom: 2px #7d7d7d solid;
+		transition: background-color 0.2s ease-out;
+
+		span{
+			display:block;
+			position: relative;
+			top:22px;
+			text-align: center;
+			margin:auto;
+		}
+
+		sup{
+			font-size: 0.5em;
+			vertical-align: top;
+			position: relative;
+			top:2px;
+		}
+
+		img{
+			position: relative;
+			right: -15px;
+			width: 7px;
+			height: 12px;
+		}
+
+	}
+
+
+	/* Wrapper */
+
+	.n2g_expresso_wrapper{
+		background-color: #ffffff;
+		box-sizing: border-box;
+
+
+		/*Exemple*/
+
+		#n2g_expresso_exemple{
+			background: #fafafa;
+			padding: 20px 30px;
+			font-size: 14px;
+			color: #151325;
+			line-height: 1.3em;
+
+			strong{
+				font-size: 16px;
+			}
+
+			sup{
+				font-size: 0.6em;
+			}
+		}
+
+		/* Bandeau */
+
+		#n2g_expresso_bandeau{
+			overflow: hidden;
+		  position: relative;
+		  width: 978px;
+		  height: 560px;
+		  background: url('../img/n2g_expresso_theme.jpg') no-repeat;
+			padding: 0;
+			margin: 0;
+
+			.n2g_expressso_date{
+				position: relative;
+				margin-top: 38px;
+				width: 100%;
+				text-align: center;
+				background-color: #e60028;
+				height: 45px;
+				text-transform: uppercase;
+				color: #ffffff;
+				font-size: 21px;
+				padding: 0;
+
+					div{
+						position: relative;
+						left: 54px;
+						display: block;
+						padding-top: 10px;
+					}
+
+					img{
+						position: absolute;
+						width: 100px;
+						height: 100px;
+						top:-32px;
+						left: 166px;
+						transform: rotate(-10deg);
+					}
+			}
+
+
+			.n2g_expresso_titre{
+				text-align: center;
+				position: relative;
+				margin: auto;
+				margin-top: 40px;
+				width:700px;
+
+				h1{
+					position: relative;
+					font-weight:300;
+					font-size: 42px;
+					color: #202e3a;
+					margin: auto;
+					text-transform: uppercase;
+
+					strong{
+						font-style: italic;
+					}
+
+					sup{
+						font-size: 0.4em;
+						vertical-align: top;
+						position: relative;
+						top:2px;
+					}
+
+					img{
+					margin-left: 7px;
+					}
+				}
+
+			}
+
+			.n2g_expresso_taux{
+				text-align: center;
+				position: relative;
+				margin: auto;
+				margin-top: 0px;
+				width:560px;
+				height: 110px;
+
+				h2{
+					position: relative;
+					font-weight:bold;
+					font-size: 116px;
+					color: #ffffff;
+					float:left;
+					width: auto;
+					span{
+						letter-spacing: 8px;
+					}
+				}
+
+				div{
+					color: #ffffff;
+					margin-left: 36px;
+					margin-top:18px;
+					text-align: left;
+					float:left;
+					width: 160px;
+					font-size: 17px;
+					line-height: 24px;
+
+					strong{
+						display: block;
+						font-size: 24px;
+						margin-bottom: 4px;
+					}
+				}
+
+			}
+
+
+
+			a.n2g_button{
+				@include n2g_button;
+
+				&.red{
+					font-size: 19px;
+					margin-top: 40px;
+					width: 297px;
+					color: #ffffff;
+					background-color: #e60028;
+					font-weight: bold;
+					border-bottom: 2px solid darken(#e60028, 15%);
+
+					span{
+						top:19px;
+					}
+
+					&:hover{
+						background-color: darken( #e60028, 5% )
+					}
+				}
+
+			}
+
+		}//Fin bandeau
+
+		/*Action*/
+
+		#n2g_expresso_action{
+
+			background-color: #f2f2f2;
+
+			.n2g_col{
+				margin-top: 30px;
+			}
+			.n2g_span_1_of_2{
+				text-align: center;
+			}
+
+			h3{
+				font-size: 19px;
+				margin-bottom: 25px;
+			}
+
+
+			/* Input number */
+
+			.n2g_form_wrapper{
+
+				width: 320px;
+				background: #938928;
+				margin: auto;
+
+				input[type="text"]{
+					float:left;
+					padding: 5px 10px;
+					background-color: #fff;
+					border-radius: 4px;
+					box-shadow: none;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+					border: 1px solid #cccccc;
+					outline: 0;
+					margin-bottom: 0;
+					border-radius: 0;
+					height: 46px;
+					width: 242px;
+					border-right: 0;
+					font-size: 15px;
+					color:#777;
+					font-style: italic;
+				}
+			}
+
+			.n2g_carte_visa_horaires{
+				clear:both;
+				font-size: 12px;
+				line-height: 17px;
+				text-transform:none;
+				display:block;
+				padding-top: 10px;
+			}
+
+			a.n2g_button{
+				@include n2g_button;
+
+				&.dark{
+					color: #ffffff;
+					background-color: #474747;
+					border-bottom: 2px solid darken(#474747, 20%);
+
+					&:hover{
+						background-color: darken( #474747, 5% )
+					}
+
+					&.ok-tel{
+						width: 50px;
+						float:left;
+						border-top-left-radius: 0px;
+						border-bottom-left-radius: 0px;
+					}
+				}
+			}
+		}
+
+		/*Mentions*/
+
+		#n2g_expresso_mentions {
+		  padding: 30px;
+			padding-bottom: 10px;
+			font-size: 12px;
+		  color: #000000;
+			background: #ffffff;
+
+			a{
+				color: #000000;
+			}
+
+			.n2g_expresso_mentions{
+				counter-reset: mention_count;
+			  margin-bottom: 10px;
+
+				dt{
+					position: relative;
+				  padding: 0px 0 12px 0;
+				  padding-left: 25px;
+				  line-height: 15px;
+
+					span{
+						position: absolute;
+						left: 0;
+						top: 0;
+						*top:-5px;
+						font-size: 12px;
+					}
+
+
+					&.last{
+						margin-bottom: 0;
+					}
+				}
+
+
+				&.small{
+					font-size: 12px;
+					line-height: 16px;
+				}
+
+			}
+
+		}
+
+	}
